@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".env.example" />
+    <File Path="docker-compose.yaml" />
+  </Folder>
+  <Project Path="api/api.csproj" />
+  <Project Path="desktop.app/desktop.app.csproj" />
+  <Project Path="optimizer/optimizer.csproj" />
+</Solution>
