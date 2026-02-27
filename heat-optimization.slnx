@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/shared/">
+    <Project Path="data/data.csproj" Id="7efdb017-74c0-4718-9be5-7d18307fe55a" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".env.example" />
     <File Path="docker-compose.yaml" />
