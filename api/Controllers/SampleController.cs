@@ -13,9 +13,10 @@ namespace api.Controllers
         : ControllerBase
     {
         [HttpGet(Name = "Test")]
-        public IEnumerable<Sample> Get()
+        // I return async here because EF ToListAsync() is asynchronous.
+        public async Task<IEnumerable<Sample>> Get()
         {
-            return _context.Samples.AsNoTracking().ToListAsync();
+            return await _context.Samples.AsNoTracking().ToListAsync();
         }
     }
 }
