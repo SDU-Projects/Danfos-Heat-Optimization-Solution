@@ -12,7 +12,7 @@ using data;
 namespace data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260324114359_AddProductionUnits")]
+    [Migration("20260324115543_AddProductionUnits")]
     partial class AddProductionUnits
     {
         /// <inheritdoc />
@@ -6144,7 +6144,7 @@ namespace data.Migrations
                         new
                         {
                             Id = 1,
-                            DataJson = "{\"maxHeatMW\":3.0,\"costDkkPerMWh\":510,\"co2KgPerMWh\":132,\"gasConsumptionMWhPerMWh\":1.05}",
+                            DataJson = "{\"name\":\"GB1\",\"imagePath\":\"AssetManager/Images/GB1.png\",\"maxHeatMW\":3.0,\"costDkkPerMWh\":510,\"co2KgPerMWh\":132,\"gasConsumptionMWhPerMWh\":1.05}",
                             IsAvailable = true,
                             IsConnectedToGrid = true,
                             OnMaintenance = false,
@@ -6153,7 +6153,7 @@ namespace data.Migrations
                         new
                         {
                             Id = 2,
-                            DataJson = "{\"maxHeatMW\":2.0,\"costDkkPerMWh\":540,\"co2KgPerMWh\":134,\"gasConsumptionMWhPerMWh\":1.08}",
+                            DataJson = "{\"name\":\"GB2\",\"imagePath\":\"AssetManager/Images/GB2.png\",\"maxHeatMW\":2.0,\"costDkkPerMWh\":540,\"co2KgPerMWh\":134,\"gasConsumptionMWhPerMWh\":1.08}",
                             IsAvailable = true,
                             IsConnectedToGrid = true,
                             OnMaintenance = false,
@@ -6162,7 +6162,7 @@ namespace data.Migrations
                         new
                         {
                             Id = 3,
-                            DataJson = "{\"maxHeatMW\":4.0,\"costDkkPerMWh\":580,\"co2KgPerMWh\":136,\"gasConsumptionMWhPerMWh\":1.09}",
+                            DataJson = "{\"name\":\"GB3\",\"imagePath\":\"AssetManager/Images/GB3.png\",\"maxHeatMW\":4.0,\"costDkkPerMWh\":580,\"co2KgPerMWh\":136,\"gasConsumptionMWhPerMWh\":1.09}",
                             IsAvailable = true,
                             IsConnectedToGrid = true,
                             OnMaintenance = false,
@@ -6171,7 +6171,7 @@ namespace data.Migrations
                         new
                         {
                             Id = 4,
-                            DataJson = "{\"maxHeatMW\":6.0,\"costDkkPerMWh\":690,\"co2KgPerMWh\":147,\"oilConsumptionMWhPerMWh\":1.18}",
+                            DataJson = "{\"name\":\"OB1\",\"imagePath\":\"AssetManager/Images/OB1.jpg\",\"maxHeatMW\":6.0,\"costDkkPerMWh\":690,\"co2KgPerMWh\":147,\"oilConsumptionMWhPerMWh\":1.18}",
                             IsAvailable = true,
                             IsConnectedToGrid = true,
                             OnMaintenance = false,
@@ -6180,7 +6180,7 @@ namespace data.Migrations
                         new
                         {
                             Id = 5,
-                            DataJson = "{\"maxHeatMW\":5.3,\"maxElectricityMW\":3.9,\"costDkkPerMWh\":975,\"co2KgPerMWh\":227,\"gasConsumptionMWhPerMWh\":1.82}",
+                            DataJson = "{\"name\":\"GM1\",\"imagePath\":\"AssetManager/Images/GM1.png\",\"maxHeatMW\":5.3,\"maxElectricityMW\":3.9,\"costDkkPerMWh\":975,\"co2KgPerMWh\":227,\"gasConsumptionMWhPerMWh\":1.82}",
                             IsAvailable = true,
                             IsConnectedToGrid = true,
                             OnMaintenance = false,
@@ -6189,7 +6189,7 @@ namespace data.Migrations
                         new
                         {
                             Id = 6,
-                            DataJson = "{\"maxHeatMW\":6.0,\"electricityConsumedMW\":6.0,\"costDkkPerMWh\":15,\"co2KgPerMWh\":0}",
+                            DataJson = "{\"name\":\"EB1\",\"imagePath\":\"AssetManager/Images/EB1.jpg\",\"maxHeatMW\":6.0,\"electricityConsumedMW\":6.0,\"costDkkPerMWh\":15,\"co2KgPerMWh\":0}",
                             IsAvailable = true,
                             IsConnectedToGrid = true,
                             OnMaintenance = false,

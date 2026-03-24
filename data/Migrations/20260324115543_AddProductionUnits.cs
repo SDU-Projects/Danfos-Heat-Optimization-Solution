@@ -35,12 +35,12 @@ namespace data.Migrations
                 columns: new[] { "Id", "DataJson", "IsAvailable", "IsConnectedToGrid", "OnMaintenance", "Type" },
                 values: new object[,]
                 {
-                    { 1, "{\"maxHeatMW\":3.0,\"costDkkPerMWh\":510,\"co2KgPerMWh\":132,\"gasConsumptionMWhPerMWh\":1.05}", true, true, false, "GasBoiler" },
-                    { 2, "{\"maxHeatMW\":2.0,\"costDkkPerMWh\":540,\"co2KgPerMWh\":134,\"gasConsumptionMWhPerMWh\":1.08}", true, true, false, "GasBoiler" },
-                    { 3, "{\"maxHeatMW\":4.0,\"costDkkPerMWh\":580,\"co2KgPerMWh\":136,\"gasConsumptionMWhPerMWh\":1.09}", true, true, false, "GasBoiler" },
-                    { 4, "{\"maxHeatMW\":6.0,\"costDkkPerMWh\":690,\"co2KgPerMWh\":147,\"oilConsumptionMWhPerMWh\":1.18}", true, true, false, "OilBoiler" },
-                    { 5, "{\"maxHeatMW\":5.3,\"maxElectricityMW\":3.9,\"costDkkPerMWh\":975,\"co2KgPerMWh\":227,\"gasConsumptionMWhPerMWh\":1.82}", true, true, false, "GasMotor" },
-                    { 6, "{\"maxHeatMW\":6.0,\"electricityConsumedMW\":6.0,\"costDkkPerMWh\":15,\"co2KgPerMWh\":0}", true, true, false, "ElectricBoiler" }
+                    { 1, "{\"name\":\"GB1\",\"imagePath\":\"AssetManager/Images/GB1.png\",\"maxHeatMW\":3.0,\"costDkkPerMWh\":510,\"co2KgPerMWh\":132,\"gasConsumptionMWhPerMWh\":1.05}", true, true, false, "GasBoiler" },
+                    { 2, "{\"name\":\"GB2\",\"imagePath\":\"AssetManager/Images/GB2.png\",\"maxHeatMW\":2.0,\"costDkkPerMWh\":540,\"co2KgPerMWh\":134,\"gasConsumptionMWhPerMWh\":1.08}", true, true, false, "GasBoiler" },
+                    { 3, "{\"name\":\"GB3\",\"imagePath\":\"AssetManager/Images/GB3.png\",\"maxHeatMW\":4.0,\"costDkkPerMWh\":580,\"co2KgPerMWh\":136,\"gasConsumptionMWhPerMWh\":1.09}", true, true, false, "GasBoiler" },
+                    { 4, "{\"name\":\"OB1\",\"imagePath\":\"AssetManager/Images/OB1.jpg\",\"maxHeatMW\":6.0,\"costDkkPerMWh\":690,\"co2KgPerMWh\":147,\"oilConsumptionMWhPerMWh\":1.18}", true, true, false, "OilBoiler" },
+                    { 5, "{\"name\":\"GM1\",\"imagePath\":\"AssetManager/Images/GM1.png\",\"maxHeatMW\":5.3,\"maxElectricityMW\":3.9,\"costDkkPerMWh\":975,\"co2KgPerMWh\":227,\"gasConsumptionMWhPerMWh\":1.82}", true, true, false, "GasMotor" },
+                    { 6, "{\"name\":\"EB1\",\"imagePath\":\"AssetManager/Images/EB1.jpg\",\"maxHeatMW\":6.0,\"electricityConsumedMW\":6.0,\"costDkkPerMWh\":15,\"co2KgPerMWh\":0}", true, true, false, "ElectricBoiler" }
                 });
         }
 
