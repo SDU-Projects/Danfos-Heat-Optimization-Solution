@@ -14,10 +14,17 @@ public class AppDbContext : DbContext
     public DbSet<Sample> Samples { get; set; }
     // I keep HeatPricePoints as its own table because it represents the CSV-based hourly heat/electricity dataset.
     public DbSet<HeatPricePoint> HeatPricePoints { get; set; }
+    public DbSet<ProductionUnitEntity> ProductionUnits { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<ProductionUnitEntity>(entity =>
+        {
+            entity.Property(x => x.Type).HasConversion<string>().HasMaxLength(32);
+            entity.HasData(ProductionUnitSeed.Rows);
+        });
 
         modelBuilder.Entity<HeatPricePoint>(entity =>
         {
