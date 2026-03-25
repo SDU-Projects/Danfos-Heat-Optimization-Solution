@@ -1,0 +1,38 @@
+<Window xmlns="[github.com](https://github.com/avaloniaui)"
+        xmlns:x="[schemas.microsoft.com](http://schemas.microsoft.com/winfx/2006/xaml)"
+        xmlns:vm="using:desktop.app.ViewModels"
+        x:Class="desktop.app.MainWindow"
+        Title="Production Units"
+        Width="900" Height="600">
+    <Design.DataContext>
+        <vm:MainViewModel/>
+    </Design.DataContext>
+    <Grid ColumnDefinitions="Auto, *">
+        <StackPanel Grid.Column="0" Spacing="10" Margin="10" Width="120">
+            <Button Content="DELETE PU" Command="{Binding DeleteProductionUnitCommand}" HorizontalAlignment="Stretch"/>
+            <Button Content="UPDATE PU" Command="{Binding UpdateProductionUnitCommand}" HorizontalAlignment="Stretch"/>
+            <Button Content="ADD PU" Command="{Binding AddProductionUnitCommand}" HorizontalAlignment="Stretch"/>
+        </StackPanel>
+        <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
+            <ItemsControl ItemsSource="{Binding Units}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Margin="10" Padding="10" Width="200">
+                            <StackPanel Spacing="5">
+                                <Image Source="{Binding ImagePath}" Height="100" Stretch="Uniform"/>
+                                <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+                                <TextBlock Text="{Binding MaxHeatMW, StringFormat='Capacidad: {0} MW'}"/>
+                                <TextBlock Text="{Binding ProductionCostPerMWh, StringFormat='Coste: {0} €/MWh'}"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Window>

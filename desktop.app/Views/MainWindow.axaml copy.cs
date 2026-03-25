@@ -7,6 +7,7 @@ namespace desktop.app.Views
         public MainWindow()
         {
             InitializeComponent();
+            DataContext= new MainViewModel();
         }
     }
 }
