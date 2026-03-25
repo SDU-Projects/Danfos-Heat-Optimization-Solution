@@ -1,9 +1,11 @@
-namespace data.AssetManager;
+using data.Models.Base;
+
+namespace data.Models;
 
 // produces both heat and electricity
 // net cost is reduced by revenue from electricity produced
 // formula: ProductionCostPerMWh - (ElectricityProducedMW * electricityPrice)
-public class GasMotor : ProductionUnit
+public class GasMotor : ProductionUnitBase
 {
     public double GasConsumption { get; set; }
 

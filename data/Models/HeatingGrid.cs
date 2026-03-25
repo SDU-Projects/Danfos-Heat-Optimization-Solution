@@ -1,4 +1,4 @@
-namespace data.AssetManager;
+namespace data.Models;
 public class HeatingGrid
 {
     public string Name { get; set; } = string.Empty;

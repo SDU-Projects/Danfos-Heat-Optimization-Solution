@@ -1,4 +1,5 @@
 using data.Entities;
+using data.Models.Base;
 
 namespace data.Seed;
 
