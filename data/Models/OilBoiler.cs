@@ -1,6 +1,8 @@
-namespace data.AssetManager;
+using data.Models.Base;
+
+namespace data.Models;
 // produces heat only
-public class OilBoiler : ProductionUnit
+public class OilBoiler : ProductionUnitBase
 {
     public double OilConsumption { get; set; }
 

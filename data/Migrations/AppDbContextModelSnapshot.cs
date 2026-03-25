@@ -63,8 +63,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 690.58m,
                             HeatDemandMWh = 8.27m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -72,8 +72,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 515.04m,
                             HeatDemandMWh = 3.58m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -81,8 +81,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 663.66m,
                             HeatDemandMWh = 8.56m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -90,8 +90,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 525.78m,
                             HeatDemandMWh = 3.69m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -99,8 +99,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 646.18m,
                             HeatDemandMWh = 8.72m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -108,8 +108,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 525.26m,
                             HeatDemandMWh = 3.52m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -117,8 +117,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 644.72m,
                             HeatDemandMWh = 8.80m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -126,8 +126,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 540.48m,
                             HeatDemandMWh = 3.35m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -135,8 +135,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 653.55m,
                             HeatDemandMWh = 9.65m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -144,8 +144,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 559.05m,
                             HeatDemandMWh = 3.46m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -153,8 +153,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 678.67m,
                             HeatDemandMWh = 9.81m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -162,8 +162,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 703.40m,
                             HeatDemandMWh = 3.58m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -171,8 +171,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 814.35m,
                             HeatDemandMWh = 10.18m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -180,8 +180,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 794.42m,
                             HeatDemandMWh = 3.64m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -189,8 +189,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 965.91m,
                             HeatDemandMWh = 9.52m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -198,8 +198,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 847.08m,
                             HeatDemandMWh = 3.62m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -207,8 +207,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1129.22m,
                             HeatDemandMWh = 9.43m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -216,8 +216,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 759.80m,
                             HeatDemandMWh = 3.69m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -225,8 +225,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1136.50m,
                             HeatDemandMWh = 9.50m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -234,8 +234,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 640.29m,
                             HeatDemandMWh = 3.76m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -243,8 +243,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1087.85m,
                             HeatDemandMWh = 9.69m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -252,8 +252,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 551.37m,
                             HeatDemandMWh = 4.00m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -261,8 +261,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1021.11m,
                             HeatDemandMWh = 8.82m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -270,8 +270,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 474.61m,
                             HeatDemandMWh = 3.73m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -279,8 +279,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1004.16m,
                             HeatDemandMWh = 8.35m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -288,8 +288,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 432.83m,
                             HeatDemandMWh = 3.57m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -297,8 +297,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1005.26m,
                             HeatDemandMWh = 8.42m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -306,8 +306,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 489.45m,
                             HeatDemandMWh = 3.20m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -315,8 +315,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1052.26m,
                             HeatDemandMWh = 8.55m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -324,8 +324,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 538.31m,
                             HeatDemandMWh = 3.13m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -333,8 +333,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1125.52m,
                             HeatDemandMWh = 9.12m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -342,8 +342,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 672.00m,
                             HeatDemandMWh = 3.09m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -351,8 +351,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1359.80m,
                             HeatDemandMWh = 9.24m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -360,8 +360,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 927.13m,
                             HeatDemandMWh = 3.15m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -369,8 +369,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1670.05m,
                             HeatDemandMWh = 9.60m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -378,8 +378,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1466.71m,
                             HeatDemandMWh = 3.06m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -387,8 +387,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1596.51m,
                             HeatDemandMWh = 9.22m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -396,8 +396,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 3085.90m,
                             HeatDemandMWh = 3.04m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -405,8 +405,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1365.46m,
                             HeatDemandMWh = 9.25m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -414,8 +414,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 2301.56m,
                             HeatDemandMWh = 3.00m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -423,8 +423,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1098.29m,
                             HeatDemandMWh = 9.45m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -432,8 +432,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1133.92m,
                             HeatDemandMWh = 2.99m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -441,8 +441,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 964.34m,
                             HeatDemandMWh = 9.61m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -450,8 +450,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 924.52m,
                             HeatDemandMWh = 2.97m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -459,8 +459,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 925.11m,
                             HeatDemandMWh = 9.57m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 5, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 5, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -468,8 +468,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 843.88m,
                             HeatDemandMWh = 3.03m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 8, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 8, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -477,8 +477,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 831.37m,
                             HeatDemandMWh = 9.42m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 5, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 5, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -486,8 +486,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 854.32m,
                             HeatDemandMWh = 3.10m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 8, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 8, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -495,8 +495,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 782.02m,
                             HeatDemandMWh = 9.48m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -504,8 +504,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 838.95m,
                             HeatDemandMWh = 3.08m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -513,8 +513,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 781.31m,
                             HeatDemandMWh = 9.60m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -522,8 +522,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 823.21m,
                             HeatDemandMWh = 2.95m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -531,8 +531,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 758.49m,
                             HeatDemandMWh = 9.64m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -540,8 +540,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 819.11m,
                             HeatDemandMWh = 2.82m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -549,8 +549,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 747.60m,
                             HeatDemandMWh = 9.63m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -558,8 +558,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 820.53m,
                             HeatDemandMWh = 2.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -567,8 +567,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 765.27m,
                             HeatDemandMWh = 10.19m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -576,8 +576,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 881.62m,
                             HeatDemandMWh = 2.86m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -585,8 +585,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 799.24m,
                             HeatDemandMWh = 10.56m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -594,8 +594,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1360.63m,
                             HeatDemandMWh = 2.91m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -603,8 +603,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 905.96m,
                             HeatDemandMWh = 10.63m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -612,8 +612,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 2189.51m,
                             HeatDemandMWh = 2.94m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -621,8 +621,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1034.51m,
                             HeatDemandMWh = 9.74m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -630,8 +630,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1469.47m,
                             HeatDemandMWh = 3.01m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -639,8 +639,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1226.38m,
                             HeatDemandMWh = 9.54m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -648,8 +648,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 951.82m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -657,8 +657,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1261.00m,
                             HeatDemandMWh = 9.63m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -666,8 +666,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 758.91m,
                             HeatDemandMWh = 3.40m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -675,8 +675,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1156.60m,
                             HeatDemandMWh = 9.55m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -684,8 +684,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 737.94m,
                             HeatDemandMWh = 3.47m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -693,8 +693,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1100.00m,
                             HeatDemandMWh = 8.74m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -702,8 +702,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 639.17m,
                             HeatDemandMWh = 3.36m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -711,8 +711,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1004.59m,
                             HeatDemandMWh = 7.99m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -720,8 +720,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 620.90m,
                             HeatDemandMWh = 3.15m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -729,8 +729,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 972.55m,
                             HeatDemandMWh = 7.78m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -738,8 +738,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 618.73m,
                             HeatDemandMWh = 2.91m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -747,8 +747,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 976.28m,
                             HeatDemandMWh = 7.85m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -756,8 +756,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 668.42m,
                             HeatDemandMWh = 2.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -765,8 +765,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1023.21m,
                             HeatDemandMWh = 8.47m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -774,8 +774,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 745.70m,
                             HeatDemandMWh = 2.84m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -783,8 +783,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1083.13m,
                             HeatDemandMWh = 8.76m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -792,8 +792,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 950.48m,
                             HeatDemandMWh = 2.94m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -801,8 +801,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1142.78m,
                             HeatDemandMWh = 8.97m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -810,8 +810,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1437.39m,
                             HeatDemandMWh = 2.93m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -819,8 +819,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1107.48m,
                             HeatDemandMWh = 8.32m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -828,8 +828,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 2882.54m,
                             HeatDemandMWh = 3.00m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -837,8 +837,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1039.14m,
                             HeatDemandMWh = 8.40m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -846,8 +846,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1608.30m,
                             HeatDemandMWh = 3.00m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -855,8 +855,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 908.31m,
                             HeatDemandMWh = 8.58m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -864,8 +864,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 987.48m,
                             HeatDemandMWh = 2.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -873,8 +873,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 810.91m,
                             HeatDemandMWh = 8.54m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -882,8 +882,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 848.28m,
                             HeatDemandMWh = 2.89m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -891,8 +891,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 763.55m,
                             HeatDemandMWh = 8.57m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 6, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 6, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -900,8 +900,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 790.76m,
                             HeatDemandMWh = 2.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 9, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 9, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -909,8 +909,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 693.30m,
                             HeatDemandMWh = 8.47m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 6, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 6, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -918,8 +918,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 751.37m,
                             HeatDemandMWh = 2.94m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 9, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 9, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -927,8 +927,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 702.29m,
                             HeatDemandMWh = 8.50m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -936,8 +936,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 754.65m,
                             HeatDemandMWh = 2.80m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -945,8 +945,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 662.11m,
                             HeatDemandMWh = 8.50m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -954,8 +954,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 734.66m,
                             HeatDemandMWh = 2.64m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -963,8 +963,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 635.47m,
                             HeatDemandMWh = 8.53m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -972,8 +972,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 739.81m,
                             HeatDemandMWh = 2.57m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -981,8 +981,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 610.09m,
                             HeatDemandMWh = 8.69m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -990,8 +990,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 747.04m,
                             HeatDemandMWh = 2.65m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -999,8 +999,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 603.62m,
                             HeatDemandMWh = 9.66m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1008,8 +1008,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 802.99m,
                             HeatDemandMWh = 2.70m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1017,8 +1017,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 634.26m,
                             HeatDemandMWh = 9.87m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1026,8 +1026,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 977.56m,
                             HeatDemandMWh = 2.70m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1035,8 +1035,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 691.55m,
                             HeatDemandMWh = 10.13m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1044,8 +1044,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1632.32m,
                             HeatDemandMWh = 2.85m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1053,8 +1053,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 741.39m,
                             HeatDemandMWh = 9.52m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1062,8 +1062,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1282.52m,
                             HeatDemandMWh = 2.99m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1071,8 +1071,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 817.09m,
                             HeatDemandMWh = 9.55m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1080,8 +1080,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 939.21m,
                             HeatDemandMWh = 3.10m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1089,8 +1089,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 837.84m,
                             HeatDemandMWh = 9.30m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1098,8 +1098,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 800.68m,
                             HeatDemandMWh = 3.16m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1107,8 +1107,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 809.33m,
                             HeatDemandMWh = 9.08m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1116,8 +1116,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 725.11m,
                             HeatDemandMWh = 3.36m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1125,8 +1125,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 746.73m,
                             HeatDemandMWh = 8.78m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1134,8 +1134,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 599.04m,
                             HeatDemandMWh = 3.46m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1143,8 +1143,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 719.70m,
                             HeatDemandMWh = 8.46m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1152,8 +1152,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 581.88m,
                             HeatDemandMWh = 3.36m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1161,8 +1161,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 696.07m,
                             HeatDemandMWh = 8.40m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1170,8 +1170,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 612.47m,
                             HeatDemandMWh = 3.23m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1179,8 +1179,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 711.47m,
                             HeatDemandMWh = 8.63m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1188,8 +1188,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 620.67m,
                             HeatDemandMWh = 3.01m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1197,8 +1197,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 760.95m,
                             HeatDemandMWh = 9.18m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1206,8 +1206,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 721.46m,
                             HeatDemandMWh = 3.06m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1215,8 +1215,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 794.93m,
                             HeatDemandMWh = 9.36m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1224,8 +1224,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 922.50m,
                             HeatDemandMWh = 2.91m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1233,8 +1233,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 935.43m,
                             HeatDemandMWh = 9.31m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1242,8 +1242,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1272.60m,
                             HeatDemandMWh = 3.02m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1251,8 +1251,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 927.30m,
                             HeatDemandMWh = 8.65m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1260,8 +1260,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 2052.92m,
                             HeatDemandMWh = 3.09m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1269,8 +1269,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 860.09m,
                             HeatDemandMWh = 8.52m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1278,8 +1278,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1261.26m,
                             HeatDemandMWh = 3.06m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1287,8 +1287,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 728.78m,
                             HeatDemandMWh = 8.47m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1296,8 +1296,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 917.13m,
                             HeatDemandMWh = 3.00m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1305,8 +1305,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 693.96m,
                             HeatDemandMWh = 8.35m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1314,8 +1314,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 757.79m,
                             HeatDemandMWh = 2.97m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1323,8 +1323,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 679.82m,
                             HeatDemandMWh = 8.21m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 7, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 7, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1332,8 +1332,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 653.72m,
                             HeatDemandMWh = 2.93m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 10, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 10, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1341,8 +1341,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 652.53m,
                             HeatDemandMWh = 8.07m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 7, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 7, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1350,8 +1350,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 615.97m,
                             HeatDemandMWh = 3.15m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 10, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 10, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1359,8 +1359,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 623.98m,
                             HeatDemandMWh = 7.94m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1368,8 +1368,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 591.13m,
                             HeatDemandMWh = 3.06m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1377,8 +1377,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 620.83m,
                             HeatDemandMWh = 7.89m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1386,8 +1386,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 533.69m,
                             HeatDemandMWh = 3.08m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1395,8 +1395,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 631.59m,
                             HeatDemandMWh = 7.97m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1404,8 +1404,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 486.62m,
                             HeatDemandMWh = 2.83m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1413,8 +1413,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 616.27m,
                             HeatDemandMWh = 8.04m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1422,8 +1422,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 486.17m,
                             HeatDemandMWh = 2.93m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1431,8 +1431,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 637.13m,
                             HeatDemandMWh = 8.80m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1440,8 +1440,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 496.84m,
                             HeatDemandMWh = 2.97m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1449,8 +1449,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 656.73m,
                             HeatDemandMWh = 8.70m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1458,8 +1458,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 640.59m,
                             HeatDemandMWh = 3.12m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1467,8 +1467,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 731.40m,
                             HeatDemandMWh = 8.70m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1476,8 +1476,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 640.07m,
                             HeatDemandMWh = 3.19m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1485,8 +1485,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 946.85m,
                             HeatDemandMWh = 8.26m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1494,8 +1494,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 649.02m,
                             HeatDemandMWh = 3.36m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1503,8 +1503,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1261.42m,
                             HeatDemandMWh = 8.53m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1512,8 +1512,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 474.68m,
                             HeatDemandMWh = 3.59m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1521,8 +1521,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1440.08m,
                             HeatDemandMWh = 8.61m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1530,8 +1530,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 306.53m,
                             HeatDemandMWh = 3.56m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1539,8 +1539,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1553.75m,
                             HeatDemandMWh = 8.36m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1548,8 +1548,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 61.40m,
                             HeatDemandMWh = 3.66m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1557,8 +1557,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1592.46m,
                             HeatDemandMWh = 8.28m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1566,8 +1566,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 30.44m,
                             HeatDemandMWh = 3.85m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1575,8 +1575,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1645.95m,
                             HeatDemandMWh = 8.12m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1584,8 +1584,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 22.16m,
                             HeatDemandMWh = 3.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1593,8 +1593,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1765.09m,
                             HeatDemandMWh = 7.99m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1602,8 +1602,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 31.71m,
                             HeatDemandMWh = 3.83m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1611,8 +1611,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1977.08m,
                             HeatDemandMWh = 8.22m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1620,8 +1620,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 21.04m,
                             HeatDemandMWh = 3.43m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1629,8 +1629,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1975.83m,
                             HeatDemandMWh = 7.75m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1638,8 +1638,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 66.84m,
                             HeatDemandMWh = 3.28m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1647,8 +1647,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1939.01m,
                             HeatDemandMWh = 7.87m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1656,8 +1656,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 507.28m,
                             HeatDemandMWh = 3.19m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1665,8 +1665,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1747.44m,
                             HeatDemandMWh = 7.59m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1674,8 +1674,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 795.83m,
                             HeatDemandMWh = 3.06m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1683,8 +1683,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1489.98m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1692,8 +1692,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 954.88m,
                             HeatDemandMWh = 3.21m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1701,8 +1701,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1040.51m,
                             HeatDemandMWh = 7.87m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1710,8 +1710,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 917.73m,
                             HeatDemandMWh = 3.38m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1719,8 +1719,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 763.12m,
                             HeatDemandMWh = 7.81m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1728,8 +1728,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 769.80m,
                             HeatDemandMWh = 3.30m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1737,8 +1737,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 706.01m,
                             HeatDemandMWh = 7.70m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1746,8 +1746,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 605.75m,
                             HeatDemandMWh = 3.25m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1755,8 +1755,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 677.15m,
                             HeatDemandMWh = 7.79m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 8, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 8, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1764,8 +1764,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 476.62m,
                             HeatDemandMWh = 3.11m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 11, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 11, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1773,8 +1773,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 584.83m,
                             HeatDemandMWh = 7.61m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 8, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 8, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1782,8 +1782,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 135.70m,
                             HeatDemandMWh = 3.25m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 11, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 11, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1791,8 +1791,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 589.97m,
                             HeatDemandMWh = 7.56m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1800,8 +1800,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 134.58m,
                             HeatDemandMWh = 3.40m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1809,8 +1809,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 528.16m,
                             HeatDemandMWh = 7.56m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1818,8 +1818,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 113.32m,
                             HeatDemandMWh = 3.33m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1827,8 +1827,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 428.49m,
                             HeatDemandMWh = 7.58m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1836,8 +1836,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 83.03m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1845,8 +1845,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 379.85m,
                             HeatDemandMWh = 7.80m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1854,8 +1854,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 98.02m,
                             HeatDemandMWh = 3.10m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1863,8 +1863,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 362.54m,
                             HeatDemandMWh = 8.43m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1872,8 +1872,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 97.50m,
                             HeatDemandMWh = 3.15m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1881,8 +1881,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 422.70m,
                             HeatDemandMWh = 8.43m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1890,8 +1890,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 224.55m,
                             HeatDemandMWh = 3.21m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1899,8 +1899,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 542.47m,
                             HeatDemandMWh = 8.39m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1908,8 +1908,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 447.60m,
                             HeatDemandMWh = 3.32m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1917,8 +1917,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 629.87m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1926,8 +1926,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 531.15m,
                             HeatDemandMWh = 3.50m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1935,8 +1935,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 668.38m,
                             HeatDemandMWh = 8.14m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1944,8 +1944,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 331.37m,
                             HeatDemandMWh = 3.56m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1953,8 +1953,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 666.07m,
                             HeatDemandMWh = 8.39m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1962,8 +1962,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 17.38m,
                             HeatDemandMWh = 3.52m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1971,8 +1971,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 701.80m,
                             HeatDemandMWh = 8.24m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1980,8 +1980,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.00m,
                             HeatDemandMWh = 3.52m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1989,8 +1989,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 641.02m,
                             HeatDemandMWh = 8.02m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -1998,8 +1998,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -13.65m,
                             HeatDemandMWh = 3.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2007,8 +2007,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 620.25m,
                             HeatDemandMWh = 7.85m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2016,8 +2016,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -30.29m,
                             HeatDemandMWh = 3.73m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2025,8 +2025,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 619.01m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2034,8 +2034,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -14.99m,
                             HeatDemandMWh = 3.58m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2043,8 +2043,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 618.90m,
                             HeatDemandMWh = 8.16m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2052,8 +2052,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -7.16m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2061,8 +2061,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 636.91m,
                             HeatDemandMWh = 8.10m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2070,8 +2070,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -0.07m,
                             HeatDemandMWh = 3.09m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2079,8 +2079,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 654.30m,
                             HeatDemandMWh = 8.06m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2088,8 +2088,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 385.16m,
                             HeatDemandMWh = 3.09m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2097,8 +2097,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 691.26m,
                             HeatDemandMWh = 7.68m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2106,8 +2106,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 678.04m,
                             HeatDemandMWh = 3.05m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2115,8 +2115,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 661.51m,
                             HeatDemandMWh = 7.87m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2124,8 +2124,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 895.20m,
                             HeatDemandMWh = 3.12m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2133,8 +2133,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 626.13m,
                             HeatDemandMWh = 7.72m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2142,8 +2142,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 923.55m,
                             HeatDemandMWh = 3.18m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2151,8 +2151,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 618.66m,
                             HeatDemandMWh = 7.62m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2160,8 +2160,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 768.31m,
                             HeatDemandMWh = 3.22m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2169,8 +2169,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 600.05m,
                             HeatDemandMWh = 7.62m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2178,8 +2178,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 667.67m,
                             HeatDemandMWh = 3.23m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2187,8 +2187,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 598.37m,
                             HeatDemandMWh = 7.61m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 9, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 9, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2196,8 +2196,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 539.06m,
                             HeatDemandMWh = 3.33m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 12, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 12, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2205,8 +2205,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 556.70m,
                             HeatDemandMWh = 7.54m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 9, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 9, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2214,8 +2214,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 349.43m,
                             HeatDemandMWh = 3.32m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 12, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 12, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2223,8 +2223,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 543.88m,
                             HeatDemandMWh = 7.60m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2232,8 +2232,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 257.37m,
                             HeatDemandMWh = 3.34m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2241,8 +2241,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 521.35m,
                             HeatDemandMWh = 7.72m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2250,8 +2250,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 182.02m,
                             HeatDemandMWh = 3.29m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2259,8 +2259,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 494.92m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2268,8 +2268,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 146.59m,
                             HeatDemandMWh = 3.19m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2277,8 +2277,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 497.14m,
                             HeatDemandMWh = 7.99m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2286,8 +2286,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 147.04m,
                             HeatDemandMWh = 3.10m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2295,8 +2295,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 496.97m,
                             HeatDemandMWh = 8.70m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2304,8 +2304,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 141.67m,
                             HeatDemandMWh = 3.19m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2313,8 +2313,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 511.53m,
                             HeatDemandMWh = 8.86m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2322,8 +2322,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 157.33m,
                             HeatDemandMWh = 3.37m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2331,8 +2331,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 522.73m,
                             HeatDemandMWh = 9.17m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2340,8 +2340,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 272.66m,
                             HeatDemandMWh = 3.41m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2349,8 +2349,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 572.83m,
                             HeatDemandMWh = 8.55m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2358,8 +2358,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 290.94m,
                             HeatDemandMWh = 3.55m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2367,8 +2367,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 635.32m,
                             HeatDemandMWh = 8.68m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2376,8 +2376,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 276.02m,
                             HeatDemandMWh = 4.08m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2385,8 +2385,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 689.62m,
                             HeatDemandMWh = 8.57m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2394,8 +2394,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 106.68m,
                             HeatDemandMWh = 4.04m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2403,8 +2403,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 724.72m,
                             HeatDemandMWh = 8.42m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2412,8 +2412,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 17.68m,
                             HeatDemandMWh = 3.59m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2421,8 +2421,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 754.16m,
                             HeatDemandMWh = 8.07m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2430,8 +2430,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 10.15m,
                             HeatDemandMWh = 3.46m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2439,8 +2439,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 754.23m,
                             HeatDemandMWh = 7.76m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2448,8 +2448,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 9.85m,
                             HeatDemandMWh = 3.44m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2457,8 +2457,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 782.44m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2466,8 +2466,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 10.22m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2475,8 +2475,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 822.71m,
                             HeatDemandMWh = 7.93m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2484,8 +2484,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.00m,
                             HeatDemandMWh = 3.25m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2493,8 +2493,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 873.24m,
                             HeatDemandMWh = 8.32m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2502,8 +2502,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 28.94m,
                             HeatDemandMWh = 3.33m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2511,8 +2511,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 956.46m,
                             HeatDemandMWh = 8.39m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2520,8 +2520,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 469.98m,
                             HeatDemandMWh = 3.22m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2529,8 +2529,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1042.54m,
                             HeatDemandMWh = 8.52m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2538,8 +2538,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 727.42m,
                             HeatDemandMWh = 3.29m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2547,8 +2547,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1022.98m,
                             HeatDemandMWh = 8.09m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2556,8 +2556,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 872.30m,
                             HeatDemandMWh = 3.30m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2565,8 +2565,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 958.68m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2574,8 +2574,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 886.02m,
                             HeatDemandMWh = 3.34m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2583,8 +2583,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 900.29m,
                             HeatDemandMWh = 7.75m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2592,8 +2592,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 829.33m,
                             HeatDemandMWh = 3.36m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2601,8 +2601,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 845.89m,
                             HeatDemandMWh = 7.77m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2610,8 +2610,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 746.00m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2619,8 +2619,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 804.57m,
                             HeatDemandMWh = 7.68m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 10, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 10, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2628,8 +2628,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 650.36m,
                             HeatDemandMWh = 3.22m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 13, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 13, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2637,8 +2637,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 733.72m,
                             HeatDemandMWh = 7.74m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 10, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 10, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2646,8 +2646,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 639.25m,
                             HeatDemandMWh = 3.39m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 13, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 13, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2655,8 +2655,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 724.04m,
                             HeatDemandMWh = 7.69m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2664,8 +2664,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 578.67m,
                             HeatDemandMWh = 3.43m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2673,8 +2673,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 692.99m,
                             HeatDemandMWh = 7.92m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2682,8 +2682,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 601.35m,
                             HeatDemandMWh = 3.50m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2691,8 +2691,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 657.78m,
                             HeatDemandMWh = 7.89m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2700,8 +2700,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 641.04m,
                             HeatDemandMWh = 3.33m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2709,8 +2709,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 634.06m,
                             HeatDemandMWh = 7.98m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2718,8 +2718,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 699.52m,
                             HeatDemandMWh = 3.28m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2727,8 +2727,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 617.77m,
                             HeatDemandMWh = 8.78m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2736,8 +2736,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 744.66m,
                             HeatDemandMWh = 3.39m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2745,8 +2745,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 616.17m,
                             HeatDemandMWh = 9.02m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2754,8 +2754,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 751.60m,
                             HeatDemandMWh = 3.56m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2763,8 +2763,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 610.28m,
                             HeatDemandMWh = 9.25m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2772,8 +2772,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 785.99m,
                             HeatDemandMWh = 3.60m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2781,8 +2781,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 629.57m,
                             HeatDemandMWh = 8.65m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2790,8 +2790,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 809.26m,
                             HeatDemandMWh = 3.56m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2799,8 +2799,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 687.85m,
                             HeatDemandMWh = 8.82m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2808,8 +2808,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 654.84m,
                             HeatDemandMWh = 3.64m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2817,8 +2817,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 770.36m,
                             HeatDemandMWh = 8.77m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2826,8 +2826,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 460.13m,
                             HeatDemandMWh = 3.79m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2835,8 +2835,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 752.28m,
                             HeatDemandMWh = 8.90m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2844,8 +2844,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 131.15m,
                             HeatDemandMWh = 3.72m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2853,8 +2853,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 746.56m,
                             HeatDemandMWh = 8.85m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2862,8 +2862,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 48.64m,
                             HeatDemandMWh = 3.77m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2871,8 +2871,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 725.42m,
                             HeatDemandMWh = 8.85m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2880,8 +2880,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.07m,
                             HeatDemandMWh = 3.66m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2889,8 +2889,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 721.16m,
                             HeatDemandMWh = 8.75m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2898,8 +2898,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.00m,
                             HeatDemandMWh = 3.53m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2907,8 +2907,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 738.79m,
                             HeatDemandMWh = 8.30m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2916,8 +2916,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.00m,
                             HeatDemandMWh = 3.25m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2925,8 +2925,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 756.71m,
                             HeatDemandMWh = 8.86m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2934,8 +2934,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 144.20m,
                             HeatDemandMWh = 3.15m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2943,8 +2943,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 835.01m,
                             HeatDemandMWh = 8.84m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2952,8 +2952,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 732.57m,
                             HeatDemandMWh = 3.11m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2961,8 +2961,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 868.60m,
                             HeatDemandMWh = 8.79m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2970,8 +2970,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 927.58m,
                             HeatDemandMWh = 3.07m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2979,8 +2979,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 838.69m,
                             HeatDemandMWh = 8.16m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2988,8 +2988,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1059.47m,
                             HeatDemandMWh = 3.11m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -2997,8 +2997,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 793.56m,
                             HeatDemandMWh = 7.98m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3006,8 +3006,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 919.22m,
                             HeatDemandMWh = 3.12m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3015,8 +3015,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 717.59m,
                             HeatDemandMWh = 8.14m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3024,8 +3024,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 668.94m,
                             HeatDemandMWh = 3.18m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3033,8 +3033,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 708.68m,
                             HeatDemandMWh = 7.93m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3042,8 +3042,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 534.43m,
                             HeatDemandMWh = 3.14m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3051,8 +3051,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 692.54m,
                             HeatDemandMWh = 8.01m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 11, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 11, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3060,8 +3060,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 106.45m,
                             HeatDemandMWh = 3.09m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 14, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 14, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3069,8 +3069,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 634.73m,
                             HeatDemandMWh = 7.93m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 11, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 11, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3078,8 +3078,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 117.94m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 14, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 14, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3087,8 +3087,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 584.97m,
                             HeatDemandMWh = 8.27m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3096,8 +3096,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 28.87m,
                             HeatDemandMWh = 3.58m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3105,8 +3105,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 582.54m,
                             HeatDemandMWh = 8.56m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3114,8 +3114,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 10.37m,
                             HeatDemandMWh = 3.69m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3123,8 +3123,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 583.19m,
                             HeatDemandMWh = 8.72m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3132,8 +3132,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.07m,
                             HeatDemandMWh = 3.52m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3141,8 +3141,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 524.30m,
                             HeatDemandMWh = 8.80m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3150,8 +3150,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.00m,
                             HeatDemandMWh = 3.35m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3159,8 +3159,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 535.86m,
                             HeatDemandMWh = 9.65m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3168,8 +3168,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 6.71m,
                             HeatDemandMWh = 3.46m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3177,8 +3177,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 552.61m,
                             HeatDemandMWh = 9.81m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3186,8 +3186,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -0.45m,
                             HeatDemandMWh = 3.58m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3195,8 +3195,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 592.78m,
                             HeatDemandMWh = 10.18m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3204,8 +3204,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.00m,
                             HeatDemandMWh = 3.64m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3213,8 +3213,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 590.03m,
                             HeatDemandMWh = 9.52m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3222,8 +3222,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 24.92m,
                             HeatDemandMWh = 3.62m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3231,8 +3231,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 669.06m,
                             HeatDemandMWh = 9.43m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3240,8 +3240,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 17.46m,
                             HeatDemandMWh = 3.69m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3249,8 +3249,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 682.19m,
                             HeatDemandMWh = 9.50m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3258,8 +3258,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 31.93m,
                             HeatDemandMWh = 3.76m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3267,8 +3267,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 619.45m,
                             HeatDemandMWh = 9.69m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3276,8 +3276,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 3.13m,
                             HeatDemandMWh = 4.00m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3285,8 +3285,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 627.63m,
                             HeatDemandMWh = 8.82m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3294,8 +3294,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.00m,
                             HeatDemandMWh = 3.73m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3303,8 +3303,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 703.45m,
                             HeatDemandMWh = 8.35m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3312,8 +3312,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -0.07m,
                             HeatDemandMWh = 3.57m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3321,8 +3321,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 759.45m,
                             HeatDemandMWh = 8.42m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3330,8 +3330,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -0.07m,
                             HeatDemandMWh = 3.20m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3339,8 +3339,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 754.84m,
                             HeatDemandMWh = 8.55m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3348,8 +3348,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -0.52m,
                             HeatDemandMWh = 3.13m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3357,8 +3357,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 707.21m,
                             HeatDemandMWh = 9.12m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3366,8 +3366,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.00m,
                             HeatDemandMWh = 3.09m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3375,8 +3375,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 843.14m,
                             HeatDemandMWh = 9.24m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3384,8 +3384,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 12.98m,
                             HeatDemandMWh = 3.15m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3393,8 +3393,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 886.73m,
                             HeatDemandMWh = 9.60m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3402,8 +3402,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 29.09m,
                             HeatDemandMWh = 3.06m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3411,8 +3411,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 865.37m,
                             HeatDemandMWh = 9.22m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3420,8 +3420,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 190.83m,
                             HeatDemandMWh = 3.04m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3429,8 +3429,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 764.65m,
                             HeatDemandMWh = 9.25m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3438,8 +3438,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 29.91m,
                             HeatDemandMWh = 3.00m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3447,8 +3447,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 697.29m,
                             HeatDemandMWh = 9.45m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3456,8 +3456,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 21.19m,
                             HeatDemandMWh = 2.99m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3465,8 +3465,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 683.20m,
                             HeatDemandMWh = 9.61m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3474,8 +3474,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 21.71m,
                             HeatDemandMWh = 2.97m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3483,8 +3483,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 672.44m,
                             HeatDemandMWh = 9.57m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 12, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 12, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3492,8 +3492,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.45m,
                             HeatDemandMWh = 3.03m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 15, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 15, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3501,8 +3501,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 632.02m,
                             HeatDemandMWh = 9.42m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 12, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 12, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3510,8 +3510,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 12.23m,
                             HeatDemandMWh = 3.10m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 15, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 15, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3519,8 +3519,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 629.96m,
                             HeatDemandMWh = 9.48m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3528,8 +3528,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -0.37m,
                             HeatDemandMWh = 3.08m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3537,8 +3537,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 617.89m,
                             HeatDemandMWh = 9.60m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3546,8 +3546,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -0.82m,
                             HeatDemandMWh = 2.95m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3555,8 +3555,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 617.86m,
                             HeatDemandMWh = 9.64m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3564,8 +3564,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -4.18m,
                             HeatDemandMWh = 2.82m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3573,8 +3573,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 628.34m,
                             HeatDemandMWh = 9.63m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3582,8 +3582,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.00m,
                             HeatDemandMWh = 2.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3591,8 +3591,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 643.88m,
                             HeatDemandMWh = 10.19m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3600,8 +3600,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1.42m,
                             HeatDemandMWh = 2.86m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3609,8 +3609,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 643.19m,
                             HeatDemandMWh = 10.56m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3618,8 +3618,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 17.31m,
                             HeatDemandMWh = 2.91m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3627,8 +3627,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 722.71m,
                             HeatDemandMWh = 10.63m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3636,8 +3636,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 139.35m,
                             HeatDemandMWh = 2.94m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3645,8 +3645,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 866.69m,
                             HeatDemandMWh = 9.74m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3654,8 +3654,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 179.04m,
                             HeatDemandMWh = 3.01m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3663,8 +3663,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 967.79m,
                             HeatDemandMWh = 9.54m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3672,8 +3672,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 74.60m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3681,8 +3681,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 988.41m,
                             HeatDemandMWh = 9.63m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3690,8 +3690,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 21.26m,
                             HeatDemandMWh = 3.40m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3699,8 +3699,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1060.22m,
                             HeatDemandMWh = 9.55m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3708,8 +3708,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 9.47m,
                             HeatDemandMWh = 3.47m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3717,8 +3717,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 925.48m,
                             HeatDemandMWh = 8.74m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3726,8 +3726,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.97m,
                             HeatDemandMWh = 3.36m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3735,8 +3735,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 879.31m,
                             HeatDemandMWh = 7.99m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3744,8 +3744,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 4.85m,
                             HeatDemandMWh = 3.15m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3753,8 +3753,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 844.21m,
                             HeatDemandMWh = 7.78m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3762,8 +3762,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 12.61m,
                             HeatDemandMWh = 2.91m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3771,8 +3771,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 913.37m,
                             HeatDemandMWh = 7.85m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3780,8 +3780,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 5.74m,
                             HeatDemandMWh = 2.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3789,8 +3789,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 900.54m,
                             HeatDemandMWh = 8.47m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3798,8 +3798,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 12.46m,
                             HeatDemandMWh = 2.84m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3807,8 +3807,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 908.48m,
                             HeatDemandMWh = 8.76m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3816,8 +3816,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 21.19m,
                             HeatDemandMWh = 2.94m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3825,8 +3825,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 923.64m,
                             HeatDemandMWh = 8.97m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3834,8 +3834,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 33.27m,
                             HeatDemandMWh = 2.93m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3843,8 +3843,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 835.60m,
                             HeatDemandMWh = 8.32m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3852,8 +3852,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 49.98m,
                             HeatDemandMWh = 3.00m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3861,8 +3861,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 737.43m,
                             HeatDemandMWh = 8.40m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3870,8 +3870,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 42.82m,
                             HeatDemandMWh = 3.00m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3879,8 +3879,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 679.61m,
                             HeatDemandMWh = 8.58m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3888,8 +3888,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 21.63m,
                             HeatDemandMWh = 2.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3897,8 +3897,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 665.85m,
                             HeatDemandMWh = 8.54m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3906,8 +3906,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 30.88m,
                             HeatDemandMWh = 2.89m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3915,8 +3915,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 652.45m,
                             HeatDemandMWh = 8.57m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 13, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 13, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3924,8 +3924,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 29.84m,
                             HeatDemandMWh = 2.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 16, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 16, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3933,8 +3933,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 603.25m,
                             HeatDemandMWh = 8.47m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 13, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 13, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3942,8 +3942,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 17.68m,
                             HeatDemandMWh = 2.94m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 16, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 16, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3951,8 +3951,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 639.34m,
                             HeatDemandMWh = 8.50m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3960,8 +3960,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 22.53m,
                             HeatDemandMWh = 2.80m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3969,8 +3969,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 629.87m,
                             HeatDemandMWh = 8.50m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3978,8 +3978,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 22.90m,
                             HeatDemandMWh = 2.64m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3987,8 +3987,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 641.69m,
                             HeatDemandMWh = 8.53m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -3996,8 +3996,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 22.90m,
                             HeatDemandMWh = 2.57m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4005,8 +4005,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 643.82m,
                             HeatDemandMWh = 8.69m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4014,8 +4014,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 23.05m,
                             HeatDemandMWh = 2.65m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4023,8 +4023,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 654.90m,
                             HeatDemandMWh = 9.66m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4032,8 +4032,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 30.81m,
                             HeatDemandMWh = 2.70m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4041,8 +4041,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 669.92m,
                             HeatDemandMWh = 9.87m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4050,8 +4050,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 74.60m,
                             HeatDemandMWh = 2.70m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4059,8 +4059,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 696.52m,
                             HeatDemandMWh = 10.13m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4068,8 +4068,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 446.78m,
                             HeatDemandMWh = 2.85m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4077,8 +4077,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 785.63m,
                             HeatDemandMWh = 9.52m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4086,8 +4086,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 390.53m,
                             HeatDemandMWh = 2.99m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4095,8 +4095,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 963.60m,
                             HeatDemandMWh = 9.55m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4104,8 +4104,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 32.00m,
                             HeatDemandMWh = 3.10m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4113,8 +4113,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 986.57m,
                             HeatDemandMWh = 9.30m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4122,8 +4122,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 30.59m,
                             HeatDemandMWh = 3.16m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4131,8 +4131,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 870.16m,
                             HeatDemandMWh = 9.08m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4140,8 +4140,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 30.74m,
                             HeatDemandMWh = 3.36m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4149,8 +4149,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 803.49m,
                             HeatDemandMWh = 8.78m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4158,8 +4158,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 67.89m,
                             HeatDemandMWh = 3.46m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4167,8 +4167,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 773.19m,
                             HeatDemandMWh = 8.46m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4176,8 +4176,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 32.00m,
                             HeatDemandMWh = 3.36m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4185,8 +4185,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 774.12m,
                             HeatDemandMWh = 8.40m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4194,8 +4194,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 42.00m,
                             HeatDemandMWh = 3.23m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4203,8 +4203,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 859.62m,
                             HeatDemandMWh = 8.63m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4212,8 +4212,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 53.12m,
                             HeatDemandMWh = 3.01m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4221,8 +4221,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1031.37m,
                             HeatDemandMWh = 9.18m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4230,8 +4230,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 49.91m,
                             HeatDemandMWh = 3.06m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4239,8 +4239,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1118.16m,
                             HeatDemandMWh = 9.36m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4248,8 +4248,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 373.00m,
                             HeatDemandMWh = 2.91m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4257,8 +4257,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1632.99m,
                             HeatDemandMWh = 9.31m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4266,8 +4266,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 692.06m,
                             HeatDemandMWh = 3.02m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4275,8 +4275,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1351.03m,
                             HeatDemandMWh = 8.65m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4284,8 +4284,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 866.93m,
                             HeatDemandMWh = 3.09m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4293,8 +4293,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1182.25m,
                             HeatDemandMWh = 8.52m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4302,8 +4302,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 826.49m,
                             HeatDemandMWh = 3.06m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4311,8 +4311,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 968.32m,
                             HeatDemandMWh = 8.47m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4320,8 +4320,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 677.52m,
                             HeatDemandMWh = 3.00m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4329,8 +4329,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 820.13m,
                             HeatDemandMWh = 8.35m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4338,8 +4338,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 568.45m,
                             HeatDemandMWh = 2.97m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4347,8 +4347,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 772.81m,
                             HeatDemandMWh = 8.21m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 14, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 14, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4356,8 +4356,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 447.60m,
                             HeatDemandMWh = 2.93m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 17, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 17, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4365,8 +4365,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 724.00m,
                             HeatDemandMWh = 8.07m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 14, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 14, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4374,8 +4374,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 257.44m,
                             HeatDemandMWh = 3.15m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 17, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 17, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4383,8 +4383,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 751.81m,
                             HeatDemandMWh = 7.94m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4392,8 +4392,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 206.64m,
                             HeatDemandMWh = 3.06m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4401,8 +4401,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 702.73m,
                             HeatDemandMWh = 7.89m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4410,8 +4410,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 145.32m,
                             HeatDemandMWh = 3.08m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4419,8 +4419,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 667.56m,
                             HeatDemandMWh = 7.97m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4428,8 +4428,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 107.57m,
                             HeatDemandMWh = 2.83m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4437,8 +4437,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 633.69m,
                             HeatDemandMWh = 8.04m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4446,8 +4446,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 67.74m,
                             HeatDemandMWh = 2.93m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4455,8 +4455,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 619.66m,
                             HeatDemandMWh = 8.80m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4464,8 +4464,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 67.89m,
                             HeatDemandMWh = 2.97m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4473,8 +4473,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 645.91m,
                             HeatDemandMWh = 8.70m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4482,8 +4482,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 336.15m,
                             HeatDemandMWh = 3.12m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4491,8 +4491,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 717.21m,
                             HeatDemandMWh = 8.70m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4500,8 +4500,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 598.29m,
                             HeatDemandMWh = 3.19m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4509,8 +4509,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 771.08m,
                             HeatDemandMWh = 8.26m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4518,8 +4518,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 686.32m,
                             HeatDemandMWh = 3.36m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4527,8 +4527,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 763.72m,
                             HeatDemandMWh = 8.53m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4536,8 +4536,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 544.13m,
                             HeatDemandMWh = 3.59m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4545,8 +4545,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 756.49m,
                             HeatDemandMWh = 8.61m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4554,8 +4554,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 389.71m,
                             HeatDemandMWh = 3.56m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4563,8 +4563,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 747.25m,
                             HeatDemandMWh = 8.36m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4572,8 +4572,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 43.94m,
                             HeatDemandMWh = 3.66m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4581,8 +4581,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 731.24m,
                             HeatDemandMWh = 8.28m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4590,8 +4590,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 17.61m,
                             HeatDemandMWh = 3.85m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4599,8 +4599,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 711.96m,
                             HeatDemandMWh = 8.12m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4608,8 +4608,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 16.56m,
                             HeatDemandMWh = 3.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4617,8 +4617,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 751.81m,
                             HeatDemandMWh = 7.99m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4626,8 +4626,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 14.92m,
                             HeatDemandMWh = 3.83m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4635,8 +4635,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 789.39m,
                             HeatDemandMWh = 8.22m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4644,8 +4644,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 17.46m,
                             HeatDemandMWh = 3.43m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4653,8 +4653,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 919.78m,
                             HeatDemandMWh = 7.75m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4662,8 +4662,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 114.21m,
                             HeatDemandMWh = 3.28m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4671,8 +4671,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1009.80m,
                             HeatDemandMWh = 7.87m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4680,8 +4680,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 372.25m,
                             HeatDemandMWh = 3.19m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4689,8 +4689,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1087.15m,
                             HeatDemandMWh = 7.59m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4698,8 +4698,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 591.13m,
                             HeatDemandMWh = 3.06m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4707,8 +4707,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 894.75m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4716,8 +4716,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 734.51m,
                             HeatDemandMWh = 3.21m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4725,8 +4725,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 788.25m,
                             HeatDemandMWh = 7.87m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4734,8 +4734,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 111.90m,
                             HeatDemandMWh = 3.38m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4743,8 +4743,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 731.05m,
                             HeatDemandMWh = 7.81m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4752,8 +4752,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 67.51m,
                             HeatDemandMWh = 3.30m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4761,8 +4761,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 679.36m,
                             HeatDemandMWh = 7.70m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4770,8 +4770,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 42.75m,
                             HeatDemandMWh = 3.25m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4779,8 +4779,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 658.95m,
                             HeatDemandMWh = 7.79m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 15, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 15, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4788,8 +4788,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 29.84m,
                             HeatDemandMWh = 3.11m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 18, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 18, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4797,8 +4797,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 606.40m,
                             HeatDemandMWh = 7.61m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 15, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 15, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4806,8 +4806,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 12.53m,
                             HeatDemandMWh = 3.25m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 18, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 18, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4815,8 +4815,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 605.00m,
                             HeatDemandMWh = 7.56m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4824,8 +4824,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 51.03m,
                             HeatDemandMWh = 3.40m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4833,8 +4833,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 560.38m,
                             HeatDemandMWh = 7.56m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4842,8 +4842,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 26.86m,
                             HeatDemandMWh = 3.33m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4851,8 +4851,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 527.17m,
                             HeatDemandMWh = 7.58m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4860,8 +4860,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 47.67m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4869,8 +4869,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 502.32m,
                             HeatDemandMWh = 7.80m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4878,8 +4878,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 61.10m,
                             HeatDemandMWh = 3.10m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4887,8 +4887,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 529.05m,
                             HeatDemandMWh = 8.43m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4896,8 +4896,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 253.86m,
                             HeatDemandMWh = 3.15m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4905,8 +4905,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 464.57m,
                             HeatDemandMWh = 8.43m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4914,8 +4914,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 417.76m,
                             HeatDemandMWh = 3.21m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4923,8 +4923,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 461.77m,
                             HeatDemandMWh = 8.39m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4932,8 +4932,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 663.94m,
                             HeatDemandMWh = 3.32m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4941,8 +4941,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 556.92m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4950,8 +4950,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 775.62m,
                             HeatDemandMWh = 3.50m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4959,8 +4959,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 478.34m,
                             HeatDemandMWh = 8.14m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4968,8 +4968,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 710.04m,
                             HeatDemandMWh = 3.56m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4977,8 +4977,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 418.30m,
                             HeatDemandMWh = 8.39m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4986,8 +4986,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 400.60m,
                             HeatDemandMWh = 3.52m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -4995,8 +4995,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 464.67m,
                             HeatDemandMWh = 8.24m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5004,8 +5004,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 97.20m,
                             HeatDemandMWh = 3.52m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5013,8 +5013,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 551.09m,
                             HeatDemandMWh = 8.02m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5022,8 +5022,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 17.61m,
                             HeatDemandMWh = 3.87m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5031,8 +5031,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 626.11m,
                             HeatDemandMWh = 7.85m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5040,8 +5040,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 18.13m,
                             HeatDemandMWh = 3.73m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5049,8 +5049,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 690.81m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5058,8 +5058,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 16.26m,
                             HeatDemandMWh = 3.58m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5067,8 +5067,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 759.59m,
                             HeatDemandMWh = 8.16m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5076,8 +5076,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 89.30m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5085,8 +5085,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 859.32m,
                             HeatDemandMWh = 8.10m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5094,8 +5094,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 371.81m,
                             HeatDemandMWh = 3.09m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5103,8 +5103,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 931.31m,
                             HeatDemandMWh = 8.06m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5112,8 +5112,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 632.46m,
                             HeatDemandMWh = 3.09m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5121,8 +5121,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1080.00m,
                             HeatDemandMWh = 7.68m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5130,8 +5130,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 768.38m,
                             HeatDemandMWh = 3.05m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5139,8 +5139,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1206.94m,
                             HeatDemandMWh = 7.87m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5148,8 +5148,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1054.84m,
                             HeatDemandMWh = 3.12m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5157,8 +5157,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1156.66m,
                             HeatDemandMWh = 7.72m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5166,8 +5166,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1064.54m,
                             HeatDemandMWh = 3.18m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5175,8 +5175,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 998.67m,
                             HeatDemandMWh = 7.62m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5184,8 +5184,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 834.18m,
                             HeatDemandMWh = 3.22m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5193,8 +5193,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 878.77m,
                             HeatDemandMWh = 7.62m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5202,8 +5202,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 641.86m,
                             HeatDemandMWh = 3.23m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5211,8 +5211,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 879.46m,
                             HeatDemandMWh = 7.61m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 16, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 16, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5220,8 +5220,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 588.82m,
                             HeatDemandMWh = 3.33m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 19, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 19, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5229,8 +5229,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 778.33m,
                             HeatDemandMWh = 7.54m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 16, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 16, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5238,8 +5238,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 650.81m,
                             HeatDemandMWh = 3.32m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 19, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 19, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5247,8 +5247,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 781.90m,
                             HeatDemandMWh = 7.60m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5256,8 +5256,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 581.21m,
                             HeatDemandMWh = 3.34m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5265,8 +5265,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 756.71m,
                             HeatDemandMWh = 7.72m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5274,8 +5274,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 559.43m,
                             HeatDemandMWh = 3.29m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5283,8 +5283,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 733.90m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5292,8 +5292,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 558.01m,
                             HeatDemandMWh = 3.19m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5301,8 +5301,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 718.23m,
                             HeatDemandMWh = 7.99m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5310,8 +5310,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 557.93m,
                             HeatDemandMWh = 3.10m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5319,8 +5319,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 711.14m,
                             HeatDemandMWh = 8.70m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5328,8 +5328,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 598.37m,
                             HeatDemandMWh = 3.19m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5337,8 +5337,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 711.55m,
                             HeatDemandMWh = 8.86m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5346,8 +5346,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 660.28m,
                             HeatDemandMWh = 3.37m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5355,8 +5355,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 716.10m,
                             HeatDemandMWh = 9.17m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5364,8 +5364,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 648.80m,
                             HeatDemandMWh = 3.41m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5373,8 +5373,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 741.02m,
                             HeatDemandMWh = 8.55m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5382,8 +5382,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 561.66m,
                             HeatDemandMWh = 3.55m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5391,8 +5391,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 791.69m,
                             HeatDemandMWh = 8.68m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5400,8 +5400,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 185.75m,
                             HeatDemandMWh = 4.08m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5409,8 +5409,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 871.52m,
                             HeatDemandMWh = 8.57m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5418,8 +5418,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 22.53m,
                             HeatDemandMWh = 4.04m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5427,8 +5427,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 859.90m,
                             HeatDemandMWh = 8.42m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5436,8 +5436,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 14.92m,
                             HeatDemandMWh = 3.59m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5445,8 +5445,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 833.81m,
                             HeatDemandMWh = 8.07m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5454,8 +5454,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 11.86m,
                             HeatDemandMWh = 3.46m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5463,8 +5463,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 836.35m,
                             HeatDemandMWh = 7.76m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5472,8 +5472,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1.87m,
                             HeatDemandMWh = 3.44m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5481,8 +5481,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 811.64m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5490,8 +5490,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.60m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5499,8 +5499,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 842.85m,
                             HeatDemandMWh = 7.93m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5508,8 +5508,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 10.67m,
                             HeatDemandMWh = 3.25m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5517,8 +5517,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 917.20m,
                             HeatDemandMWh = 8.32m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5526,8 +5526,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 196.65m,
                             HeatDemandMWh = 3.33m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5535,8 +5535,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1014.36m,
                             HeatDemandMWh = 8.39m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5544,8 +5544,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 700.05m,
                             HeatDemandMWh = 3.22m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5553,8 +5553,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1052.74m,
                             HeatDemandMWh = 8.52m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5562,8 +5562,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 915.57m,
                             HeatDemandMWh = 3.29m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5571,8 +5571,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1073.07m,
                             HeatDemandMWh = 8.09m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5580,8 +5580,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 959.51m,
                             HeatDemandMWh = 3.30m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5589,8 +5589,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1035.37m,
                             HeatDemandMWh = 7.83m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5598,8 +5598,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 739.14m,
                             HeatDemandMWh = 3.34m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5607,8 +5607,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 895.85m,
                             HeatDemandMWh = 7.75m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5616,8 +5616,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 611.35m,
                             HeatDemandMWh = 3.36m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5625,8 +5625,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 805.40m,
                             HeatDemandMWh = 7.77m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5634,8 +5634,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 522.65m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5643,8 +5643,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 815.21m,
                             HeatDemandMWh = 7.68m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 17, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 17, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5652,8 +5652,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 352.19m,
                             HeatDemandMWh = 3.22m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 20, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 20, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5661,8 +5661,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 799.55m,
                             HeatDemandMWh = 7.74m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 17, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 17, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5670,8 +5670,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 60.20m,
                             HeatDemandMWh = 3.39m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 20, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 20, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5679,8 +5679,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 827.12m,
                             HeatDemandMWh = 7.69m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5688,8 +5688,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 27.60m,
                             HeatDemandMWh = 3.43m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 1, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 0, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 1, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5697,8 +5697,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 815.73m,
                             HeatDemandMWh = 7.92m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5706,8 +5706,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 25.36m,
                             HeatDemandMWh = 3.50m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 1, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 2, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 1, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 2, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5715,8 +5715,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 802.28m,
                             HeatDemandMWh = 7.89m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5724,8 +5724,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 12.31m,
                             HeatDemandMWh = 3.33m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 2, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 3, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 2, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 3, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5733,8 +5733,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 766.05m,
                             HeatDemandMWh = 7.98m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5742,8 +5742,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 12.09m,
                             HeatDemandMWh = 3.28m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 3, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 4, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 3, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 4, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5751,8 +5751,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 763.77m,
                             HeatDemandMWh = 8.78m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5760,8 +5760,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -0.07m,
                             HeatDemandMWh = 3.39m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 4, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 5, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 4, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 5, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5769,8 +5769,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 762.61m,
                             HeatDemandMWh = 9.02m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5778,8 +5778,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -0.07m,
                             HeatDemandMWh = 3.56m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 5, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 6, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 5, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 6, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5787,8 +5787,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 754.47m,
                             HeatDemandMWh = 9.25m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5796,8 +5796,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 7.76m,
                             HeatDemandMWh = 3.60m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 6, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 7, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 6, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 7, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5805,8 +5805,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 749.48m,
                             HeatDemandMWh = 8.65m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5814,8 +5814,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 22.45m,
                             HeatDemandMWh = 3.56m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 7, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 8, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 7, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 8, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5823,8 +5823,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 787.67m,
                             HeatDemandMWh = 8.82m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5832,8 +5832,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 9.77m,
                             HeatDemandMWh = 3.64m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 9, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 8, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 9, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5841,8 +5841,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 802.41m,
                             HeatDemandMWh = 8.77m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5850,8 +5850,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 0.00m,
                             HeatDemandMWh = 3.79m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 10, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 9, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 10, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5859,8 +5859,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 761.34m,
                             HeatDemandMWh = 8.90m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5868,8 +5868,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -0.67m,
                             HeatDemandMWh = 3.72m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 10, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 11, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 10, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 11, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5877,8 +5877,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 735.73m,
                             HeatDemandMWh = 8.85m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5886,8 +5886,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -8.95m,
                             HeatDemandMWh = 3.77m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 11, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 12, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 11, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 12, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5895,8 +5895,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 723.57m,
                             HeatDemandMWh = 8.85m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5904,8 +5904,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -12.01m,
                             HeatDemandMWh = 3.66m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 12, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 13, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 12, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 13, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5913,8 +5913,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 724.38m,
                             HeatDemandMWh = 8.75m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5922,8 +5922,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -9.77m,
                             HeatDemandMWh = 3.53m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 13, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 14, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 13, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 14, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5931,8 +5931,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 753.38m,
                             HeatDemandMWh = 8.30m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5940,8 +5940,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = -0.07m,
                             HeatDemandMWh = 3.25m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 14, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 15, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 14, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 15, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5949,8 +5949,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 788.53m,
                             HeatDemandMWh = 8.86m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5958,8 +5958,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 2.01m,
                             HeatDemandMWh = 3.15m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 15, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 16, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 15, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 16, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5967,8 +5967,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 858.20m,
                             HeatDemandMWh = 8.84m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5976,8 +5976,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 22.75m,
                             HeatDemandMWh = 3.11m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 16, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 17, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 16, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 17, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5985,8 +5985,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 971.13m,
                             HeatDemandMWh = 8.79m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -5994,8 +5994,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 32.08m,
                             HeatDemandMWh = 3.07m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 17, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 18, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 17, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 18, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6003,8 +6003,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 1056.69m,
                             HeatDemandMWh = 8.16m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6012,8 +6012,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 521.75m,
                             HeatDemandMWh = 3.11m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 19, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 18, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 19, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6021,8 +6021,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 924.76m,
                             HeatDemandMWh = 7.98m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6030,8 +6030,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 301.38m,
                             HeatDemandMWh = 3.12m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 19, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 20, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 19, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 20, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6039,8 +6039,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 866.00m,
                             HeatDemandMWh = 8.14m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6048,8 +6048,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 313.25m,
                             HeatDemandMWh = 3.18m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 20, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 21, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 20, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 21, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6057,8 +6057,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 799.27m,
                             HeatDemandMWh = 7.93m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6066,8 +6066,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 104.96m,
                             HeatDemandMWh = 3.14m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 21, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 22, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 21, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 22, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6075,8 +6075,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 797.03m,
                             HeatDemandMWh = 8.01m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 18, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 18, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6084,8 +6084,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 149.57m,
                             HeatDemandMWh = 3.09m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 22, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 21, 23, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 22, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 21, 23, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6093,8 +6093,8 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 774.95m,
                             HeatDemandMWh = 7.93m,
                             Season = "Winter",
-                            TimeFrom = new DateTime(2026, 1, 18, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2026, 1, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2026, 1, 18, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2026, 1, 19, 0, 0, 0, 0, DateTimeKind.Utc)
                         },
                         new
                         {
@@ -6102,12 +6102,12 @@ namespace data.Migrations
                             ElectricityPriceDkkPerMWh = 22.90m,
                             HeatDemandMWh = 3.24m,
                             Season = "Summer",
-                            TimeFrom = new DateTime(2025, 9, 21, 23, 0, 0, 0, DateTimeKind.Unspecified),
-                            TimeTo = new DateTime(2025, 9, 22, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            TimeFrom = new DateTime(2025, 9, 21, 23, 0, 0, 0, DateTimeKind.Utc),
+                            TimeTo = new DateTime(2025, 9, 22, 0, 0, 0, 0, DateTimeKind.Utc)
                         });
                 });
 
-            modelBuilder.Entity("data.Entities.Sample", b =>
+            modelBuilder.Entity("data.Entities.ProductionUnit", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -6115,17 +6115,56 @@ namespace data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Data")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasColumnName("JsonData");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Samples");
+                    b.ToTable("ProductionUnits");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Data = "{\"$type\":\"GasBoiler\",\"GasConsumption\":1.05,\"Name\":\"GB1\",\"ImageUrl\":\"GB1.png\",\"MaxHeatMW\":3,\"ProductionCostPerMWh\":510,\"CO2KgPerMWh\":132,\"ElectricityProducedMW\":0,\"ElectricityConsumedMW\":0,\"IsAvailable\":false,\"OnMaintainance\":false,\"IsConnectedToGrid\":false}",
+                            Type = "GasBoiler"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Data = "{\"$type\":\"GasBoiler\",\"GasConsumption\":1.08,\"Name\":\"GB2\",\"ImageUrl\":\"GB2.png\",\"MaxHeatMW\":2,\"ProductionCostPerMWh\":540,\"CO2KgPerMWh\":134,\"ElectricityProducedMW\":0,\"ElectricityConsumedMW\":0,\"IsAvailable\":false,\"OnMaintainance\":false,\"IsConnectedToGrid\":false}",
+                            Type = "GasBoiler"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Data = "{\"$type\":\"GasBoiler\",\"GasConsumption\":1.09,\"Name\":\"GB3\",\"ImageUrl\":\"GB3.png\",\"MaxHeatMW\":4,\"ProductionCostPerMWh\":580,\"CO2KgPerMWh\":136,\"ElectricityProducedMW\":0,\"ElectricityConsumedMW\":0,\"IsAvailable\":false,\"OnMaintainance\":false,\"IsConnectedToGrid\":false}",
+                            Type = "GasBoiler"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Data = "{\"$type\":\"OilBoiler\",\"OilConsumption\":1.18,\"Name\":\"OB1\",\"ImageUrl\":\"OB1.jpg\",\"MaxHeatMW\":6,\"ProductionCostPerMWh\":690,\"CO2KgPerMWh\":147,\"ElectricityProducedMW\":0,\"ElectricityConsumedMW\":0,\"IsAvailable\":false,\"OnMaintainance\":false,\"IsConnectedToGrid\":false}",
+                            Type = "OilBoiler"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Data = "{\"$type\":\"GasMotor\",\"GasConsumption\":1.82,\"Name\":\"GM1\",\"ImageUrl\":\"GM1.png\",\"MaxHeatMW\":5.3,\"ProductionCostPerMWh\":975,\"CO2KgPerMWh\":227,\"ElectricityProducedMW\":3.9,\"ElectricityConsumedMW\":0,\"IsAvailable\":false,\"OnMaintainance\":false,\"IsConnectedToGrid\":false}",
+                            Type = "GasMotor"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Data = "{\"$type\":\"ElectricBoiler\",\"Name\":\"EB1\",\"ImageUrl\":\"EB1.jpg\",\"MaxHeatMW\":6,\"ProductionCostPerMWh\":15,\"CO2KgPerMWh\":0,\"ElectricityProducedMW\":0,\"ElectricityConsumedMW\":6,\"IsAvailable\":false,\"OnMaintainance\":false,\"IsConnectedToGrid\":false}",
+                            Type = "ElectricBoiler"
+                        });
                 });
 #pragma warning restore 612, 618
         }

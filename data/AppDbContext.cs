@@ -1,6 +1,10 @@
+using System.Text.Json;
 using data.Entities;
+using data.Models.Base;
 using data.Seed;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace data;
 
@@ -11,13 +15,37 @@ public class AppDbContext : DbContext
     {
     }
 
-    public DbSet<Sample> Samples { get; set; }
-    // I keep HeatPricePoints as its own table because it represents the CSV-based hourly heat/electricity dataset.
+    public DbSet<ProductionUnit> ProductionUnits { get; set; }
     public DbSet<HeatPricePoint> HeatPricePoints { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+
+        var jsonOptions = new JsonSerializerOptions();
+
+        modelBuilder.Entity<ProductionUnit>(entity =>
+        {
+            entity.Property(x => x.Type)
+                .HasConversion<string>();
+
+            var converter = new ValueConverter<ProductionUnitBase, string>(
+                v => JsonSerializer.Serialize(v, jsonOptions),
+                v => JsonSerializer.Deserialize<ProductionUnitBase>(v, jsonOptions)!
+            );
+
+            var comparer = new ValueComparer<ProductionUnitBase>(
+                (a, b) => JsonSerializer.Serialize(a, jsonOptions) == JsonSerializer.Serialize(b, jsonOptions),
+                v => JsonSerializer.Serialize(v, jsonOptions).GetHashCode(),
+                v => JsonSerializer.Deserialize<ProductionUnitBase>(JsonSerializer.Serialize(v, jsonOptions), jsonOptions)!
+            );
+
+            entity.Property(x => x.Data)
+                .HasColumnName("JsonData")
+                .HasConversion(converter, comparer);
+
+            entity.HasData(ProductionUnitSeed.Rows);
+        });
 
         modelBuilder.Entity<HeatPricePoint>(entity =>
         {

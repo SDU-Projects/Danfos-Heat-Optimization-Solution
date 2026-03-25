@@ -1,12 +1,15 @@
-namespace data.AssetManager;
-public class AssetManager
+using data.Models;
+using data.Models.Base;
+
+namespace data.Services;
+public class AssetService
 {
     private const string ImagesFolder = "AssetManager/Images";
 
     private readonly HeatingGrid _heatingGrid;
-    private readonly List<ProductionUnit> _productionUnits;
+    private readonly List<ProductionUnitBase> _productionUnits;
 
-    public AssetManager()
+    public AssetService()
     {
         _heatingGrid = CreateHeatingGrid();
         _productionUnits = CreateProductionUnits();
@@ -19,29 +22,27 @@ public class AssetManager
     }
 
 
-    public List<ProductionUnit> GetProductionUnits()
+    public List<ProductionUnitBase> GetProductionUnits()
     {
         return _productionUnits;
     }
 
-    public ProductionUnit? GetProductionUnitByName(string name)
+    public ProductionUnitBase? GetProductionUnitByName(string name)
     {
         return _productionUnits.FirstOrDefault(u => u.Name == name);
     }
 
-    public List<ProductionUnit> GetAvailableUnits()
+    public List<ProductionUnitBase> GetAvailableUnits()
     {
         return _productionUnits.Where(u => u.IsAvailable).ToList();
     }
 
-    public List<ProductionUnit> GetAvailableUnitsAt(DateTime time)
+    public List<ProductionUnitBase> GetAvailableUnitsAt(DateTime time)
     {
         return _productionUnits
             .Where(u => u.IsAvailable && !u.IsUnderMaintenance(time))
             .ToList();
     }
-
-    // heat grid??
 
     private static HeatingGrid CreateHeatingGrid()
     {
@@ -52,9 +53,9 @@ public class AssetManager
         };
     }
 
-    private static List<ProductionUnit> CreateProductionUnits()
+    private static List<ProductionUnitBase> CreateProductionUnits()
     {
-        return new List<ProductionUnit>
+        return new List<ProductionUnitBase>
         {
             new GasBoiler
             {
@@ -63,7 +64,7 @@ public class AssetManager
                 ProductionCostPerMWh = 510,
                 CO2KgPerMWh = 132,
                 GasConsumption = 1.05,
-                ImagePath = Path.Combine(ImagesFolder, "GB1.png")
+                ImageUrl = Path.Combine(ImagesFolder, "GB1.png")
             },
             new GasBoiler
             {
@@ -72,7 +73,7 @@ public class AssetManager
                 ProductionCostPerMWh = 540,
                 CO2KgPerMWh = 134,
                 GasConsumption = 1.08,
-                ImagePath = Path.Combine(ImagesFolder, "GB2.png")
+                ImageUrl = Path.Combine(ImagesFolder, "GB2.png")
             },
             new GasBoiler
             {
@@ -81,7 +82,7 @@ public class AssetManager
                 ProductionCostPerMWh = 580,
                 CO2KgPerMWh = 136,
                 GasConsumption = 1.09,
-                ImagePath = Path.Combine(ImagesFolder, "GB3.png")
+                ImageUrl = Path.Combine(ImagesFolder, "GB3.png")
             },
             new OilBoiler
             {
@@ -90,7 +91,7 @@ public class AssetManager
                 ProductionCostPerMWh = 690,
                 CO2KgPerMWh = 147,
                 OilConsumption = 1.18,
-                ImagePath = Path.Combine(ImagesFolder, "OB1.jpg")
+                ImageUrl = Path.Combine(ImagesFolder, "OB1.jpg")
             },
             new GasMotor
             {
@@ -100,7 +101,7 @@ public class AssetManager
                 CO2KgPerMWh = 227,
                 GasConsumption = 1.82,
                 ElectricityProducedMW = 3.9,
-                ImagePath = Path.Combine(ImagesFolder, "GM1.png")
+                ImageUrl = Path.Combine(ImagesFolder, "GM1.png")
             },
             new ElectricBoiler
             {
@@ -109,7 +110,7 @@ public class AssetManager
                 ProductionCostPerMWh = 15,
                 CO2KgPerMWh = 0,
                 ElectricityConsumedMW = 6.0,
-                ImagePath = Path.Combine(ImagesFolder, "EB1.jpg")
+                ImageUrl = Path.Combine(ImagesFolder, "EB1.jpg")
             }
         };
     }
