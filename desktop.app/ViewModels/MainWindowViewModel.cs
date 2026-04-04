@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -15,12 +17,18 @@ namespace desktop.app.ViewModels
     {
         private readonly AssetService _assetService;
 
+        public AsyncRelayCommand AddProductionUnitCommand { get; }
+
         public MainWindowViewModel()
         {
+            DebugMessage = "MainWindowViewModel constructor";
             _assetService = new AssetService();
             ProductionUnits = new ObservableCollection<ProductionUnit>();
             LoadProductionUnitsAsync();
             SelectedProductionUnitType = ProductionUnitTypes.First();
+
+            AddProductionUnitCommand = new AsyncRelayCommand(AddProductionUnitAsync);
+            DebugMessage += $"\nAddProductionUnitCommand is null: {AddProductionUnitCommand == null}";
 
             ShowCatalog();
         }
@@ -62,7 +70,9 @@ namespace desktop.app.ViewModels
         private double newUnitCO2KgPerMWh;
 
         [ObservableProperty]
-        private string selectedProductionUnitType;
+        private string debugMessage = string.Empty;
+
+        public string SelectedProductionUnitType { get; set; } = "GasBoiler";
 
         [ObservableProperty]
         private bool isLoading;
@@ -120,17 +130,23 @@ namespace desktop.app.ViewModels
         [RelayCommand]
         public void ShowCreate()
         {
+            DebugMessage += "\nShowCreate called";
             IsCatalogVisible = false;
             IsCreateVisible = true;
             IsUpdateVisible = false;
             IsDeleteVisible = false;
             ClearForm();
         }
-        [RelayCommand]
         private async Task AddProductionUnitAsync()
         {
+            DebugMessage += "\nCreate button clicked";
+            DebugMessage += $"\nName: '{NewUnitName}', Image: '{NewUnitImageUrl}'";
             if (string.IsNullOrWhiteSpace(NewUnitName) || string.IsNullOrWhiteSpace(NewUnitImageUrl))
+            {
+                DebugMessage += "\nValidation failed";
                 return;
+            }
+            DebugMessage += "\nValidation passed";
 
             IsLoading = true;
             try
@@ -158,17 +174,34 @@ namespace desktop.app.ViewModels
                     Type = type
                 };
 
+                var requestOptions = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true,
+                    Converters = { new JsonStringEnumConverter() }
+                };
+                var requestJson = JsonSerializer.Serialize(newAsset, requestOptions);
+                DebugMessage += $"\nRequest JSON: {requestJson}";
+                DebugMessage += "\nAbout to call API";
                 var created = await _assetService.CreateAssetAsync(newAsset);
                 if (created != null)
                 {
+                    if (!string.IsNullOrWhiteSpace(created.Data.ImageUrl) && !created.Data.ImageUrl.Contains("://"))
+                    {
+                        created.Data.ImageUrl = $"avares://desktop.app/Images/{created.Data.ImageUrl}";
+                    }
                     ProductionUnits.Add(created);
                     OnPropertyChanged(nameof(FilteredProductionUnits));
+                    DebugMessage += "\nUnit created successfully";
                     ShowCatalog();
+                }
+                else
+                {
+                    DebugMessage += "\nAPI returned null";
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error creando ProductionUnit: {ex.Message}");
+                DebugMessage += $"\nError: {ex.Message}";
             }
             finally
             {
