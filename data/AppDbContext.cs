@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.Json.Serialization.Metadata;
 using data.Entities;
 using data.Models.Base;
 using data.Seed;
@@ -22,7 +23,10 @@ public class AppDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        var jsonOptions = new JsonSerializerOptions();
+        var jsonOptions = new JsonSerializerOptions
+        {
+            TypeInfoResolver = new DefaultJsonTypeInfoResolver()
+        };
 
         modelBuilder.Entity<ProductionUnit>(entity =>
         {

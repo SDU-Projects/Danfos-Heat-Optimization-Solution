@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
+using System.Text.Json.Serialization.Metadata;
 using System.Threading.Tasks;
 using data.Entities;
 
@@ -29,7 +30,8 @@ public class AssetService
         var result = JsonSerializer.Deserialize<List<ProductionUnit>>(text, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true,
-            Converters = { new JsonStringEnumConverter() }
+            Converters = { new JsonStringEnumConverter() },
+            TypeInfoResolver = new DefaultJsonTypeInfoResolver()
         });
 
         return result ?? new List<ProductionUnit>();
@@ -41,107 +43,11 @@ public class AssetService
         {
             PropertyNameCaseInsensitive = true,
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-            Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }
+            Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) },
+            TypeInfoResolver = new DefaultJsonTypeInfoResolver()
         };
 
-        JsonObject requestPayload = asset.Data switch
-        {
-            data.Models.GasBoiler gb => new JsonObject
-            {
-                ["data"] = new JsonObject
-                {
-                    ["$type"] = "GasBoiler",
-                    ["name"] = gb.Name,
-                    ["imageUrl"] = gb.ImageUrl,
-                    ["maxHeatMW"] = gb.MaxHeatMW,
-                    ["productionCostPerMWh"] = gb.ProductionCostPerMWh,
-                    ["cO2KgPerMWh"] = gb.CO2KgPerMWh,
-                    ["electricityProducedMW"] = gb.ElectricityProducedMW,
-                    ["electricityConsumedMW"] = gb.ElectricityConsumedMW,
-                    ["isAvailable"] = gb.IsAvailable,
-                    ["onMaintainance"] = gb.OnMaintainance,
-                    ["isConnectedToGrid"] = gb.IsConnectedToGrid,
-                    ["gasConsumption"] = gb.GasConsumption
-                },
-                ["type"] = JsonValue.Create(asset.Type)
-            },
-            data.Models.GasMotor gm => new JsonObject
-            {
-                ["data"] = new JsonObject
-                {
-                    ["$type"] = "GasMotor",
-                    ["name"] = gm.Name,
-                    ["imageUrl"] = gm.ImageUrl,
-                    ["maxHeatMW"] = gm.MaxHeatMW,
-                    ["productionCostPerMWh"] = gm.ProductionCostPerMWh,
-                    ["cO2KgPerMWh"] = gm.CO2KgPerMWh,
-                    ["electricityProducedMW"] = gm.ElectricityProducedMW,
-                    ["electricityConsumedMW"] = gm.ElectricityConsumedMW,
-                    ["isAvailable"] = gm.IsAvailable,
-                    ["onMaintainance"] = gm.OnMaintainance,
-                    ["isConnectedToGrid"] = gm.IsConnectedToGrid,
-                    ["gasConsumption"] = gm.GasConsumption
-                },
-                ["type"] = JsonValue.Create(asset.Type)
-            },
-            data.Models.OilBoiler ob => new JsonObject
-            {
-                ["data"] = new JsonObject
-                {
-                    ["$type"] = "OilBoiler",
-                    ["name"] = ob.Name,
-                    ["imageUrl"] = ob.ImageUrl,
-                    ["maxHeatMW"] = ob.MaxHeatMW,
-                    ["productionCostPerMWh"] = ob.ProductionCostPerMWh,
-                    ["cO2KgPerMWh"] = ob.CO2KgPerMWh,
-                    ["electricityProducedMW"] = ob.ElectricityProducedMW,
-                    ["electricityConsumedMW"] = ob.ElectricityConsumedMW,
-                    ["isAvailable"] = ob.IsAvailable,
-                    ["onMaintainance"] = ob.OnMaintainance,
-                    ["isConnectedToGrid"] = ob.IsConnectedToGrid,
-                    ["oilConsumption"] = ob.OilConsumption
-                },
-                ["type"] = JsonValue.Create(asset.Type)
-            },
-            data.Models.ElectricBoiler eb => new JsonObject
-            {
-                ["data"] = new JsonObject
-                {
-                    ["$type"] = "ElectricBoiler",
-                    ["name"] = eb.Name,
-                    ["imageUrl"] = eb.ImageUrl,
-                    ["maxHeatMW"] = eb.MaxHeatMW,
-                    ["productionCostPerMWh"] = eb.ProductionCostPerMWh,
-                    ["cO2KgPerMWh"] = eb.CO2KgPerMWh,
-                    ["electricityProducedMW"] = eb.ElectricityProducedMW,
-                    ["electricityConsumedMW"] = eb.ElectricityConsumedMW,
-                    ["isAvailable"] = eb.IsAvailable,
-                    ["onMaintainance"] = eb.OnMaintainance,
-                    ["isConnectedToGrid"] = eb.IsConnectedToGrid
-                },
-                ["type"] = JsonValue.Create(asset.Type)
-            },
-            _ => new JsonObject
-            {
-                ["data"] = new JsonObject
-                {
-                    ["$type"] = asset.Data.GetType().Name,
-                    ["name"] = asset.Data.Name,
-                    ["imageUrl"] = asset.Data.ImageUrl,
-                    ["maxHeatMW"] = asset.Data.MaxHeatMW,
-                    ["productionCostPerMWh"] = asset.Data.ProductionCostPerMWh,
-                    ["cO2KgPerMWh"] = asset.Data.CO2KgPerMWh,
-                    ["electricityProducedMW"] = asset.Data.ElectricityProducedMW,
-                    ["electricityConsumedMW"] = asset.Data.ElectricityConsumedMW,
-                    ["isAvailable"] = asset.Data.IsAvailable,
-                    ["onMaintainance"] = asset.Data.OnMaintainance,
-                    ["isConnectedToGrid"] = asset.Data.IsConnectedToGrid
-                },
-                ["type"] = JsonValue.Create(asset.Type)
-            }
-        };
-
-        var json = requestPayload.ToJsonString(options);
+        var json = JsonSerializer.Serialize(asset, options);
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
         var response = await _httpClient.PostAsync(_baseUrl, content);
@@ -160,7 +66,8 @@ public class AssetService
         var json = JsonSerializer.Serialize(asset, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true,
-            Converters = { new JsonStringEnumConverter() }
+            Converters = { new JsonStringEnumConverter() },
+            TypeInfoResolver = new DefaultJsonTypeInfoResolver()
         });
 
         var response = await _httpClient.PutAsync($"{_baseUrl}/{id}", new StringContent(json, Encoding.UTF8, "application/json"));
