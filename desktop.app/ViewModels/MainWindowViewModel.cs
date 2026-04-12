@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.Json.Serialization.Metadata;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -44,6 +45,18 @@ namespace desktop.app.ViewModels
 
         [ObservableProperty]
         private bool isCreateVisible;
+
+        [ObservableProperty]
+        private bool isSourceDataVisible;
+
+        [ObservableProperty]
+        private bool isScenariosVisible;
+
+        [ObservableProperty]
+        private bool isRunOptimizationVisible;
+
+        [ObservableProperty]
+        private bool isVisualizationVisible;
 
         [ObservableProperty]
         private bool isUpdateVisible;
@@ -123,6 +136,10 @@ namespace desktop.app.ViewModels
             SearchTerm = string.Empty;
             IsCatalogVisible = true;
             IsCreateVisible = false;
+            IsSourceDataVisible = false;
+            IsScenariosVisible = false;
+            IsRunOptimizationVisible = false;
+            IsVisualizationVisible = false;
             IsUpdateVisible = false;
             IsDeleteVisible = false;
         }
@@ -133,10 +150,68 @@ namespace desktop.app.ViewModels
             DebugMessage += "\nShowCreate called";
             IsCatalogVisible = false;
             IsCreateVisible = true;
+            IsSourceDataVisible = false;
+            IsScenariosVisible = false;
+            IsRunOptimizationVisible = false;
+            IsVisualizationVisible = false;
             IsUpdateVisible = false;
             IsDeleteVisible = false;
+
             ClearForm();
         }
+
+        [RelayCommand]
+        public void ShowSourceData()
+        {
+            IsCatalogVisible = false;
+            IsCreateVisible = false;
+            IsSourceDataVisible = true;
+            IsScenariosVisible = false;
+            IsRunOptimizationVisible = false;
+            IsVisualizationVisible = false;
+            IsUpdateVisible = false;
+            IsDeleteVisible = false;
+        }
+
+        [RelayCommand]
+        public void ShowScenarios()
+        {
+            IsCatalogVisible = false;
+            IsCreateVisible = false;
+            IsSourceDataVisible = false;
+            IsScenariosVisible = true;
+            IsRunOptimizationVisible = false;
+            IsVisualizationVisible = false;
+            IsUpdateVisible = false;
+            IsDeleteVisible = false;
+        }
+
+        [RelayCommand]
+        public void ShowRunOptimization()
+        {
+            IsCatalogVisible = false;
+            IsCreateVisible = false;
+            IsSourceDataVisible = false;
+            IsScenariosVisible = false;
+            IsRunOptimizationVisible = true;
+            IsVisualizationVisible = false;
+            IsUpdateVisible = false;
+            IsDeleteVisible = false;
+        }
+
+        [RelayCommand]
+        public void ShowVisualization()
+        {
+            IsCatalogVisible = false;
+            IsCreateVisible = false;
+            IsSourceDataVisible = false;
+            IsScenariosVisible = false;
+            IsRunOptimizationVisible = false;
+            IsVisualizationVisible = true;
+            IsUpdateVisible = false;
+            IsDeleteVisible = false;
+        }
+
         private async Task AddProductionUnitAsync()
         {
             DebugMessage += "\nCreate button clicked";
@@ -177,7 +252,8 @@ namespace desktop.app.ViewModels
                 var requestOptions = new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true,
-                    Converters = { new JsonStringEnumConverter() }
+                    Converters = { new JsonStringEnumConverter() },
+                    TypeInfoResolver = new DefaultJsonTypeInfoResolver()
                 };
                 var requestJson = JsonSerializer.Serialize(newAsset, requestOptions);
                 DebugMessage += $"\nRequest JSON: {requestJson}";
@@ -236,9 +312,33 @@ namespace desktop.app.ViewModels
         }
 
         [RelayCommand]
-        public void RefreshCatalog()
+        private async Task UpdateProductionUnitAsync(ProductionUnit unit)
         {
-            LoadProductionUnitsAsync();
+            if (unit == null)
+                return;
+
+            IsLoading = true;
+            try
+            {
+                var ok = await _assetService.UpdateAssetAsync(unit.Id, unit);
+                if (!ok)
+                {
+                    DebugMessage += "\nUpdate failed.";
+                }
+                else
+                {
+                    OnPropertyChanged(nameof(FilteredProductionUnits));
+                    DebugMessage += "\nUnit updated successfully.";
+                }
+            }
+            catch (Exception ex)
+            {
+                DebugMessage += $"\nError updating ProductionUnit: {ex.Message}";
+            }
+            finally
+            {
+                IsLoading = false;
+            }
         }
 
         private void ClearForm()

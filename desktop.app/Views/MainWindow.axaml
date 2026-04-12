@@ -1,78 +1,491 @@
-<Window xmlns="https://github.com/avaloniaui"
+﻿<Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:desktop.app.ViewModels"
         xmlns:data="using:data.Entities"
         xmlns:desktop="using:desktop.app"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
+        mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="700"
         x:Class="desktop.app.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Heat Optimization - Production Units">
+        Title="Heat Optimization - Production Units"
+        Background="#f8fafc">
 
     <Window.Resources>
         <desktop:UriToBitmapConverter x:Key="UriToBitmapConverter" />
     </Window.Resources>
 
-    <Grid ColumnDefinitions="240,*" Background="#f4f6f8">
+    <Window.Styles>
+        <Style Selector="Button.sidebar">
+            <Setter Property="Height" Value="42" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="Padding" Value="14,0" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Foreground" Value="#94a3b8" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="CornerRadius" Value="6" />
+        </Style>
+        <Style Selector="Button.sidebar:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#1e293b" />
+        </Style>
+        <Style Selector="Button.sidebar-active">
+            <Setter Property="Height" Value="42" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="Padding" Value="14,0" />
+            <Setter Property="Background" Value="#1e3a5f" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="CornerRadius" Value="6" />
+        </Style>
+        <Style Selector="Button.icon-btn">
+            <Setter Property="Width" Value="32" />
+            <Setter Property="Height" Value="32" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="CornerRadius" Value="6" />
+        </Style>
+        <Style Selector="Button.icon-btn:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#f1f5f9" />
+        </Style>
+        <Style Selector="TextBlock.th">
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Foreground" Value="#64748b" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style Selector="TextBlock.td">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Foreground" Value="#1e293b" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </Window.Styles>
 
-        <StackPanel Grid.Column="0" Background="#2f3d4f" Margin="16" Spacing="10">
-            <Button Content="📋 Catalog" Height="45" Command="{Binding ShowCatalogCommand}" Background="#1f78d1" Foreground="White" BorderThickness="0" />
-            <Button Content="➕ Create" Height="45" Command="{Binding ShowCreateCommand}" Background="#27ae60" Foreground="White" BorderThickness="0" />
-            <Button Content="🔄 Refresh" Height="45" Command="{Binding RefreshCatalogCommand}" Background="#4a90e2" Foreground="White" BorderThickness="0" />
-        </StackPanel>
+    <Grid ColumnDefinitions="240,*" Background="#f8fafc">
 
-        <Grid Grid.Column="1" Margin="20">
-
-            <Grid IsVisible="{Binding IsCatalogVisible}">
-                <StackPanel>
-                    <TextBlock Text="Production Units Catalog" FontSize="24" FontWeight="Bold" Foreground="#2f3d4f" />
-
-                    <ScrollViewer VerticalScrollBarVisibility="Auto" Height="520">
-                        <ItemsControl ItemsSource="{Binding FilteredProductionUnits}">
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate x:DataType="data:ProductionUnit">
-                                    <Border Background="White" CornerRadius="8" BorderBrush="#d0d7e0" BorderThickness="1" Margin="0,0,0,10">
-                                        <Grid ColumnDefinitions="100,*,130" RowDefinitions="Auto,Auto,Auto,Auto">
-                                            <Image Source="{Binding Data.ImageUrl, Converter={StaticResource UriToBitmapConverter}}" Width="100" Height="100" Stretch="Uniform" Grid.Column="0" Grid.RowSpan="4" Margin="0,0,12,0" />
-                                            <TextBlock Text="{Binding Data.Name}" FontSize="18" FontWeight="Bold" Grid.Column="1" />
-                                            <TextBlock Text="{Binding Id, StringFormat='ID: {0}'}" FontSize="12" Foreground="#586673" Grid.Column="2" HorizontalAlignment="Right" />
-
-                                            <TextBlock Text="{Binding Type, StringFormat='Tipo: {0}'}" Grid.Row="1" Grid.Column="1" Foreground="#5f6f85" />
-                                            <TextBlock Text="{Binding Data.MaxHeatMW, StringFormat='MaxHeatMW: {0}'}" Grid.Row="2" Grid.Column="1" Foreground="#5f6f85" />
-                                            <TextBlock Text="{Binding Data.ProductionCostPerMWh, StringFormat='Coste: {0} €/MWh'}" Grid.Row="3" Grid.Column="1" Foreground="#5f6f85" />
-
-                                            <StackPanel Grid.Row="0" Grid.RowSpan="4" Grid.Column="2" Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Center" Spacing="6">
-                                                <Button Content="Save" Width="110" Height="30" Background="#27ae60" Foreground="White" Command="{Binding $parent[Window].DataContext.UpdateProductionUnitCommand}" CommandParameter="{Binding}" />
-                                                <Button Content="Delete" Width="110" Height="30" Background="#e74c3c" Foreground="White" Command="{Binding $parent[Window].DataContext.DeleteProductionUnitCommand}" CommandParameter="{Binding}" />
-                                            </StackPanel>
-                                        </Grid>
-                                    </Border>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
-                    </ScrollViewer>
-                </StackPanel>
-            </Grid>
-
-            <Grid IsVisible="{Binding IsCreateVisible}">
-                <StackPanel Width="600" Spacing="12">
-                    <TextBlock Text="Create Production Unit" FontSize="24" FontWeight="Bold" Foreground="#2f3d4f" />
-                    <TextBox Text="{Binding NewUnitName, Mode=TwoWay}" Watermark="Name" Height="36" />
-                    <TextBox Text="{Binding NewUnitImageUrl, Mode=TwoWay}" Watermark="Image URL" Height="36" />
-                    <TextBox Text="{Binding NewUnitMaxHeatMW, Mode=TwoWay}" Watermark="MaxHeatMW" Height="36" />
-                    <TextBox Text="{Binding NewUnitProductionCostPerMWh, Mode=TwoWay}" Watermark="ProductionCostPerMWh" Height="36" />
-                    <TextBox Text="{Binding NewUnitCO2KgPerMWh, Mode=TwoWay}" Watermark="CO2KgPerMWh" Height="36" />
-                    <ComboBox ItemsSource="{Binding ProductionUnitTypes}" SelectedItem="{Binding SelectedProductionUnitType, Mode=TwoWay}" Height="36" />
-                    <TextBlock Text="{Binding DebugMessage}" Foreground="Red" FontSize="12" />
-                    <StackPanel Orientation="Horizontal" Spacing="10" Margin="0,10,0,0">
-                        <Button Content="Create" Width="120" Height="36" Background="#27ae60" Foreground="White" Command="{Binding AddProductionUnitCommand}" />
-                        <Button Content="Cancel " Width="120" Height="36" Background="#7f8c8d" Foreground="White" Command="{Binding ShowCatalogCommand}" />
+        <!-- ═══════════════ SIDEBAR ═══════════════ -->
+        <Border Grid.Column="0" Background="#0f172a">
+            <Grid RowDefinitions="Auto,*,Auto">
+                <Border Grid.Row="0" Padding="20,24,20,20" BorderBrush="#1e293b" BorderThickness="0,0,0,1">
+                    <StackPanel Orientation="Horizontal" Spacing="10">
+                        <Border Background="#1d4ed8" CornerRadius="8" Width="32" Height="32">
+                            <TextBlock Text="🔥" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <StackPanel VerticalAlignment="Center" Spacing="1">
+                            <TextBlock Text="Heat Production" FontSize="13" FontWeight="Bold" Foreground="White" />
+                            <TextBlock Text="Optimization MVP" FontSize="11" Foreground="#64748b" />
+                        </StackPanel>
                     </StackPanel>
+                </Border>
+
+                <StackPanel Grid.Row="1" Margin="12,16,12,16" Spacing="2">
+                    <Button Classes="sidebar-active" Command="{Binding ShowCatalogCommand}">
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <TextBlock Text="📊" FontSize="15" VerticalAlignment="Center" />
+                            <TextBlock Text="Assets" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                    <Button Classes="sidebar" Command="{Binding ShowSourceDataCommand}">
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <TextBlock Text="📈" FontSize="15" VerticalAlignment="Center" />
+                            <TextBlock Text="Source Data" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                    <Button Classes="sidebar" Command="{Binding ShowScenariosCommand}">
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <TextBlock Text="🧩" FontSize="15" VerticalAlignment="Center" />
+                            <TextBlock Text="Scenarios" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                    <Button Classes="sidebar" Command="{Binding ShowRunOptimizationCommand}">
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <TextBlock Text="▶" FontSize="15" VerticalAlignment="Center" />
+                            <TextBlock Text="Run Optimization" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                    <Button Classes="sidebar" Command="{Binding ShowVisualizationCommand}">
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <TextBlock Text="📉" FontSize="15" VerticalAlignment="Center" />
+                            <TextBlock Text="Results &amp; Visualization" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+
+                <Border Grid.Row="2" Padding="20,16" BorderBrush="#1e293b" BorderThickness="0,1,0,0">
+                    <StackPanel Spacing="2">
+                        <TextBlock Text="SDU / Danfoss Project" FontSize="11" Foreground="#475569" />
+                        <TextBlock Text="Engineering MVP v1.0" FontSize="11" Foreground="#475569" />
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+
+        <!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+        <Grid Grid.Column="1">
+
+            <!-- ── CATALOG ── -->
+            <Grid IsVisible="{Binding IsCatalogVisible}" Margin="32,28,32,28">
+                <Grid RowDefinitions="Auto,*">
+                    <Grid Grid.Row="0" ColumnDefinitions="*,Auto" Margin="0,0,0,20">
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Asset Manager" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
+                            <TextBlock Text="Manage production units for heat optimization. Configure technical parameters and costs."
+                                       FontSize="13" Foreground="#64748b" Margin="0,4,0,0" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10" VerticalAlignment="Top">
+                            <Button Height="38" Padding="14,0"
+                                    Background="White" BorderBrush="#e2e8f0" BorderThickness="1"
+                                    CornerRadius="8" Foreground="#374151" FontSize="13">
+                                <StackPanel Orientation="Horizontal" Spacing="6">
+                                    <TextBlock Text="↺" FontSize="15" VerticalAlignment="Center" />
+                                    <TextBlock Text="Reset to Defaults" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Button>
+                            <Button Height="38" Padding="16,0"
+                                    Background="#0f172a" BorderThickness="0" CornerRadius="8"
+                                    Foreground="White" FontSize="13" FontWeight="SemiBold"
+                                    Command="{Binding ShowCreateCommand}">
+                                <StackPanel Orientation="Horizontal" Spacing="6">
+                                    <TextBlock Text="+" FontSize="18" VerticalAlignment="Center" />
+                                    <TextBlock Text="Add Unit" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+
+                    <Border Grid.Row="1" Background="White" CornerRadius="12"
+                            BorderBrush="#e2e8f0" BorderThickness="1">
+                        <Grid RowDefinitions="Auto,*">
+                            <Border Grid.Row="0" Padding="20,14,20,14"
+                                    BorderBrush="#f1f5f9" BorderThickness="0,0,0,1">
+                                <Grid ColumnDefinitions="56,100,120,110,150,120,110,100,80">
+                                    <TextBlock Grid.Column="0" Classes="th" Text="" />
+                                    <TextBlock Grid.Column="1" Classes="th" Text="NAME" />
+                                    <TextBlock Grid.Column="2" Classes="th" Text="TYPE" />
+                                    <TextBlock Grid.Column="3" Classes="th" Text="MAX HEAT (MW)" HorizontalAlignment="Right" />
+                                    <TextBlock Grid.Column="4" Classes="th" Text="MAX ELECTRICITY (MW)" HorizontalAlignment="Right" />
+                                    <TextBlock Grid.Column="5" Classes="th" Text="COST (DKK/MWH)" HorizontalAlignment="Right" />
+                                    <TextBlock Grid.Column="6" Classes="th" Text="CO₂ (KG/MWH)" HorizontalAlignment="Right" />
+                                    <TextBlock Grid.Column="7" Classes="th" Text="FUEL FACTOR" HorizontalAlignment="Right" />
+                                    <TextBlock Grid.Column="8" Classes="th" Text="ACTIONS" HorizontalAlignment="Center" />
+                                </Grid>
+                            </Border>
+
+                            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                                <ItemsControl ItemsSource="{Binding FilteredProductionUnits}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate x:DataType="data:ProductionUnit">
+                                            <Border Padding="20,0" BorderBrush="#f1f5f9" BorderThickness="0,0,0,1">
+                                                <Grid ColumnDefinitions="56,100,120,110,150,120,110,100,80" Height="64">
+                                                    <Border Grid.Column="0"
+                                                            Width="40" Height="40"
+                                                            CornerRadius="8"
+                                                            ClipToBounds="True"
+                                                            Background="#f1f5f9"
+                                                            VerticalAlignment="Center"
+                                                            HorizontalAlignment="Left">
+                                                        <Image Source="{Binding Data.ImageUrl, Converter={StaticResource UriToBitmapConverter}}"
+                                                               Width="40" Height="40"
+                                                               Stretch="UniformToFill" />
+                                                    </Border>
+                                                    <TextBlock Grid.Column="1" Text="{Binding Data.Name}"
+                                                               FontSize="14" FontWeight="SemiBold"
+                                                               Foreground="#0f172a" VerticalAlignment="Center" />
+                                                    <Border Grid.Column="2" VerticalAlignment="Center"
+                                                            CornerRadius="20" Padding="10,4"
+                                                            Background="#fef3c7" HorizontalAlignment="Left">
+                                                        <TextBlock Text="{Binding Type}" FontSize="12" Foreground="#92400e" />
+                                                    </Border>
+                                                    <TextBlock Grid.Column="3" Classes="td"
+                                                               Text="{Binding Data.MaxHeatMW, StringFormat='{}{0:0.0}'}"
+                                                               HorizontalAlignment="Right" />
+                                                    <TextBlock Grid.Column="4" Classes="td" Text="0.0" HorizontalAlignment="Right" />
+                                                    <TextBlock Grid.Column="5" Classes="td"
+                                                               Text="{Binding Data.ProductionCostPerMWh, StringFormat='{}{0:0}'}"
+                                                               HorizontalAlignment="Right" />
+                                                    <TextBlock Grid.Column="6" Classes="td"
+                                                               Text="{Binding Data.CO2KgPerMWh, StringFormat='{}{0:0}'}"
+                                                               HorizontalAlignment="Right" />
+                                                    <TextBlock Grid.Column="7" Classes="td" Text="1.00" HorizontalAlignment="Right" />
+                                                    <StackPanel Grid.Column="8" Orientation="Horizontal"
+                                                                HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="4">
+                                                        <Button Classes="icon-btn"
+                                                                Command="{Binding $parent[Window].DataContext.UpdateProductionUnitCommand}"
+                                                                CommandParameter="{Binding}" ToolTip.Tip="Edit">
+                                                            <TextBlock Text="✏" FontSize="15" Foreground="#64748b"
+                                                                       HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                        </Button>
+                                                        <Button Classes="icon-btn"
+                                                                Command="{Binding $parent[Window].DataContext.DeleteProductionUnitCommand}"
+                                                                CommandParameter="{Binding}" ToolTip.Tip="Delete">
+                                                            <TextBlock Text="🗑" FontSize="15" Foreground="#ef4444"
+                                                                       HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                        </Button>
+                                                    </StackPanel>
+                                                </Grid>
+                                            </Border>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </ScrollViewer>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Grid>
+
+            <!-- ── CREATE (modal overlay) ── -->
+            <Grid IsVisible="{Binding IsCreateVisible}">
+                <Border Background="#80000000" />
+
+                <!-- Modal card — scrollable so it fits all fields -->
+                <Border Background="White" CornerRadius="12"
+                        Width="500" MaxHeight="620"
+                        HorizontalAlignment="Center" VerticalAlignment="Center"
+                        BoxShadow="0 20 60 0 #40000000">
+                    <Grid RowDefinitions="Auto,*,Auto">
+
+                        <!-- Modal header (fixed) -->
+                        <Grid Grid.Row="0" ColumnDefinitions="*,Auto"
+                              Margin="28,24,28,0">
+                            <TextBlock Grid.Column="0" Text="Add Production Unit"
+                                       FontSize="20" FontWeight="Bold" Foreground="#0f172a" />
+                            <Button Grid.Column="1" Content="✕" Width="30" Height="30"
+                                    Background="Transparent" BorderThickness="0"
+                                    Foreground="#94a3b8" FontSize="16"
+                                    Command="{Binding ShowCatalogCommand}" />
+                        </Grid>
+
+                        <!-- Scrollable body -->
+                        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto"
+                                      Margin="0,16,0,0">
+                            <StackPanel Margin="28,0,28,0" Spacing="16">
+
+                                <!-- Unit Name -->
+                                <StackPanel Spacing="6">
+                                    <TextBlock Text="Unit Name" FontSize="13" FontWeight="SemiBold" Foreground="#374151" />
+                                    <TextBox Text="{Binding NewUnitName, Mode=TwoWay}"
+                                             Watermark="e.g., GB1" Height="40"
+                                             Background="#f8fafc" BorderBrush="#e2e8f0" BorderThickness="1"
+                                             CornerRadius="8" Padding="12,0" FontSize="14" />
+                                </StackPanel>
+
+                                <!-- Unit Type -->
+                                <StackPanel Spacing="6">
+                                    <TextBlock Text="Unit Type" FontSize="13" FontWeight="SemiBold" Foreground="#374151" />
+                                    <ComboBox ItemsSource="{Binding ProductionUnitTypes}"
+                                              SelectedItem="{Binding SelectedProductionUnitType, Mode=TwoWay}"
+                                              Height="40" HorizontalAlignment="Stretch"
+                                              BorderBrush="#e2e8f0" BorderThickness="1"
+                                              CornerRadius="8" FontSize="14" />
+                                </StackPanel>
+
+                                <!-- ══ IMAGE PICKER ══ -->
+                                <StackPanel Spacing="8">
+                                    <TextBlock Text="Unit Image" FontSize="13" FontWeight="SemiBold" Foreground="#374151" />
+
+                                    <!-- Preview + grid side by side -->
+                                    <Grid ColumnDefinitions="90,*">
+
+                                        <!-- Selected image preview -->
+                                        <Border Grid.Column="0"
+                                                Width="80" Height="80"
+                                                CornerRadius="10"
+                                                BorderBrush="#1d4ed8" BorderThickness="2"
+                                                Background="#eff6ff"
+                                                ClipToBounds="True"
+                                                VerticalAlignment="Top">
+                                            <Panel>
+                                                <!-- Placeholder when nothing selected -->
+                                                <TextBlock Text="?"
+                                                           FontSize="28" Foreground="#93c5fd"
+                                                           HorizontalAlignment="Center"
+                                                           VerticalAlignment="Center"
+                                                           IsVisible="{Binding SelectedImageFile, Converter={x:Static ObjectConverters.IsNull}}" />
+                                                <!-- Preview image -->
+                                                <Image IsVisible="{Binding SelectedImageFile, Converter={x:Static ObjectConverters.IsNotNull}}"
+                                                       Source="{Binding NewUnitImageUrl, Converter={StaticResource UriToBitmapConverter}}"
+                                                       Width="80" Height="80"
+                                                       Stretch="UniformToFill" />
+                                            </Panel>
+                                        </Border>
+
+                                        <!-- Image grid picker -->
+                                        <Border Grid.Column="1"
+                                                Background="#f8fafc"
+                                                BorderBrush="#e2e8f0" BorderThickness="1"
+                                                CornerRadius="8" Padding="8">
+                                            <ItemsControl ItemsSource="{Binding AvailableImages}">
+                                                <ItemsControl.ItemsPanel>
+                                                    <ItemsPanelTemplate>
+                                                        <WrapPanel Orientation="Horizontal" />
+                                                    </ItemsPanelTemplate>
+                                                </ItemsControl.ItemsPanel>
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate x:DataType="x:String">
+                                                        <Button Margin="4"
+                                                                Width="72" Height="72"
+                                                                Padding="4"
+                                                                CornerRadius="8"
+                                                                BorderThickness="2"
+                                                                Background="White"
+                                                                Command="{Binding $parent[Window].DataContext.SelectImageCommand}"
+                                                                CommandParameter="{Binding}">
+                                                            <Button.BorderBrush>
+                                                                <SolidColorBrush Color="#e2e8f0" />
+                                                            </Button.BorderBrush>
+                                                            <StackPanel Spacing="3">
+                                                                <Border Width="48" Height="48"
+                                                                        CornerRadius="6"
+                                                                        ClipToBounds="True"
+                                                                        HorizontalAlignment="Center">
+                                                                    <Image Stretch="UniformToFill">
+                                                                        <Image.Source>
+                                                                            <Binding Converter="{StaticResource UriToBitmapConverter}">
+                                                                                <Binding.Source>
+                                                                                    <x:String>placeholder</x:String>
+                                                                                </Binding.Source>
+                                                                            </Binding>
+                                                                        </Image.Source>
+                                                                    </Image>
+                                                                </Border>
+                                                                <TextBlock Text="{Binding}"
+                                                                           FontSize="9" Foreground="#64748b"
+                                                                           HorizontalAlignment="Center"
+                                                                           TextTrimming="CharacterEllipsis"
+                                                                           MaxWidth="64" />
+                                                            </StackPanel>
+                                                        </Button>
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
+                                        </Border>
+                                    </Grid>
+
+                                    <!-- Selected file name display -->
+                                    <TextBlock FontSize="11" Foreground="#64748b">
+                                        <TextBlock.Text>
+                                            <Binding Path="SelectedImageFile"
+                                                     FallbackValue="No image selected"
+                                                     TargetNullValue="No image selected" />
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                </StackPanel>
+                                <!-- ══ END IMAGE PICKER ══ -->
+
+                                <!-- Max Heat + Max Electricity -->
+                                <Grid ColumnDefinitions="*,12,*">
+                                    <StackPanel Grid.Column="0" Spacing="6">
+                                        <TextBlock Text="Max Heat (MW)" FontSize="13" FontWeight="SemiBold" Foreground="#374151" />
+                                        <TextBox Text="{Binding NewUnitMaxHeatMW, Mode=TwoWay}"
+                                                 Height="40" Background="#f8fafc"
+                                                 BorderBrush="#e2e8f0" BorderThickness="1"
+                                                 CornerRadius="8" Padding="12,0" FontSize="14" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="2" Spacing="6">
+                                        <TextBlock Text="Max Electricity (MW)" FontSize="13" FontWeight="SemiBold" Foreground="#374151" />
+                                        <TextBox Watermark="0" Height="40" Background="#f8fafc"
+                                                 BorderBrush="#e2e8f0" BorderThickness="1"
+                                                 CornerRadius="8" Padding="12,0" FontSize="14" />
+                                        <TextBlock Text="Positive = produces, Negative = consumes"
+                                                   FontSize="11" Foreground="#94a3b8" TextWrapping="Wrap" />
+                                    </StackPanel>
+                                </Grid>
+
+                                <!-- Cost + CO2 -->
+                                <Grid ColumnDefinitions="*,12,*">
+                                    <StackPanel Grid.Column="0" Spacing="6">
+                                        <TextBlock Text="Cost (DKK/MWh)" FontSize="13" FontWeight="SemiBold" Foreground="#374151" />
+                                        <TextBox Text="{Binding NewUnitProductionCostPerMWh, Mode=TwoWay}"
+                                                 Height="40" Background="#f8fafc"
+                                                 BorderBrush="#e2e8f0" BorderThickness="1"
+                                                 CornerRadius="8" Padding="12,0" FontSize="14" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="2" Spacing="6">
+                                        <TextBlock Text="CO₂ (kg/MWh)" FontSize="13" FontWeight="SemiBold" Foreground="#374151" />
+                                        <TextBox Text="{Binding NewUnitCO2KgPerMWh, Mode=TwoWay}"
+                                                 Height="40" Background="#f8fafc"
+                                                 BorderBrush="#e2e8f0" BorderThickness="1"
+                                                 CornerRadius="8" Padding="12,0" FontSize="14" />
+                                    </StackPanel>
+                                </Grid>
+
+                                <!-- Fuel Factor -->
+                                <StackPanel Spacing="6">
+                                    <TextBlock Text="Fuel Factor" FontSize="13" FontWeight="SemiBold" Foreground="#374151" />
+                                    <TextBox Watermark="1.0" Height="40"
+                                             Background="#f8fafc" BorderBrush="#e2e8f0" BorderThickness="1"
+                                             CornerRadius="8" Padding="12,0" FontSize="14" />
+                                    <TextBlock Text="MWh fuel consumed per MWh heat produced"
+                                               FontSize="11" Foreground="#94a3b8" />
+                                </StackPanel>
+
+                                <TextBlock Text="{Binding DebugMessage}" Foreground="#ef4444" FontSize="11"
+                                           IsVisible="{Binding DebugMessage, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+
+                                <!-- Spacer at bottom of scroll -->
+                                <Border Height="8" />
+                            </StackPanel>
+                        </ScrollViewer>
+
+                        <!-- Footer buttons (fixed) -->
+                        <Grid Grid.Row="2" ColumnDefinitions="*,12,*" Margin="28,12,28,24">
+                            <Button Grid.Column="0" Content="Cancel" Height="40"
+                                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                                    Background="White" BorderBrush="#e2e8f0" BorderThickness="1"
+                                    Foreground="#374151" FontSize="14" CornerRadius="8"
+                                    Command="{Binding ShowCatalogCommand}" />
+                            <Button Grid.Column="2" Content="Add Unit" Height="40"
+                                    HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                                    Background="#0f172a" BorderThickness="0"
+                                    Foreground="White" FontSize="14" FontWeight="SemiBold" CornerRadius="8"
+                                    Command="{Binding AddProductionUnitCommand}" />
+                        </Grid>
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <!-- ── SOURCE DATA ── -->
+            <Grid IsVisible="{Binding IsSourceDataVisible}" Margin="32,28">
+                <StackPanel>
+                    <TextBlock Text="Source Data" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
+                    <TextBlock Text="Here you can display source data content and tables." Foreground="#64748b" Margin="0,8,0,0" />
                 </StackPanel>
             </Grid>
 
-        </Grid>
+            <!-- ── SCENARIOS ── -->
+            <Grid IsVisible="{Binding IsScenariosVisible}" Margin="32,28">
+                <StackPanel>
+                    <TextBlock Text="Scenarios" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
+                    <TextBlock Text="Here you can configure and manage scenario settings." Foreground="#64748b" Margin="0,8,0,0" />
+                </StackPanel>
+            </Grid>
 
+            <!-- ── RUN OPTIMIZATION ── -->
+            <Grid IsVisible="{Binding IsRunOptimizationVisible}" Margin="32,28">
+                <StackPanel>
+                    <TextBlock Text="Run Optimization" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
+                    <TextBlock Text="Run the optimization engine from this view." Foreground="#64748b" Margin="0,8,0,0" />
+                </StackPanel>
+            </Grid>
+
+            <!-- ── VISUALIZATION ── -->
+            <Grid IsVisible="{Binding IsVisualizationVisible}" Margin="32,28">
+                <StackPanel>
+                    <TextBlock Text="Results &amp; Visualization" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
+                    <TextBlock Text="Display the optimization results and charts here." Foreground="#64748b" Margin="0,8,0,0" />
+                </StackPanel>
+            </Grid>
+
+            <!-- Loading overlay -->
+            <Border IsVisible="{Binding IsLoading}" Background="#80ffffff">
+                <TextBlock Text="Loading..." FontSize="18" FontWeight="SemiBold"
+                           Foreground="#0f172a" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+        </Grid>
     </Grid>
 </Window>
