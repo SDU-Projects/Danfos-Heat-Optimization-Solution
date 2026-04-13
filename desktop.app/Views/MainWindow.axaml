@@ -363,11 +363,121 @@
             </Grid>
 
             <!-- ── SOURCE DATA ── -->
-            <Grid IsVisible="{Binding IsSourceDataVisible}" Margin="32,28">
-                <StackPanel>
-                    <TextBlock Text="Source Data" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
-                    <TextBlock Text="Here you can display source data content and tables." Foreground="#64748b" Margin="0,8,0,0" />
-                </StackPanel>
+            <Grid IsVisible="{Binding IsSourceDataVisible}" Margin="32,28,32,28">
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto,*,*">
+                    <Grid Grid.Row="0" ColumnDefinitions="*,Auto,Auto,Auto" Margin="0,0,0,16">
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Source Data Manager" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
+                            <TextBlock Text="Upload, generate and manage time series datasets for heat demand and electricity prices."
+                                       FontSize="13" Foreground="#64748b" Margin="0,4,0,0" />
+                        </StackPanel>
+                        <Button Grid.Column="1" Height="38" Margin="8,0,0,0" Padding="14,0"
+                                Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="8"
+                                Foreground="#1e293b" FontSize="13"
+                                Command="{Binding GenerateWinterSampleCommand}"
+                                Content="Generate Winter Sample" />
+                        <Button Grid.Column="2" Height="38" Margin="8,0,0,0" Padding="14,0"
+                                Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="8"
+                                Foreground="#1e293b" FontSize="13"
+                                Command="{Binding GenerateSummerSampleCommand}"
+                                Content="Generate Summer Sample" />
+                        <Button Grid.Column="3" Height="38" Margin="8,0,0,0" Padding="14,0"
+                                Background="#0f172a" BorderThickness="0" CornerRadius="8"
+                                Foreground="White" FontSize="13" FontWeight="SemiBold"
+                                Click="UploadCsvButton_Click"
+                                Content="Upload CSV" />
+                    </Grid>
+
+                    <Border Grid.Row="1" Background="#fff7ed" BorderBrush="#fdba74" BorderThickness="1" CornerRadius="10" Padding="14,10" Margin="0,0,0,12">
+                        <StackPanel>
+                            <TextBlock Text="CSV Format Requirements" FontWeight="SemiBold" Foreground="#9a3412" FontSize="13" />
+                            <TextBlock Text="Columns required: timestamp, heat_demand, electricity_price. Rows must be hourly and consecutive."
+                                       Foreground="#9a3412" FontSize="12" Margin="0,4,0,0" TextWrapping="Wrap" />
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="2" Background="#eff6ff" BorderBrush="#bfdbfe" BorderThickness="1" CornerRadius="10" Padding="12,10" Margin="0,0,0,12">
+                        <TextBlock Text="{Binding SourceDataStatusMessage}" Foreground="#1e3a8a" FontSize="12" TextWrapping="Wrap" />
+                    </Border>
+
+                    <Border Grid.Row="3" Background="#fef2f2" BorderBrush="#fecaca" BorderThickness="1" CornerRadius="10" Padding="12,10" Margin="0,0,0,12"
+                            IsVisible="{Binding HasSourceDataValidationMessage}">
+                        <TextBlock Text="{Binding SourceDataValidationMessage}" Foreground="#991b1b" FontSize="12" TextWrapping="Wrap" />
+                    </Border>
+
+                    <Border Grid.Row="4" Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12" Margin="0,0,0,12">
+                        <Grid RowDefinitions="Auto,*">
+                            <Border Grid.Row="0" Padding="16,12" BorderBrush="#f1f5f9" BorderThickness="0,0,0,1">
+                                <Grid ColumnDefinitions="260,100,80,240,130,70">
+                                    <TextBlock Grid.Column="0" Classes="th" Text="DATASET NAME" />
+                                    <TextBlock Grid.Column="1" Classes="th" Text="PERIOD" />
+                                    <TextBlock Grid.Column="2" Classes="th" Text="HOURS" HorizontalAlignment="Right" />
+                                    <TextBlock Grid.Column="3" Classes="th" Text="DATE RANGE" />
+                                    <TextBlock Grid.Column="4" Classes="th" Text="UPLOADED" />
+                                    <TextBlock Grid.Column="5" Classes="th" Text="ACTIONS" HorizontalAlignment="Center" />
+                                </Grid>
+                            </Border>
+                            <ListBox Grid.Row="1"
+                                     ItemsSource="{Binding SourceDatasets}"
+                                     SelectedItem="{Binding SelectedSourceDataset, Mode=TwoWay}"
+                                     BorderThickness="0"
+                                     Background="Transparent"
+                                     MaxHeight="220">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border Padding="16,0" BorderBrush="#f1f5f9" BorderThickness="0,0,0,1">
+                                            <Grid ColumnDefinitions="260,100,80,240,130,70" Height="52">
+                                                <TextBlock Grid.Column="0" Classes="td" Text="{Binding DatasetName}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Column="1" Classes="td" Text="{Binding Period}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Column="2" Classes="td" Text="{Binding Hours}" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Column="3" Classes="td" Text="{Binding DateRange}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Column="4" Classes="td" Text="{Binding Uploaded, StringFormat='{}{0:MMM d HH:mm}'}" VerticalAlignment="Center" />
+                                                <Button Grid.Column="5" Classes="icon-btn"
+                                                        Command="{Binding $parent[Window].DataContext.DeleteSourceDatasetCommand}"
+                                                        CommandParameter="{Binding}">
+                                                    <TextBlock Text="🗑" Foreground="#ef4444" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                </Button>
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </Grid>
+                    </Border>
+
+                    <Border Grid.Row="5" Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12">
+                        <Grid RowDefinitions="Auto,*">
+                            <Border Grid.Row="0" Padding="16,12" BorderBrush="#f1f5f9" BorderThickness="0,0,0,1">
+                                <StackPanel>
+                                    <TextBlock Text="Dataset Details" FontSize="14" FontWeight="SemiBold" Foreground="#0f172a" />
+                                    <TextBlock Text="{Binding SelectedDatasetDateRange}" FontSize="12" Foreground="#64748b" Margin="0,4,0,0" />
+                                </StackPanel>
+                            </Border>
+                            <Grid Grid.Row="1" RowDefinitions="Auto,*" Margin="16,12,16,16">
+                                <Grid Grid.Row="0" ColumnDefinitions="220,160,160" Margin="0,0,0,8">
+                                    <TextBlock Grid.Column="0" Classes="th" Text="TIMESTAMP" />
+                                    <TextBlock Grid.Column="1" Classes="th" Text="HEAT DEMAND" HorizontalAlignment="Right" />
+                                    <TextBlock Grid.Column="2" Classes="th" Text="ELECTRICITY PRICE" HorizontalAlignment="Right" />
+                                </Grid>
+                                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" MaxHeight="240">
+                                    <ItemsControl ItemsSource="{Binding SelectedDatasetRows}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border BorderBrush="#f1f5f9" BorderThickness="0,0,0,1" Height="32">
+                                                    <Grid ColumnDefinitions="220,160,160">
+                                                        <TextBlock Grid.Column="0" Classes="td" Text="{Binding TimestampUtc, StringFormat='{}{0:yyyy-MM-dd HH:mm}'}" VerticalAlignment="Center" />
+                                                        <TextBlock Grid.Column="1" Classes="td" Text="{Binding HeatDemand}" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                                        <TextBlock Grid.Column="2" Classes="td" Text="{Binding ElectricityPrice}" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                                    </Grid>
+                                                </Border>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </ScrollViewer>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
             </Grid>
 
             <!-- ── SCENARIOS ── -->

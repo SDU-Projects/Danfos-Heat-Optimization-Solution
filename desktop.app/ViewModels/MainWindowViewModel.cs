@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -16,6 +18,7 @@ namespace desktop.app.ViewModels
 {
     public partial class MainWindowViewModel : ViewModelBase
     {
+        private readonly Dictionary<string, List<SourceDataPoint>> _sourceDataRowsByDatasetName;
         private readonly AssetService _assetService;
 
         public AsyncRelayCommand AddProductionUnitCommand { get; }
@@ -24,7 +27,10 @@ namespace desktop.app.ViewModels
         {
             DebugMessage = "MainWindowViewModel constructor";
             _assetService = new AssetService();
+            _sourceDataRowsByDatasetName = new Dictionary<string, List<SourceDataPoint>>(StringComparer.OrdinalIgnoreCase);
             ProductionUnits = new ObservableCollection<ProductionUnit>();
+            SourceDatasets = new ObservableCollection<SourceDatasetSummary>();
+            SelectedDatasetRows = new ObservableCollection<SourceDataPoint>();
             LoadProductionUnitsAsync();
             SelectedProductionUnitType = ProductionUnitTypes.First();
 
@@ -38,7 +44,16 @@ namespace desktop.app.ViewModels
         public ObservableCollection<ProductionUnit> productionUnits;
 
         [ObservableProperty]
+        public ObservableCollection<SourceDatasetSummary> sourceDatasets;
+
+        [ObservableProperty]
+        public ObservableCollection<SourceDataPoint> selectedDatasetRows;
+
+        [ObservableProperty]
         public ProductionUnit? selectedUnit;
+
+        [ObservableProperty]
+        private SourceDatasetSummary? selectedSourceDataset;
 
         [ObservableProperty]
         private bool isCatalogVisible = true;
@@ -85,6 +100,12 @@ namespace desktop.app.ViewModels
         [ObservableProperty]
         private string debugMessage = string.Empty;
 
+        [ObservableProperty]
+        private string sourceDataStatusMessage = "No dataset loaded yet.";
+
+        [ObservableProperty]
+        private string sourceDataValidationMessage = string.Empty;
+
         public string SelectedProductionUnitType { get; set; } = "GasBoiler";
 
         [ObservableProperty]
@@ -102,6 +123,35 @@ namespace desktop.app.ViewModels
             string.IsNullOrWhiteSpace(SearchTerm)
             ? ProductionUnits
             : ProductionUnits.Where(x => x.Data.Name.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase));
+
+        public bool HasSourceDataValidationMessage
+        {
+            get
+            {
+                return !string.IsNullOrWhiteSpace(SourceDataValidationMessage);
+            }
+        }
+
+        public bool HasSelectedSourceDataset
+        {
+            get
+            {
+                return SelectedSourceDataset != null;
+            }
+        }
+
+        public string SelectedDatasetDateRange
+        {
+            get
+            {
+                if (SelectedSourceDataset == null)
+                {
+                    return "-";
+                }
+
+                return SelectedSourceDataset.DateRange;
+            }
+        }
 
         private async void LoadProductionUnitsAsync()
         {
@@ -171,6 +221,44 @@ namespace desktop.app.ViewModels
             IsVisualizationVisible = false;
             IsUpdateVisible = false;
             IsDeleteVisible = false;
+        }
+
+        [RelayCommand]
+        private void GenerateWinterSample()
+        {
+            List<SourceDataPoint> rows = BuildGeneratedRows(new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc), true);
+            AddOrReplaceDatasetFromRows("Sample Winter Data", "Winter", rows, true);
+        }
+
+        [RelayCommand]
+        private void GenerateSummerSample()
+        {
+            List<SourceDataPoint> rows = BuildGeneratedRows(new DateTime(2026, 7, 1, 0, 0, 0, DateTimeKind.Utc), false);
+            AddOrReplaceDatasetFromRows("Sample Summer Data", "Summer", rows, true);
+        }
+
+        [RelayCommand]
+        private void DeleteSourceDataset(SourceDatasetSummary? dataset)
+        {
+            if (dataset == null)
+            {
+                return;
+            }
+
+            _sourceDataRowsByDatasetName.Remove(dataset.DatasetName);
+            SourceDatasets.Remove(dataset);
+
+            if (SelectedSourceDataset != null && string.Equals(SelectedSourceDataset.DatasetName, dataset.DatasetName, StringComparison.OrdinalIgnoreCase))
+            {
+                SelectedSourceDataset = null;
+                SelectedDatasetRows.Clear();
+            }
+
+            SourceDataValidationMessage = string.Empty;
+            SourceDataStatusMessage = $"Dataset '{dataset.DatasetName}' deleted.";
+            OnPropertyChanged(nameof(HasSelectedSourceDataset));
+            OnPropertyChanged(nameof(SelectedDatasetDateRange));
+            OnPropertyChanged(nameof(HasSourceDataValidationMessage));
         }
 
         [RelayCommand]
@@ -354,6 +442,387 @@ namespace desktop.app.ViewModels
         partial void OnSearchTermChanged(string value)
         {
             OnPropertyChanged(nameof(FilteredProductionUnits));
+        }
+
+        partial void OnSelectedSourceDatasetChanged(SourceDatasetSummary? value)
+        {
+            SelectedDatasetRows.Clear();
+
+            if (value == null)
+            {
+                SourceDataStatusMessage = "Select a dataset to see its rows.";
+                OnPropertyChanged(nameof(HasSelectedSourceDataset));
+                OnPropertyChanged(nameof(SelectedDatasetDateRange));
+                return;
+            }
+
+            if (_sourceDataRowsByDatasetName.TryGetValue(value.DatasetName, out List<SourceDataPoint>? rows))
+            {
+                foreach (SourceDataPoint row in rows)
+                {
+                    SelectedDatasetRows.Add(row);
+                }
+
+                SourceDataStatusMessage = $"Opened '{value.DatasetName}' ({rows.Count} rows).";
+            }
+            else
+            {
+                SourceDataStatusMessage = "No rows found for selected dataset.";
+            }
+
+            SourceDataValidationMessage = string.Empty;
+            OnPropertyChanged(nameof(HasSelectedSourceDataset));
+            OnPropertyChanged(nameof(SelectedDatasetDateRange));
+            OnPropertyChanged(nameof(HasSourceDataValidationMessage));
+        }
+
+        public async Task ProcessCsvUploadAsync(string filePath)
+        {
+            if (string.IsNullOrWhiteSpace(filePath))
+            {
+                SourceDataValidationMessage = "No file selected.";
+                SourceDataStatusMessage = "CSV upload failed.";
+                OnPropertyChanged(nameof(HasSourceDataValidationMessage));
+                return;
+            }
+
+            if (!File.Exists(filePath))
+            {
+                SourceDataValidationMessage = "Selected file does not exist.";
+                SourceDataStatusMessage = "CSV upload failed.";
+                OnPropertyChanged(nameof(HasSourceDataValidationMessage));
+                return;
+            }
+
+            try
+            {
+                IsLoading = true;
+                SourceDataValidationMessage = string.Empty;
+
+                string[] lines = await File.ReadAllLinesAsync(filePath);
+                ParseCsvResult parseResult = ParseCsvLines(lines);
+
+                if (parseResult.HasErrors)
+                {
+                    SourceDataValidationMessage = parseResult.ErrorMessage;
+                    SourceDataStatusMessage = "CSV upload failed.";
+                    OnPropertyChanged(nameof(HasSourceDataValidationMessage));
+                    return;
+                }
+
+                string datasetName = Path.GetFileNameWithoutExtension(filePath);
+                string period = InferPeriod(parseResult.Rows);
+                AddOrReplaceDatasetFromRows(datasetName, period, parseResult.Rows, false);
+            }
+            catch (Exception ex)
+            {
+                SourceDataValidationMessage = $"Upload failed: {ex.Message}";
+                SourceDataStatusMessage = "CSV upload failed.";
+                OnPropertyChanged(nameof(HasSourceDataValidationMessage));
+            }
+            finally
+            {
+                IsLoading = false;
+            }
+        }
+
+        private void AddOrReplaceDatasetFromRows(string datasetName, string period, List<SourceDataPoint> rows, bool generated)
+        {
+            if (rows.Count == 0)
+            {
+                SourceDataValidationMessage = "Dataset has no rows.";
+                SourceDataStatusMessage = "Dataset creation failed.";
+                OnPropertyChanged(nameof(HasSourceDataValidationMessage));
+                return;
+            }
+
+            rows.Sort((left, right) => left.TimestampUtc.CompareTo(right.TimestampUtc));
+
+            DateTime min = rows[0].TimestampUtc;
+            DateTime max = rows[rows.Count - 1].TimestampUtc;
+
+            SourceDatasetSummary summary = new SourceDatasetSummary
+            {
+                DatasetName = datasetName,
+                Period = period,
+                Hours = rows.Count,
+                DateRange = $"{min:MMM d, HH:mm} - {max:MMM d, HH:mm}",
+                Uploaded = DateTime.Now,
+                Source = generated ? "Generated" : "Uploaded"
+            };
+
+            _sourceDataRowsByDatasetName[datasetName] = rows;
+
+            SourceDatasetSummary? existing = SourceDatasets.FirstOrDefault(x => string.Equals(x.DatasetName, datasetName, StringComparison.OrdinalIgnoreCase));
+            if (existing != null)
+            {
+                int index = SourceDatasets.IndexOf(existing);
+                SourceDatasets[index] = summary;
+            }
+            else
+            {
+                SourceDatasets.Insert(0, summary);
+            }
+
+            SelectedSourceDataset = summary;
+            SourceDataValidationMessage = string.Empty;
+            SourceDataStatusMessage = generated
+                ? $"Generated '{datasetName}' with {rows.Count} rows."
+                : $"Uploaded '{datasetName}' with {rows.Count} rows.";
+
+            OnPropertyChanged(nameof(HasSourceDataValidationMessage));
+        }
+
+        private static ParseCsvResult ParseCsvLines(string[] lines)
+        {
+            if (lines.Length < 2)
+            {
+                return ParseCsvResult.Fail("CSV must include a header and at least one data row.");
+            }
+
+            string[] headers = SplitCsvLine(lines[0]);
+            Dictionary<string, int> headerMap = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+            for (int i = 0; i < headers.Length; i++)
+            {
+                string key = headers[i].Trim();
+                if (!headerMap.ContainsKey(key))
+                {
+                    headerMap.Add(key, i);
+                }
+            }
+
+            string[] requiredHeaders = new[] { "timestamp", "heat_demand", "electricity_price" };
+            foreach (string header in requiredHeaders)
+            {
+                if (!headerMap.ContainsKey(header))
+                {
+                    return ParseCsvResult.Fail("CSV header must contain columns: timestamp, heat_demand, electricity_price.");
+                }
+            }
+
+            List<SourceDataPoint> rows = new List<SourceDataPoint>();
+            List<string> errors = new List<string>();
+
+            for (int lineIndex = 1; lineIndex < lines.Length; lineIndex++)
+            {
+                string line = lines[lineIndex];
+                if (string.IsNullOrWhiteSpace(line))
+                {
+                    continue;
+                }
+
+                string[] columns = SplitCsvLine(line);
+                int timestampIndex = headerMap["timestamp"];
+                int heatDemandIndex = headerMap["heat_demand"];
+                int priceIndex = headerMap["electricity_price"];
+
+                if (columns.Length <= Math.Max(timestampIndex, Math.Max(heatDemandIndex, priceIndex)))
+                {
+                    errors.Add($"Line {lineIndex + 1}: missing one or more required values.");
+                    continue;
+                }
+
+                string timestampRaw = columns[timestampIndex].Trim();
+                string heatDemandRaw = columns[heatDemandIndex].Trim();
+                string priceRaw = columns[priceIndex].Trim();
+
+                if (!DateTime.TryParse(timestampRaw, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal, out DateTime timestamp))
+                {
+                    errors.Add($"Line {lineIndex + 1}: invalid timestamp '{timestampRaw}'.");
+                    continue;
+                }
+
+                if (!decimal.TryParse(heatDemandRaw, NumberStyles.Float, CultureInfo.InvariantCulture, out decimal heatDemand))
+                {
+                    errors.Add($"Line {lineIndex + 1}: invalid heat_demand '{heatDemandRaw}'.");
+                    continue;
+                }
+
+                if (!decimal.TryParse(priceRaw, NumberStyles.Float, CultureInfo.InvariantCulture, out decimal price))
+                {
+                    errors.Add($"Line {lineIndex + 1}: invalid electricity_price '{priceRaw}'.");
+                    continue;
+                }
+
+                if (heatDemand < 0m)
+                {
+                    errors.Add($"Line {lineIndex + 1}: heat_demand must be non-negative.");
+                    continue;
+                }
+
+                if (price < 0m)
+                {
+                    errors.Add($"Line {lineIndex + 1}: electricity_price must be non-negative.");
+                    continue;
+                }
+
+                rows.Add(new SourceDataPoint
+                {
+                    TimestampUtc = timestamp,
+                    HeatDemand = decimal.Round(heatDemand, 3),
+                    ElectricityPrice = decimal.Round(price, 3)
+                });
+            }
+
+            if (errors.Count > 0)
+            {
+                string joinedErrors = string.Join(Environment.NewLine, errors.Take(8));
+                if (errors.Count > 8)
+                {
+                    joinedErrors += Environment.NewLine + $"... and {errors.Count - 8} more error(s).";
+                }
+
+                return ParseCsvResult.Fail(joinedErrors);
+            }
+
+            rows.Sort((left, right) => left.TimestampUtc.CompareTo(right.TimestampUtc));
+
+            for (int i = 1; i < rows.Count; i++)
+            {
+                TimeSpan diff = rows[i].TimestampUtc - rows[i - 1].TimestampUtc;
+                if (diff != TimeSpan.FromHours(1))
+                {
+                    return ParseCsvResult.Fail($"Timestamps must be hourly and consecutive. Gap found between {rows[i - 1].TimestampUtc:O} and {rows[i].TimestampUtc:O}.");
+                }
+            }
+
+            return ParseCsvResult.Ok(rows);
+        }
+
+        private static string[] SplitCsvLine(string line)
+        {
+            List<string> values = new List<string>();
+            bool inQuotes = false;
+            int start = 0;
+
+            for (int i = 0; i < line.Length; i++)
+            {
+                char current = line[i];
+                if (current == '"')
+                {
+                    inQuotes = !inQuotes;
+                }
+                else if (current == ',' && !inQuotes)
+                {
+                    values.Add(UnwrapCsvValue(line.Substring(start, i - start)));
+                    start = i + 1;
+                }
+            }
+
+            values.Add(UnwrapCsvValue(line.Substring(start)));
+            return values.ToArray();
+        }
+
+        private static string UnwrapCsvValue(string value)
+        {
+            string trimmed = value.Trim();
+            if (trimmed.Length >= 2 && trimmed.StartsWith("\"") && trimmed.EndsWith("\""))
+            {
+                return trimmed.Substring(1, trimmed.Length - 2).Replace("\"\"", "\"");
+            }
+
+            return trimmed;
+        }
+
+        private static string InferPeriod(List<SourceDataPoint> rows)
+        {
+            if (rows.Count == 0)
+            {
+                return "Unknown";
+            }
+
+            int month = rows[0].TimestampUtc.Month;
+            if (month == 12 || month == 1 || month == 2)
+            {
+                return "Winter";
+            }
+
+            if (month >= 6 && month <= 8)
+            {
+                return "Summer";
+            }
+
+            if (month >= 3 && month <= 5)
+            {
+                return "Spring";
+            }
+
+            return "Autumn";
+        }
+
+        private static List<SourceDataPoint> BuildGeneratedRows(DateTime startUtc, bool winterProfile)
+        {
+            List<SourceDataPoint> rows = new List<SourceDataPoint>();
+            for (int hour = 0; hour < 168; hour++)
+            {
+                DateTime timestamp = startUtc.AddHours(hour);
+                int hourOfDay = timestamp.Hour;
+
+                decimal dayWave = Convert.ToDecimal(Math.Sin((hourOfDay / 24.0) * Math.PI * 2.0));
+                decimal demandBase = winterProfile ? 8.8m : 3.2m;
+                decimal demandAmplitude = winterProfile ? 1.3m : 0.55m;
+                decimal priceBase = winterProfile ? 860m : 620m;
+                decimal priceAmplitude = winterProfile ? 240m : 180m;
+
+                decimal heatDemand = decimal.Round(demandBase + demandAmplitude * (0.5m + dayWave), 3);
+                decimal electricityPrice = decimal.Round(priceBase + priceAmplitude * (0.5m + dayWave), 3);
+
+                if (hourOfDay >= 17 && hourOfDay <= 20)
+                {
+                    electricityPrice += winterProfile ? 160m : 120m;
+                }
+
+                rows.Add(new SourceDataPoint
+                {
+                    TimestampUtc = timestamp,
+                    HeatDemand = heatDemand,
+                    ElectricityPrice = electricityPrice
+                });
+            }
+
+            return rows;
+        }
+
+        public class SourceDatasetSummary
+        {
+            public string DatasetName { get; set; } = string.Empty;
+            public string Period { get; set; } = string.Empty;
+            public int Hours { get; set; }
+            public string DateRange { get; set; } = string.Empty;
+            public DateTime Uploaded { get; set; }
+            public string Source { get; set; } = string.Empty;
+        }
+
+        public class SourceDataPoint
+        {
+            public DateTime TimestampUtc { get; set; }
+            public decimal HeatDemand { get; set; }
+            public decimal ElectricityPrice { get; set; }
+        }
+
+        private class ParseCsvResult
+        {
+            public bool HasErrors { get; set; }
+            public string ErrorMessage { get; set; } = string.Empty;
+            public List<SourceDataPoint> Rows { get; set; } = new List<SourceDataPoint>();
+
+            public static ParseCsvResult Fail(string message)
+            {
+                return new ParseCsvResult
+                {
+                    HasErrors = true,
+                    ErrorMessage = message
+                };
+            }
+
+            public static ParseCsvResult Ok(List<SourceDataPoint> rows)
+            {
+                return new ParseCsvResult
+                {
+                    HasErrors = false,
+                    Rows = rows
+                };
+            }
         }
     }
 }
