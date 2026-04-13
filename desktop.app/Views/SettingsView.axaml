@@ -1,0 +1,12 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 x:Class="desktop.app.Views.SettingsView">
+	<Grid Background="#DCDDDF" Margin="24">
+		<Border Background="White" CornerRadius="8" Padding="24">
+			<StackPanel Spacing="8">
+				<TextBlock Text="Module Placeholder" FontSize="26" FontWeight="Bold" Foreground="#0A1732"/>
+				<TextBlock Text="This screen is ready for future module implementation." FontSize="18" Foreground="#5D6F8D"/>
+			</StackPanel>
+		</Border>
+	</Grid>
+</UserControl>

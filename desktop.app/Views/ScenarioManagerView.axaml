@@ -1,0 +1,178 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:desktop.app.ViewModels"
+             xmlns:views="using:desktop.app.Views"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1040" d:DesignHeight="700"
+             x:CompileBindings="False"
+             x:Class="desktop.app.Views.ScenarioManagerView"
+             x:DataType="vm:ScenarioManagerViewModel">
+
+    <Grid Background="#DCDDDF" RowDefinitions="*">
+        <ScrollViewer Margin="40,28,36,24" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Spacing="18">
+                <Grid ColumnDefinitions="*,Auto" VerticalAlignment="Center">
+                    <StackPanel Spacing="6">
+                        <TextBlock Text="Scenario Manager" FontSize="48" FontWeight="Bold" Foreground="#0B162B"/>
+                        <TextBlock Text="Configure optimization scenarios with active units, maintenance schedules, and data sources."
+                                   FontSize="17"
+                                   Foreground="#53627F"/>
+                    </StackPanel>
+                    <Button Grid.Column="1"
+                            Command="{Binding OpenCreateScenarioCommand}"
+                            Background="#192945"
+                            Foreground="#EAF1FF"
+                            BorderThickness="0"
+                            Padding="22,13"
+                            FontSize="16"
+                            FontWeight="SemiBold"
+                            Content="+   Create Scenario"/>
+                </Grid>
+
+                <ItemsControl ItemsSource="{Binding Scenarios}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate x:DataType="vm:ScenarioItem">
+                            <Border Background="#F9FAFB"
+                                    BorderBrush="#D2D8E0"
+                                    BorderThickness="1"
+                                    CornerRadius="6"
+                                    Padding="24"
+                                    Margin="0,0,0,12">
+                                <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto" ColumnSpacing="16" RowSpacing="10">
+                                    <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="22" Foreground="#111A2D"/>
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10" HorizontalAlignment="Right">
+                                        <Button Width="34" Height="34"
+                                                Content="E"
+                                            Command="{Binding DataContext.EditScenarioCommand, RelativeSource={RelativeSource AncestorType=views:ScenarioManagerView}}"
+                                                CommandParameter="{Binding .}"
+                                                Background="Transparent"
+                                                BorderBrush="#C6CEDA"
+                                                BorderThickness="1"
+                                                Foreground="#3A4B67"/>
+                                        <Button Width="34" Height="34"
+                                                Content="X"
+                                            Command="{Binding DataContext.DeleteScenarioCommand, RelativeSource={RelativeSource AncestorType=views:ScenarioManagerView}}"
+                                                CommandParameter="{Binding .}"
+                                                Background="Transparent"
+                                                BorderBrush="#C6CEDA"
+                                                BorderThickness="1"
+                                                Foreground="#3A4B67"/>
+                                    </StackPanel>
+
+                                    <Grid Grid.Row="1" ColumnDefinitions="*,*" ColumnSpacing="24">
+                                        <StackPanel Spacing="3">
+                                            <TextBlock Text="Active Units:" FontSize="14" Foreground="#5F6E88"/>
+                                            <TextBlock Text="{Binding ActiveUnits}" FontSize="18" FontWeight="SemiBold" Foreground="#1D2A43"/>
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" Spacing="3">
+                                            <TextBlock Text="Dataset:" FontSize="14" Foreground="#5F6E88"/>
+                                            <TextBlock Text="{Binding Dataset}" FontSize="18" FontWeight="SemiBold" Foreground="#1D2A43" TextWrapping="Wrap"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border Background="#77050C1A" IsVisible="{Binding IsCreateDialogOpen}">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="740" MaxHeight="700">
+                <Border Background="#F9FAFB"
+                        BorderBrush="#CED5DF"
+                        BorderThickness="1"
+                        CornerRadius="10"
+                        Padding="28">
+                    <Grid RowDefinitions="Auto,*,Auto" RowSpacing="20">
+                        <Grid ColumnDefinitions="*,Auto">
+                            <TextBlock Text="Create Scenario" FontSize="43" FontWeight="Bold" Foreground="#10203A"/>
+                            <Button Grid.Column="1"
+                                    Content="X"
+                                    Command="{Binding CancelCreateScenarioCommand}"
+                                    Width="34"
+                                    Height="34"
+                                    BorderThickness="0"
+                                    Background="Transparent"
+                                    Foreground="#546684"/>
+                        </Grid>
+
+                        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" MaxHeight="520">
+                            <StackPanel Spacing="16">
+                                <StackPanel Spacing="6">
+                                    <TextBlock Text="Scenario Name" FontSize="17" FontWeight="SemiBold" Foreground="#1B2A43"/>
+                                    <TextBox Text="{Binding NewScenarioName}"
+                                             Watermark="e.g., Winter Base Case"
+                                             FontSize="16"
+                                             Padding="12"
+                                             BorderBrush="#BFC9D8"/>
+                                </StackPanel>
+
+                                <StackPanel Spacing="6">
+                                    <TextBlock Text="Data Source" FontSize="17" FontWeight="SemiBold" Foreground="#1B2A43"/>
+                                    <ComboBox ItemsSource="{Binding AvailableDatasets}"
+                                              SelectedItem="{Binding SelectedDataset}"
+                                              FontSize="16"
+                                              Padding="10"
+                                              BorderBrush="#BFC9D8"/>
+                                </StackPanel>
+
+                                <StackPanel Spacing="6">
+                                    <TextBlock Text="Active Production Units" FontSize="17" FontWeight="SemiBold" Foreground="#1B2A43"/>
+                                    <Border BorderBrush="#CBD3DF" BorderThickness="1" CornerRadius="6" Padding="12">
+                                        <ItemsControl ItemsSource="{Binding ProductionUnits}">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate x:DataType="vm:UnitOption">
+                                                    <CheckBox IsChecked="{Binding IsSelected}" Margin="0,4,0,4">
+                                                        <TextBlock>
+                                                            <Run Text="{Binding Code}"/>
+                                                            <Run Text=" (" Foreground="#667690"/>
+                                                            <Run Text="{Binding Type}" Foreground="#667690"/>
+                                                            <Run Text=")" Foreground="#667690"/>
+                                                        </TextBlock>
+                                                    </CheckBox>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </Border>
+                                </StackPanel>
+
+                                <Border BorderBrush="#CBD3DF" BorderThickness="1" CornerRadius="6" Padding="14">
+                                    <StackPanel Spacing="8">
+                                        <TextBlock Text="Maintenance Schedule (Optional)" FontSize="17" FontWeight="SemiBold" Foreground="#1B2A43"/>
+                                        <TextBlock Text="Unit Under Maintenance" FontSize="16" Foreground="#2F3E58"/>
+                                        <ComboBox ItemsSource="{Binding MaintenanceUnitOptions}"
+                                                  SelectedItem="{Binding SelectedMaintenanceUnit}"
+                                                  FontSize="16"
+                                                  Padding="10"
+                                                  BorderBrush="#BFC9D8"/>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </ScrollViewer>
+
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="12">
+                            <Button Content="Cancel"
+                                    Command="{Binding CancelCreateScenarioCommand}"
+                                    Padding="18,10"
+                                    FontSize="16"
+                                    Background="#F3F5F8"
+                                    Foreground="#1E2B43"
+                                    BorderBrush="#C6CEDA"
+                                    BorderThickness="1"/>
+                            <Button Content="Create Scenario"
+                                    Command="{Binding CreateScenarioCommand}"
+                                    Padding="18,10"
+                                    FontSize="16"
+                                    FontWeight="SemiBold"
+                                    Background="#8D97A6"
+                                    Foreground="#F3F6FB"
+                                    BorderThickness="0"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

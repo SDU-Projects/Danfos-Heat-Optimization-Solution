@@ -1,0 +1,89 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:desktop.app.ViewModels"
+             xmlns:views="using:desktop.app.Views"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
+             x:CompileBindings="False"
+             x:Class="desktop.app.Views.ShellView"
+             x:DataType="vm:ShellViewModel">
+
+    <UserControl.Styles>
+        <Style Selector="Button.nav-item">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#A9B6CB"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="14,11"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style Selector="Button.nav-item:pointerover">
+            <Setter Property="Background" Value="#1A2E4E"/>
+            <Setter Property="Foreground" Value="#E5EDF8"/>
+        </Style>
+        <Style Selector="Button.nav-item.selected">
+            <Setter Property="Background" Value="#1A2E4E"/>
+            <Setter Property="Foreground" Value="#1EB4FF"/>
+        </Style>
+    </UserControl.Styles>
+
+    <Grid ColumnDefinitions="320,*" Background="#DCDDDF">
+        <Border Grid.Column="0" Background="#0A1732" BorderBrush="#1A2A49" BorderThickness="0,0,1,0">
+            <Grid RowDefinitions="Auto,*,Auto" Margin="12,0">
+                <Border Grid.Row="0" Padding="14,16" BorderBrush="#1A2A49" BorderThickness="0,0,0,1">
+                    <StackPanel Spacing="2">
+                        <TextBlock Text="Heat Production" FontWeight="Bold" FontSize="32" Foreground="#F4F8FF"/>
+                        <TextBlock Text="Optimization MVP" FontWeight="SemiBold" FontSize="22" Foreground="#9CB0CE"/>
+                    </StackPanel>
+                </Border>
+
+                <StackPanel Grid.Row="1" Margin="0,18,0,0" Spacing="8">
+                    <Button Classes.nav-item="True"
+                            Classes.selected="{Binding IsAssetsSelected}"
+                            Command="{Binding NavigateToCommand}"
+                            CommandParameter="assets"
+                            Content="Assets"/>
+                    <Button Classes.nav-item="True"
+                            Classes.selected="{Binding IsSourceDataSelected}"
+                            Command="{Binding NavigateToCommand}"
+                            CommandParameter="source-data"
+                            Content="Source Data"/>
+                    <Button Classes.nav-item="True"
+                            Classes.selected="{Binding IsScenarioManagerSelected}"
+                            Command="{Binding NavigateToCommand}"
+                            CommandParameter="scenarios"
+                            Content="Scenarios"/>
+                    <Button Classes.nav-item="True"
+                            Classes.selected="{Binding IsRunOptimizationSelected}"
+                            Command="{Binding NavigateToCommand}"
+                            CommandParameter="run-optimization"
+                            Content="Run Optimization"/>
+                    <Button Classes.nav-item="True"
+                            Classes.selected="{Binding IsResultsSelected}"
+                            Command="{Binding NavigateToCommand}"
+                            CommandParameter="results"
+                            Content="Results and Visualization"/>
+                </StackPanel>
+
+                <Border Grid.Row="2" BorderBrush="#1A2A49" BorderThickness="0,1,0,0" Padding="14,16">
+                    <StackPanel Spacing="2">
+                        <TextBlock Text="SDU / Danfoss Project" FontWeight="Bold" FontSize="16" Foreground="#8EA4C7"/>
+                        <TextBlock Text="Engineering MVP v1.0" FontWeight="SemiBold" FontSize="14" Foreground="#748CB3"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Column="1" Margin="0">
+            <views:DashboardView IsVisible="{Binding IsAssetsSelected}"/>
+            <views:DashboardView IsVisible="{Binding IsSourceDataSelected}"/>
+            <views:ScenarioManagerView
+                DataContext="{Binding ScenarioManager}"
+                IsVisible="{Binding DataContext.IsScenarioManagerSelected, RelativeSource={RelativeSource AncestorType=views:ShellView}}"/>
+            <views:SettingsView IsVisible="{Binding IsRunOptimizationSelected}"/>
+            <views:SettingsView IsVisible="{Binding IsResultsSelected}"/>
+        </Grid>
+    </Grid>
+</UserControl>
