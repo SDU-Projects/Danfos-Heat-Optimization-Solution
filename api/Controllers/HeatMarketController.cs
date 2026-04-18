@@ -75,11 +75,6 @@ public class HeatMarketController : ControllerBase
             return BadRequest("HeatDemandKWh must be between 5 and 15.");
         }
 
-        if (request.ElectricityPriceDkkPerMWh < 0m)
-        {
-            return BadRequest("ElectricityPriceDkkPerMWh must be non-negative.");
-        }
-
         DateTime normalizedFrom = TruncateToHour(request.TimeFromUtc.ToUniversalTime());
         DateTime normalizedTo = TruncateToHour(request.TimeToUtc.ToUniversalTime());
 

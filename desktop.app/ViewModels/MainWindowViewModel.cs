@@ -650,12 +650,6 @@ namespace desktop.app.ViewModels
                     continue;
                 }
 
-                if (price < 0m)
-                {
-                    errors.Add($"Line {lineIndex + 1}: electricity_price must be non-negative.");
-                    continue;
-                }
-
                 rows.Add(new SourceDataPoint
                 {
                     TimestampUtc = timestamp,

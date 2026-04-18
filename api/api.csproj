@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\data\data.csproj" />
+    <ProjectReference Include="..\optimizer\optimizer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
