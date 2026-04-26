@@ -1,6 +1,6 @@
 using data.Models.Base;
 
-namespace optimizer;
+namespace Domain.Entities;
 
 public sealed class HeatOptimizer
 {

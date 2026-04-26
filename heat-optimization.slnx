@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/shared/">
     <Project Path="data/data.csproj" Id="7efdb017-74c0-4718-9be5-7d18307fe55a" />
+    <Project Path="Domain/Domain.csproj" Id="39387ba7-f3a7-4f52-befa-b34b5f229fcb" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".env.example" />

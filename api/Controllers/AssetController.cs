@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using api.Models;
 using api.Services;
-using optimizer;
+using Domain.Entities;
 
 namespace api.Controllers
 {
