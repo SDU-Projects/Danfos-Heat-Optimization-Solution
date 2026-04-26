@@ -18,6 +18,9 @@ public class AppDbContext : DbContext
 
     public DbSet<ProductionUnit> ProductionUnits { get; set; }
     public DbSet<HeatPricePoint> HeatPricePoints { get; set; }
+    public DbSet<OptimizationRun> OptimizationRuns { get; set; }
+    public DbSet<OptimizationHourResult> OptimizationHourResults { get; set; }
+    public DbSet<OptimizationUnitHourResult> OptimizationUnitHourResults { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -59,6 +62,36 @@ public class AppDbContext : DbContext
             entity.HasIndex(x => new { x.Season, x.TimeFrom, x.TimeTo }).IsUnique();
             // I seed from HeatPricePointSeed so every database instance gets the same baseline data via migrations.
             entity.HasData(HeatPricePointSeed.Rows);
+        });
+
+        modelBuilder.Entity<OptimizationRun>(entity =>
+        {
+            entity.Property(x => x.TotalNetCostDkk).HasPrecision(18, 4);
+            entity.Property(x => x.TotalCo2Kg).HasPrecision(18, 4);
+            entity.Property(x => x.TotalElectricityCashflowDkk).HasPrecision(18, 4);
+        });
+
+        modelBuilder.Entity<OptimizationHourResult>(entity =>
+        {
+            entity.Property(x => x.HeatDemandMWh).HasPrecision(18, 4);
+            entity.Property(x => x.ElectricityPriceDkkPerMWh).HasPrecision(18, 4);
+            entity.Property(x => x.HeatSuppliedMWh).HasPrecision(18, 4);
+            entity.Property(x => x.TotalNetCostDkk).HasPrecision(18, 4);
+            entity.Property(x => x.TotalCo2Kg).HasPrecision(18, 4);
+            entity.Property(x => x.ElectricityCashflowDkk).HasPrecision(18, 4);
+
+            entity.HasIndex(x => new { x.OptimizationRunId, x.TimeFromUtc }).IsUnique();
+        });
+
+        modelBuilder.Entity<OptimizationUnitHourResult>(entity =>
+        {
+            entity.Property(x => x.HeatProducedMWh).HasPrecision(18, 4);
+            entity.Property(x => x.ElectricityMWh).HasPrecision(18, 4);
+            entity.Property(x => x.NetCostDkk).HasPrecision(18, 4);
+            entity.Property(x => x.Co2Kg).HasPrecision(18, 4);
+            entity.Property(x => x.ScorePerMWh).HasPrecision(18, 6);
+
+            entity.HasIndex(x => new { x.OptimizationHourResultId, x.ProductionUnitId }).IsUnique();
         });
     }
 }

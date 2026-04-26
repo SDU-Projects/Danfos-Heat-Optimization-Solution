@@ -3,8 +3,7 @@ using data.Models.Base;
 namespace data.Models;
 
 // produces both heat and electricity
-// net cost is reduced by revenue from electricity produced
-// formula: ProductionCostPerMWh - (ElectricityProducedMW * electricityPrice)
+// net cost is reduced by revenue from electricity produced (per MWh heat)
 public class GasMotor : ProductionUnitBase
 {
     public double GasConsumption { get; set; }
@@ -16,6 +15,12 @@ public class GasMotor : ProductionUnitBase
 
     public override double CalculateNetProductionCost(double electricityPrice)
     {
-        return ProductionCostPerMWh - (ElectricityProducedMW * electricityPrice);
+        if (MaxHeatMW <= 0)
+        {
+            return ProductionCostPerMWh;
+        }
+
+        double electricityMWhPerMWhHeat = ElectricityProducedMW / MaxHeatMW;
+        return ProductionCostPerMWh - (electricityMWhPerMWhHeat * electricityPrice);
     }
 }
