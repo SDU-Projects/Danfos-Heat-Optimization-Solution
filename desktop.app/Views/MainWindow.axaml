@@ -3,6 +3,7 @@
         xmlns:vm="using:desktop.app.ViewModels"
         xmlns:data="using:data.Entities"
         xmlns:desktop="using:desktop.app"
+        xmlns:splot="using:ScottPlot.Avalonia"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="700"
@@ -204,7 +205,9 @@
                                                     <TextBlock Grid.Column="3" Classes="td"
                                                                Text="{Binding Data.MaxHeatMW, StringFormat='{}{0:0.0}'}"
                                                                HorizontalAlignment="Right" />
-                                                    <TextBlock Grid.Column="4" Classes="td" Text="0.0" HorizontalAlignment="Right" />
+                                                    <TextBlock Grid.Column="4" Classes="td"
+                                                               Text="{Binding Data.ElectricityProducedMW, StringFormat='{}{0:0.0}'}"
+                                                               HorizontalAlignment="Right" />
                                                     <TextBlock Grid.Column="5" Classes="td"
                                                                Text="{Binding Data.ProductionCostPerMWh, StringFormat='{}{0:0}'}"
                                                                HorizontalAlignment="Right" />
@@ -481,27 +484,280 @@
             </Grid>
 
             <!-- ── SCENARIOS ── -->
-            <Grid IsVisible="{Binding IsScenariosVisible}" Margin="32,28">
-                <StackPanel>
-                    <TextBlock Text="Scenarios" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
-                    <TextBlock Text="Here you can configure and manage scenario settings." Foreground="#64748b" Margin="0,8,0,0" />
-                </StackPanel>
+            <Grid IsVisible="{Binding IsScenariosVisible}" Margin="32,28,32,28">
+                <Grid RowDefinitions="Auto,*">
+                    <StackPanel Grid.Row="0" Margin="0,0,0,20">
+                        <TextBlock Text="Scenarios" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
+                        <TextBlock Foreground="#64748b" Margin="0,4,0,0" TextWrapping="Wrap"
+                                   Text="Two pre-defined optimization scenarios. Scenario 1 uses three gas boilers + one oil boiler (heat only). Scenario 2 uses two gas boilers + gas motor (CHP) + electric boiler (electricity-consuming)." />
+                    </StackPanel>
+                    <ScrollViewer Grid.Row="1">
+                        <StackPanel Spacing="16">
+                            <!-- Scenario 1 card -->
+                            <Border Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12" Padding="24">
+                                <StackPanel Spacing="10">
+                                    <StackPanel Orientation="Horizontal" Spacing="10">
+                                        <Border Background="#dbeafe" CornerRadius="6" Padding="8,4">
+                                            <TextBlock Text="Scenario 1" FontWeight="Bold" Foreground="#1e40af" FontSize="14" />
+                                        </Border>
+                                        <TextBlock Text="Heat-Only Boilers (Winter)" FontSize="16" FontWeight="SemiBold" VerticalAlignment="Center" Foreground="#0f172a" />
+                                    </StackPanel>
+                                    <TextBlock TextWrapping="Wrap" Foreground="#374151" FontSize="13"
+                                               Text="Units: GB1 (510 DKK/MWh), GB2 (540 DKK/MWh), GB3 (580 DKK/MWh), OB1 (690 DKK/MWh). All boilers are heat-only with fixed costs. Dispatch order is always cheapest first. GB2 is placed under maintenance for hours 48-96." />
+                                    <Grid ColumnDefinitions="*,*,*,*" Margin="0,8,0,0">
+                                        <Border Grid.Column="0" Background="#f0fdf4" CornerRadius="8" Padding="12" Margin="0,0,8,0">
+                                            <StackPanel>
+                                                <TextBlock Text="GB1" FontWeight="Bold" Foreground="#166534" />
+                                                <TextBlock Text="3 MW heat" FontSize="12" Foreground="#166534" />
+                                                <TextBlock Text="510 DKK/MWh" FontSize="12" Foreground="#166534" />
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="1" Background="#f0fdf4" CornerRadius="8" Padding="12" Margin="0,0,8,0">
+                                            <StackPanel>
+                                                <TextBlock Text="GB2" FontWeight="Bold" Foreground="#166534" />
+                                                <TextBlock Text="2 MW heat" FontSize="12" Foreground="#166534" />
+                                                <TextBlock Text="540 DKK/MWh" FontSize="12" Foreground="#166534" />
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="2" Background="#f0fdf4" CornerRadius="8" Padding="12" Margin="0,0,8,0">
+                                            <StackPanel>
+                                                <TextBlock Text="GB3" FontWeight="Bold" Foreground="#166534" />
+                                                <TextBlock Text="4 MW heat" FontSize="12" Foreground="#166534" />
+                                                <TextBlock Text="580 DKK/MWh" FontSize="12" Foreground="#166534" />
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="3" Background="#fef3c7" CornerRadius="8" Padding="12">
+                                            <StackPanel>
+                                                <TextBlock Text="OB1 (Peak)" FontWeight="Bold" Foreground="#92400e" />
+                                                <TextBlock Text="6 MW heat" FontSize="12" Foreground="#92400e" />
+                                                <TextBlock Text="690 DKK/MWh" FontSize="12" Foreground="#92400e" />
+                                            </StackPanel>
+                                        </Border>
+                                    </Grid>
+                                    <Border Background="#fef2f2" CornerRadius="8" Padding="10" Margin="0,4,0,0">
+                                        <TextBlock Text="⚠ GB2 under maintenance: hours 48–96 (2 days)" Foreground="#991b1b" FontSize="12" />
+                                    </Border>
+                                </StackPanel>
+                            </Border>
+
+                            <!-- Scenario 2 card -->
+                            <Border Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12" Padding="24">
+                                <StackPanel Spacing="10">
+                                    <StackPanel Orientation="Horizontal" Spacing="10">
+                                        <Border Background="#ede9fe" CornerRadius="6" Padding="8,4">
+                                            <TextBlock Text="Scenario 2" FontWeight="Bold" Foreground="#5b21b6" FontSize="14" />
+                                        </Border>
+                                        <TextBlock Text="CHP + Electric Boiler (Summer, Electricity Prices)" FontSize="16" FontWeight="SemiBold" VerticalAlignment="Center" Foreground="#0f172a" />
+                                    </StackPanel>
+                                    <TextBlock TextWrapping="Wrap" Foreground="#374151" FontSize="13"
+                                               Text="Units: GB1, GB2, GM1 (CHP – produces electricity), EB1 (consumes electricity). Net production costs depend on real-time electricity prices. GM1 is profitable when electricity prices are high; EB1 is profitable when electricity prices are low or negative. GM1 under maintenance for hours 48-96." />
+                                    <Grid ColumnDefinitions="*,*,*,*" Margin="0,8,0,0">
+                                        <Border Grid.Column="0" Background="#f0fdf4" CornerRadius="8" Padding="12" Margin="0,0,8,0">
+                                            <StackPanel>
+                                                <TextBlock Text="GB1" FontWeight="Bold" Foreground="#166534" />
+                                                <TextBlock Text="3 MW heat" FontSize="12" Foreground="#166534" />
+                                                <TextBlock Text="510 DKK/MWh" FontSize="12" Foreground="#166534" />
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="1" Background="#f0fdf4" CornerRadius="8" Padding="12" Margin="0,0,8,0">
+                                            <StackPanel>
+                                                <TextBlock Text="GB2" FontWeight="Bold" Foreground="#166534" />
+                                                <TextBlock Text="2 MW heat" FontSize="12" Foreground="#166534" />
+                                                <TextBlock Text="540 DKK/MWh" FontSize="12" Foreground="#166534" />
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="2" Background="#dbeafe" CornerRadius="8" Padding="12" Margin="0,0,8,0">
+                                            <StackPanel>
+                                                <TextBlock Text="GM1 (CHP)" FontWeight="Bold" Foreground="#1e40af" />
+                                                <TextBlock Text="5.3 MW heat + 3.9 MW elec" FontSize="12" Foreground="#1e40af" />
+                                                <TextBlock Text="975 – elec income DKK/MWh" FontSize="12" Foreground="#1e40af" />
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Column="3" Background="#fce7f3" CornerRadius="8" Padding="12">
+                                            <StackPanel>
+                                                <TextBlock Text="EB1 (Electric)" FontWeight="Bold" Foreground="#9d174d" />
+                                                <TextBlock Text="6 MW heat" FontSize="12" Foreground="#9d174d" />
+                                                <TextBlock Text="15 + elec cost DKK/MWh" FontSize="12" Foreground="#9d174d" />
+                                            </StackPanel>
+                                        </Border>
+                                    </Grid>
+                                    <Border Background="#fef2f2" CornerRadius="8" Padding="10" Margin="0,4,0,0">
+                                        <TextBlock Text="⚠ GM1 under maintenance: hours 48–96 (2 days)" Foreground="#991b1b" FontSize="12" />
+                                    </Border>
+                                    <Border Background="#eff6ff" CornerRadius="8" Padding="10">
+                                        <TextBlock TextWrapping="Wrap" Foreground="#1e40af" FontSize="12"
+                                                   Text="ℹ Note: Negative electricity prices cause GM1 net cost to exceed its base cost. During those hours EB1 becomes the cheapest option and provides extra income from electricity consumption." />
+                                    </Border>
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
             </Grid>
 
             <!-- ── RUN OPTIMIZATION ── -->
-            <Grid IsVisible="{Binding IsRunOptimizationVisible}" Margin="32,28">
-                <StackPanel>
-                    <TextBlock Text="Run Optimization" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
-                    <TextBlock Text="Run the optimization engine from this view." Foreground="#64748b" Margin="0,8,0,0" />
-                </StackPanel>
+            <Grid IsVisible="{Binding IsRunOptimizationVisible}" Margin="32,28,32,28">
+                <Grid RowDefinitions="Auto,Auto,Auto,*">
+                    <StackPanel Grid.Row="0" Margin="0,0,0,20">
+                        <TextBlock Text="Run Optimization" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
+                        <TextBlock Text="Select a season and run the optimizer. Results are saved and available in Results &amp; Visualization."
+                                   FontSize="13" Foreground="#64748b" Margin="0,4,0,0" />
+                    </StackPanel>
+
+                    <!-- Controls -->
+                    <Border Grid.Row="1" Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12" Padding="24" Margin="0,0,0,16">
+                        <Grid ColumnDefinitions="Auto,16,200,24,Auto,16,Auto" VerticalAlignment="Center">
+                            <TextBlock Grid.Column="0" Text="Season:" FontSize="14" FontWeight="SemiBold" Foreground="#374151" VerticalAlignment="Center" />
+                            <ComboBox Grid.Column="2"
+                                      ItemsSource="{Binding SeasonOptions}"
+                                      SelectedItem="{Binding SelectedSeason, Mode=TwoWay}"
+                                      Height="40" HorizontalAlignment="Stretch"
+                                      BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="8" FontSize="14" />
+                            <Button Grid.Column="4"
+                                    Height="40" Padding="20,0"
+                                    Background="#0f172a" BorderThickness="0" CornerRadius="8"
+                                    Foreground="White" FontSize="14" FontWeight="SemiBold"
+                                    Command="{Binding RunOptimizationCommand}">
+                                <StackPanel Orientation="Horizontal" Spacing="6">
+                                    <TextBlock Text="▶" FontSize="14" VerticalAlignment="Center" />
+                                    <TextBlock Text="Run" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Column="6"
+                                    Height="40" Padding="16,0"
+                                    Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="8"
+                                    Foreground="#374151" FontSize="14"
+                                    Command="{Binding LoadOptimizationRunsCommand}">
+                                <TextBlock Text="⟳ Load History" VerticalAlignment="Center" />
+                            </Button>
+                        </Grid>
+                    </Border>
+
+                    <!-- Status -->
+                    <Border Grid.Row="2" Background="#eff6ff" BorderBrush="#bfdbfe" BorderThickness="1" CornerRadius="10" Padding="14,10" Margin="0,0,0,16">
+                        <TextBlock Text="{Binding OptimizationStatusMessage}" Foreground="#1e3a8a" FontSize="13" TextWrapping="Wrap" />
+                    </Border>
+
+                    <!-- Run history table -->
+                    <Border Grid.Row="3" Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12">
+                        <Grid RowDefinitions="Auto,*">
+                            <Border Grid.Row="0" Padding="20,14" BorderBrush="#f1f5f9" BorderThickness="0,0,0,1">
+                                <Grid ColumnDefinitions="60,160,100,140,130,130,140,*">
+                                    <TextBlock Grid.Column="0" Classes="th" Text="ID" />
+                                    <TextBlock Grid.Column="1" Classes="th" Text="CREATED" />
+                                    <TextBlock Grid.Column="2" Classes="th" Text="SEASON / SOURCE" />
+                                    <TextBlock Grid.Column="3" Classes="th" Text="PERIOD FROM" />
+                                    <TextBlock Grid.Column="4" Classes="th" Text="TOTAL COST (DKK)" HorizontalAlignment="Right" />
+                                    <TextBlock Grid.Column="5" Classes="th" Text="ELEC CASHFLOW" HorizontalAlignment="Right" />
+                                    <TextBlock Grid.Column="6" Classes="th" Text="TOTAL CO₂ (KG)" HorizontalAlignment="Right" />
+                                    <TextBlock Grid.Column="7" Classes="th" Text="ACTION" HorizontalAlignment="Center" />
+                                </Grid>
+                            </Border>
+                            <ListBox Grid.Row="1"
+                                     ItemsSource="{Binding OptimizationRuns}"
+                                     SelectedItem="{Binding SelectedOptimizationRun, Mode=TwoWay}"
+                                     BorderThickness="0" Background="Transparent">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border Padding="20,0" BorderBrush="#f1f5f9" BorderThickness="0,0,0,1">
+                                            <Grid ColumnDefinitions="60,160,100,140,130,130,140,*" Height="52">
+                                                <TextBlock Grid.Column="0" Classes="td" Text="{Binding Id}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Column="1" Classes="td" Text="{Binding CreatedAtUtc, StringFormat='{}{0:yyyy-MM-dd HH:mm}'}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Column="2" Classes="td" Text="{Binding ElectricityPriceSource}" VerticalAlignment="Center" FontSize="11" />
+                                                <TextBlock Grid.Column="3" Classes="td" Text="{Binding TimeFromUtc, StringFormat='{}{0:yyyy-MM-dd}'}" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Column="4" Classes="td" Text="{Binding TotalNetCostDkk, StringFormat='{}{0:N0}'}" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Column="5" Classes="td" Text="{Binding TotalElectricityCashflowDkk, StringFormat='{}{0:N0}'}" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                                <TextBlock Grid.Column="6" Classes="td" Text="{Binding TotalCo2Kg, StringFormat='{}{0:N0}'}" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                                <Button Grid.Column="7"
+                                                        HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                        Height="30" Padding="12,0"
+                                                        Background="#0f172a" BorderThickness="0" CornerRadius="6"
+                                                        Foreground="White" FontSize="12"
+                                                        Command="{Binding $parent[Window].DataContext.ShowVisualizationCommand}">
+                                                    <TextBlock Text="View Charts" VerticalAlignment="Center" />
+                                                </Button>
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </Grid>
+                    </Border>
+                </Grid>
             </Grid>
 
             <!-- ── VISUALIZATION ── -->
-            <Grid IsVisible="{Binding IsVisualizationVisible}" Margin="32,28">
-                <StackPanel>
-                    <TextBlock Text="Results &amp; Visualization" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
-                    <TextBlock Text="Display the optimization results and charts here." Foreground="#64748b" Margin="0,8,0,0" />
-                </StackPanel>
+            <Grid IsVisible="{Binding IsVisualizationVisible}" Margin="32,28,32,28">
+                <Grid RowDefinitions="Auto,*">
+                    <StackPanel Grid.Row="0" Margin="0,0,0,20">
+                        <TextBlock Text="Results &amp; Visualization" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
+                        <TextBlock Text="Charts for the selected optimization run. Switch runs from the Run Optimization view."
+                                   FontSize="13" Foreground="#64748b" Margin="0,4,0,0" />
+                    </StackPanel>
+
+                    <!-- No run selected placeholder -->
+                    <Border Grid.Row="1"
+                            IsVisible="{Binding !HasCharts}"
+                            Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12">
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="8">
+                            <TextBlock Text="📉" FontSize="48" HorizontalAlignment="Center" />
+                            <TextBlock Text="No optimization run selected." FontSize="16" Foreground="#64748b" HorizontalAlignment="Center" />
+                            <TextBlock Text="Go to Run Optimization, run or select a result, then come back here." FontSize="13" Foreground="#94a3b8" HorizontalAlignment="Center" />
+                        </StackPanel>
+                    </Border>
+
+                    <ScrollViewer Grid.Row="1"
+                                  IsVisible="{Binding HasCharts}">
+                        <StackPanel Spacing="20">
+                            <!-- Summary row -->
+                            <Border Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12" Padding="20">
+                                <Grid ColumnDefinitions="*,*,*,*">
+                                    <StackPanel Grid.Column="0" HorizontalAlignment="Center">
+                                        <TextBlock Text="Run ID" FontSize="11" Foreground="#64748b" HorizontalAlignment="Center" />
+                                        <TextBlock Text="{Binding SelectedOptimizationRun.Id}" FontSize="22" FontWeight="Bold" Foreground="#0f172a" HorizontalAlignment="Center" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                                        <TextBlock Text="Total Net Cost (DKK)" FontSize="11" Foreground="#64748b" HorizontalAlignment="Center" />
+                                        <TextBlock Text="{Binding SelectedOptimizationRun.TotalNetCostDkk, StringFormat='{}{0:N0}'}" FontSize="22" FontWeight="Bold" Foreground="#1e40af" HorizontalAlignment="Center" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="2" HorizontalAlignment="Center">
+                                        <TextBlock Text="Electricity Cashflow (DKK)" FontSize="11" Foreground="#64748b" HorizontalAlignment="Center" />
+                                        <TextBlock Text="{Binding SelectedOptimizationRun.TotalElectricityCashflowDkk, StringFormat='{}{0:N0}'}" FontSize="22" FontWeight="Bold" Foreground="#166534" HorizontalAlignment="Center" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="3" HorizontalAlignment="Center">
+                                        <TextBlock Text="Total CO₂ (kg)" FontSize="11" Foreground="#64748b" HorizontalAlignment="Center" />
+                                        <TextBlock Text="{Binding SelectedOptimizationRun.TotalCo2Kg, StringFormat='{}{0:N0}'}" FontSize="22" FontWeight="Bold" Foreground="#9a3412" HorizontalAlignment="Center" />
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+
+                            <!-- Heat production chart -->
+                            <Border Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12" Padding="16">
+                                <splot:AvaPlot x:Name="HeatProductionAvaPlot" Height="280" />
+                            </Border>
+
+                            <!-- Electricity chart -->
+                            <Border Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12" Padding="16">
+                                <splot:AvaPlot x:Name="ElectricityAvaPlot" Height="280" />
+                            </Border>
+
+                            <!-- Cost & cashflow chart -->
+                            <Border Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12" Padding="16">
+                                <splot:AvaPlot x:Name="CostAvaPlot" Height="280" />
+                            </Border>
+
+                            <!-- CO2 chart -->
+                            <Border Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12" Padding="16">
+                                <splot:AvaPlot x:Name="Co2AvaPlot" Height="280" />
+                            </Border>
+
+                            <!-- Net production cost comparison chart -->
+                            <Border Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12" Padding="16">
+                                <splot:AvaPlot x:Name="NetProductionCostAvaPlot" Height="280" />
+                            </Border>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
             </Grid>
 
             <!-- Loading overlay -->

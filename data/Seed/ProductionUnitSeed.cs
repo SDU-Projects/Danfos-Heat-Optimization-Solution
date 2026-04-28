@@ -18,7 +18,8 @@ public static class ProductionUnitSeed
                 ProductionCostPerMWh = 510,
                 CO2KgPerMWh = 132,
                 GasConsumption = 1.05,
-                ImageUrl = "GB1.png"
+                ImageUrl = "GB1.png",
+                IsAvailable = true
             }
         },
         new ProductionUnit
@@ -32,7 +33,8 @@ public static class ProductionUnitSeed
                 ProductionCostPerMWh = 540,
                 CO2KgPerMWh = 134,
                 GasConsumption = 1.08,
-                ImageUrl = "GB2.png"
+                ImageUrl = "GB2.png",
+                IsAvailable = true
             }
         },
         new ProductionUnit
@@ -46,7 +48,8 @@ public static class ProductionUnitSeed
                 ProductionCostPerMWh = 580,
                 CO2KgPerMWh = 136,
                 GasConsumption = 1.09,
-                ImageUrl = "GB3.png"
+                ImageUrl = "GB3.png",
+                IsAvailable = true
             }
         },
         new ProductionUnit
@@ -60,7 +63,8 @@ public static class ProductionUnitSeed
                 ProductionCostPerMWh = 690,
                 CO2KgPerMWh = 147,
                 OilConsumption = 1.18,
-                ImageUrl = "OB1.jpg"
+                ImageUrl = "OB1.jpg",
+                IsAvailable = true
             }
         },
         new ProductionUnit
@@ -75,7 +79,8 @@ public static class ProductionUnitSeed
                 CO2KgPerMWh = 227,
                 GasConsumption = 1.82,
                 ElectricityProducedMW = 3.9,
-                ImageUrl = "GM1.png"
+                ImageUrl = "GM1.png",
+                IsAvailable = true
             }
         },
         new ProductionUnit
@@ -89,7 +94,8 @@ public static class ProductionUnitSeed
                 ProductionCostPerMWh = 15,
                 CO2KgPerMWh = 0,
                 ElectricityConsumedMW = 6.0,
-                ImageUrl = "EB1.jpg"
+                ImageUrl = "EB1.jpg",
+                IsAvailable = true
             }
         },
     };

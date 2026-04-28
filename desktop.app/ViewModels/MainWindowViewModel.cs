@@ -13,6 +13,7 @@ using CommunityToolkit.Mvvm.Input;
 using data.Entities;
 using data.Models.Base;
 using data.Services;
+using ScottPlot;
 
 namespace desktop.app.ViewModels
 {
@@ -20,6 +21,7 @@ namespace desktop.app.ViewModels
     {
         private readonly Dictionary<string, List<SourceDataPoint>> _sourceDataRowsByDatasetName;
         private readonly AssetService _assetService;
+        private readonly OptimizationService _optimizationService;
 
         public AsyncRelayCommand AddProductionUnitCommand { get; }
 
@@ -27,10 +29,12 @@ namespace desktop.app.ViewModels
         {
             DebugMessage = "MainWindowViewModel constructor";
             _assetService = new AssetService();
+            _optimizationService = new OptimizationService();
             _sourceDataRowsByDatasetName = new Dictionary<string, List<SourceDataPoint>>(StringComparer.OrdinalIgnoreCase);
             ProductionUnits = new ObservableCollection<ProductionUnit>();
             SourceDatasets = new ObservableCollection<SourceDatasetSummary>();
             SelectedDatasetRows = new ObservableCollection<SourceDataPoint>();
+            OptimizationRuns = new ObservableCollection<OptimizationRunDto>();
             LoadProductionUnitsAsync();
             SelectedProductionUnitType = ProductionUnitTypes.First();
 
@@ -429,8 +433,267 @@ namespace desktop.app.ViewModels
             }
         }
 
-        private void ClearForm()
+        // ── Optimization Run view ────────────────────────────────────────────────
+
+        [ObservableProperty]
+        private string selectedSeason = "Winter";
+
+        public ObservableCollection<string> SeasonOptions { get; } = new ObservableCollection<string> { "Winter", "Summer" };
+
+        [ObservableProperty]
+        private string optimizationStatusMessage = "Configure settings and click Run.";
+
+        [ObservableProperty]
+        private ObservableCollection<OptimizationRunDto> optimizationRuns;
+
+        [ObservableProperty]
+        private OptimizationRunDto? selectedOptimizationRun;
+
+        [RelayCommand]
+        private async Task RunOptimizationAsync()
         {
+            IsLoading = true;
+            OptimizationStatusMessage = "Running optimization...";
+            try
+            {
+                var request = new OptimizationRunRequest
+                {
+                    Season = SelectedSeason,
+                    Objective = 0, // Cost
+                    CostWeight = 1m,
+                    Co2Weight = 0m,
+                    ElectricityPriceSource = 0
+                };
+
+                OptimizationRunDto result = await _optimizationService.RunOptimizationAsync(request);
+                OptimizationRuns.Insert(0, result);
+                SelectedOptimizationRun = result;
+                OptimizationStatusMessage = $"Run #{result.Id} completed. Total cost: {result.TotalNetCostDkk:N0} DKK, CO₂: {result.TotalCo2Kg:N0} kg";
+            }
+            catch (Exception ex)
+            {
+                OptimizationStatusMessage = $"Error: {ex.Message}";
+            }
+            finally
+            {
+                IsLoading = false;
+            }
+        }
+
+        [RelayCommand]
+        private async Task LoadOptimizationRunsAsync()
+        {
+            IsLoading = true;
+            try
+            {
+                var runs = await _optimizationService.GetRunsAsync();
+                OptimizationRuns.Clear();
+                foreach (var r in runs) OptimizationRuns.Add(r);
+                if (OptimizationRuns.Count > 0)
+                    SelectedOptimizationRun = OptimizationRuns[0];
+                OptimizationStatusMessage = $"Loaded {runs.Count} run(s) from history.";
+            }
+            catch (Exception ex)
+            {
+                OptimizationStatusMessage = $"Error loading runs: {ex.Message}";
+            }
+            finally
+            {
+                IsLoading = false;
+            }
+        }
+
+        // ── Visualization ────────────────────────────────────────────────────────
+
+        private static readonly ScottPlot.Color[] ChartPalette =
+        {
+            new ScottPlot.Color(30, 130, 210),
+            new ScottPlot.Color(255, 160, 30),
+            new ScottPlot.Color(80, 190, 100),
+            new ScottPlot.Color(220, 60, 60),
+            new ScottPlot.Color(160, 100, 200),
+            new ScottPlot.Color(80, 200, 200)
+        };
+
+        public bool HasCharts => SelectedOptimizationRun?.Hours?.Count > 0;
+
+        partial void OnSelectedOptimizationRunChanged(OptimizationRunDto? value)
+        {
+            OnPropertyChanged(nameof(HasCharts));
+            if (value != null && value.Hours.Count == 0 && value.Id > 0)
+            {
+                _ = LoadFullRunAndBuildChartsAsync(value.Id);
+            }
+        }
+
+        private async Task LoadFullRunAndBuildChartsAsync(int runId)
+        {
+            try
+            {
+                var fullRun = await _optimizationService.GetRunAsync(runId);
+                if (fullRun != null)
+                {
+                    var existing = OptimizationRuns.FirstOrDefault(r => r.Id == runId);
+                    if (existing != null)
+                    {
+                        int idx = OptimizationRuns.IndexOf(existing);
+                        OptimizationRuns[idx] = fullRun;
+                        SelectedOptimizationRun = fullRun;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                OptimizationStatusMessage = $"Error loading run detail: {ex.Message}";
+            }
+        }
+
+        public void ConfigureHeatProductionChart(ScottPlot.Plot plt)
+        {
+            plt.Clear();
+            if (SelectedOptimizationRun == null) return;
+            var hours = SelectedOptimizationRun.Hours.OrderBy(h => h.TimeFromUtc).ToList();
+            var unitNames = GetUnitNames(hours);
+            double[] xs = hours.Select(h => h.TimeFromUtc.ToOADate()).ToArray();
+            for (int i = 0; i < unitNames.Count; i++)
+            {
+                string name = unitNames[i];
+                double[] ys = hours.Select(h => (double)(h.UnitResults.FirstOrDefault(u => u.UnitName == name)?.HeatProducedMWh ?? 0m)).ToArray();
+                var s = plt.Add.Scatter(xs, ys);
+                s.Label = name;
+                s.Color = ChartPalette[i % ChartPalette.Length];
+                s.LineWidth = 1.5f;
+                s.MarkerSize = 0;
+            }
+            double[] demandYs = hours.Select(h => (double)h.HeatDemandMWh).ToArray();
+            var demand = plt.Add.Scatter(xs, demandYs);
+            demand.Label = "Heat Demand";
+            demand.Color = new ScottPlot.Color(0, 0, 0);
+            demand.LineWidth = 2f;
+            demand.LinePattern = ScottPlot.LinePattern.Dashed;
+            demand.MarkerSize = 0;
+            plt.Axes.DateTimeTicksBottom();
+            plt.Title("Heat Production per Unit (MWh)");
+            plt.XLabel("Time (UTC)");
+            plt.YLabel("MWh");
+            plt.ShowLegend();
+        }
+
+        public void ConfigureElectricityChart(ScottPlot.Plot plt)
+        {
+            plt.Clear();
+            if (SelectedOptimizationRun == null) return;
+            var hours = SelectedOptimizationRun.Hours.OrderBy(h => h.TimeFromUtc).ToList();
+            var unitNames = GetUnitNames(hours);
+            double[] xs = hours.Select(h => h.TimeFromUtc.ToOADate()).ToArray();
+            var rightAxis = plt.Axes.AddRightAxis();
+            rightAxis.Label.Text = "DKK/MWh";
+            for (int i = 0; i < unitNames.Count; i++)
+            {
+                string name = unitNames[i];
+                double[] ys = hours.Select(h => (double)(h.UnitResults.FirstOrDefault(u => u.UnitName == name)?.ElectricityMWh ?? 0m)).ToArray();
+                var s = plt.Add.Scatter(xs, ys);
+                s.Label = name;
+                s.Color = ChartPalette[i % ChartPalette.Length];
+                s.LineWidth = 1.5f;
+                s.MarkerSize = 0;
+            }
+            double[] priceYs = hours.Select(h => (double)h.ElectricityPriceDkkPerMWh).ToArray();
+            var price = plt.Add.Scatter(xs, priceYs);
+            price.Label = "Electricity Price (DKK/MWh)";
+            price.Color = new ScottPlot.Color(150, 150, 150);
+            price.LinePattern = ScottPlot.LinePattern.Dashed;
+            price.LineWidth = 1.5f;
+            price.MarkerSize = 0;
+            price.Axes.YAxis = rightAxis;
+            plt.Axes.DateTimeTicksBottom();
+            plt.Title("Electricity Production/Consumption (MWh) & Price (DKK/MWh)");
+            plt.XLabel("Time (UTC)");
+            plt.YLabel("MWh");
+            plt.ShowLegend();
+        }
+
+        public void ConfigureCo2Chart(ScottPlot.Plot plt)
+        {
+            plt.Clear();
+            if (SelectedOptimizationRun == null) return;
+            var hours = SelectedOptimizationRun.Hours.OrderBy(h => h.TimeFromUtc).ToList();
+            var unitNames = GetUnitNames(hours);
+            double[] xs = hours.Select(h => h.TimeFromUtc.ToOADate()).ToArray();
+            for (int i = 0; i < unitNames.Count; i++)
+            {
+                string name = unitNames[i];
+                double[] ys = hours.Select(h => (double)(h.UnitResults.FirstOrDefault(u => u.UnitName == name)?.Co2Kg ?? 0m)).ToArray();
+                var s = plt.Add.Scatter(xs, ys);
+                s.Label = name;
+                s.Color = ChartPalette[i % ChartPalette.Length];
+                s.LineWidth = 1.5f;
+                s.MarkerSize = 0;
+            }
+            plt.Axes.DateTimeTicksBottom();
+            plt.Title("CO₂ Emissions per Unit (kg)");
+            plt.XLabel("Time (UTC)");
+            plt.YLabel("kg");
+            plt.ShowLegend();
+        }
+
+        public void ConfigureCostChart(ScottPlot.Plot plt)
+        {
+            plt.Clear();
+            if (SelectedOptimizationRun == null) return;
+            var hours = SelectedOptimizationRun.Hours.OrderBy(h => h.TimeFromUtc).ToList();
+            double[] xs = hours.Select(h => h.TimeFromUtc.ToOADate()).ToArray();
+            double[] costYs = hours.Select(h => (double)h.TotalNetCostDkk).ToArray();
+            double[] cashYs = hours.Select(h => (double)h.ElectricityCashflowDkk).ToArray();
+            var s1 = plt.Add.Scatter(xs, costYs);
+            s1.Label = "Net Cost";
+            s1.Color = new ScottPlot.Color(30, 130, 210);
+            s1.LineWidth = 2f;
+            s1.MarkerSize = 0;
+            var s2 = plt.Add.Scatter(xs, cashYs);
+            s2.Label = "Electricity Cashflow";
+            s2.Color = new ScottPlot.Color(255, 160, 30);
+            s2.LineWidth = 2f;
+            s2.LinePattern = ScottPlot.LinePattern.Dashed;
+            s2.MarkerSize = 0;
+            plt.Axes.DateTimeTicksBottom();
+            plt.Title("Net Cost (DKK) & Electricity Cashflow (DKK) per Hour");
+            plt.XLabel("Time (UTC)");
+            plt.YLabel("DKK");
+            plt.ShowLegend();
+        }
+
+        public void ConfigureNetProductionCostChart(ScottPlot.Plot plt)
+        {
+            plt.Clear();
+            if (SelectedOptimizationRun == null) return;
+            var hours = SelectedOptimizationRun.Hours.OrderBy(h => h.TimeFromUtc).ToList();
+            var unitNames = GetUnitNames(hours);
+            double[] xs = hours.Select(h => h.TimeFromUtc.ToOADate()).ToArray();
+            for (int i = 0; i < unitNames.Count; i++)
+            {
+                string name = unitNames[i];
+                double[] ys = hours.Select(h => (double)(h.UnitResults.FirstOrDefault(u => u.UnitName == name)?.ScorePerMWh ?? 0m)).ToArray();
+                var s = plt.Add.Scatter(xs, ys);
+                s.Label = name;
+                s.Color = ChartPalette[i % ChartPalette.Length];
+                s.LineWidth = 1.5f;
+                s.MarkerSize = 0;
+            }
+            plt.Axes.DateTimeTicksBottom();
+            plt.Title("Net Production Cost per Unit per Hour (DKK/MWh)");
+            plt.XLabel("Time (UTC)");
+            plt.YLabel("DKK/MWh");
+            plt.ShowLegend();
+        }
+
+        private static List<string> GetUnitNames(List<OptimizationHourResultDto> hours) =>
+            hours.SelectMany(h => h.UnitResults.Select(u => u.UnitName))
+                 .Distinct()
+                 .OrderBy(x => x)
+                 .ToList();
+
+        private void ClearForm()        {
             NewUnitName = string.Empty;
             NewUnitImageUrl = string.Empty;
             NewUnitMaxHeatMW = 0;

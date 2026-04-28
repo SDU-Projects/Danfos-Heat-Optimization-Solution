@@ -3,6 +3,7 @@ using Avalonia.Interactivity;
 using Avalonia.Platform.Storage;
 using desktop.app.ViewModels;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace desktop.app.Views
 {
@@ -11,7 +12,45 @@ namespace desktop.app.Views
         public MainWindow()
         {
             InitializeComponent();
-            DataContext= new MainWindowViewModel();
+            DataContext = new MainWindowViewModel();
+        }
+
+        protected override void OnDataContextChanged(System.EventArgs e)
+        {
+            base.OnDataContextChanged(e);
+            if (DataContext is MainWindowViewModel vm)
+            {
+                vm.PropertyChanged += ViewModel_PropertyChanged;
+            }
+        }
+
+        private void ViewModel_PropertyChanged(object? sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == nameof(MainWindowViewModel.SelectedOptimizationRun))
+            {
+                RefreshCharts();
+            }
+        }
+
+        private void RefreshCharts()
+        {
+            if (DataContext is not MainWindowViewModel vm || !vm.HasCharts)
+                return;
+
+            vm.ConfigureHeatProductionChart(HeatProductionAvaPlot.Plot);
+            HeatProductionAvaPlot.Refresh();
+
+            vm.ConfigureElectricityChart(ElectricityAvaPlot.Plot);
+            ElectricityAvaPlot.Refresh();
+
+            vm.ConfigureCo2Chart(Co2AvaPlot.Plot);
+            Co2AvaPlot.Refresh();
+
+            vm.ConfigureCostChart(CostAvaPlot.Plot);
+            CostAvaPlot.Refresh();
+
+            vm.ConfigureNetProductionCostChart(NetProductionCostAvaPlot.Plot);
+            NetProductionCostAvaPlot.Refresh();
         }
 
         private async void UploadCsvButton_Click(object? sender, RoutedEventArgs e)

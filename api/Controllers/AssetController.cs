@@ -179,6 +179,32 @@ namespace api.Controllers
             return CreatedAtAction(nameof(GetOptimizationRun), new { id = runEntity.Id }, dto);
         }
 
+        [HttpGet("/api/optimization/runs")]
+        public async Task<ActionResult<IEnumerable<OptimizationRunDto>>> GetOptimizationRuns(CancellationToken cancellationToken)
+        {
+            var runs = await _context.OptimizationRuns
+                .AsNoTracking()
+                .OrderByDescending(x => x.CreatedAtUtc)
+                .Select(r => new OptimizationRunDto
+                {
+                    Id = r.Id,
+                    CreatedAtUtc = r.CreatedAtUtc,
+                    Objective = r.Objective,
+                    CostWeight = r.CostWeight,
+                    Co2Weight = r.Co2Weight,
+                    ElectricityPriceSource = r.ElectricityPriceSource,
+                    TimeFromUtc = r.TimeFromUtc,
+                    TimeToUtc = r.TimeToUtc,
+                    TotalNetCostDkk = r.TotalNetCostDkk,
+                    TotalCo2Kg = r.TotalCo2Kg,
+                    TotalElectricityCashflowDkk = r.TotalElectricityCashflowDkk,
+                    Hours = new List<OptimizationHourResultDto>()
+                })
+                .ToListAsync(cancellationToken);
+
+            return Ok(runs);
+        }
+
         [HttpGet("/api/optimization/runs/{id:int}")]
         public async Task<ActionResult<OptimizationRunDto>> GetOptimizationRun(int id, CancellationToken cancellationToken)
         {
