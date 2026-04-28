@@ -13,6 +13,7 @@ using CommunityToolkit.Mvvm.Input;
 using data.Entities;
 using data.Models.Base;
 using data.Services;
+using desktop.app.Services;
 using ScottPlot;
 
 namespace desktop.app.ViewModels
@@ -22,6 +23,8 @@ namespace desktop.app.ViewModels
         private readonly Dictionary<string, List<SourceDataPoint>> _sourceDataRowsByDatasetName;
         private readonly AssetService _assetService;
         private readonly OptimizationService _optimizationService;
+        private readonly AiChatService _aiChatService;
+        private readonly List<desktop.app.Services.ChatTurn> _aiHistory = new();
 
         public AsyncRelayCommand AddProductionUnitCommand { get; }
 
@@ -30,6 +33,8 @@ namespace desktop.app.ViewModels
             DebugMessage = "MainWindowViewModel constructor";
             _assetService = new AssetService();
             _optimizationService = new OptimizationService();
+            _aiChatService = new AiChatService();
+            AiMessages = new ObservableCollection<ChatMessage>();
             _sourceDataRowsByDatasetName = new Dictionary<string, List<SourceDataPoint>>(StringComparer.OrdinalIgnoreCase);
             ProductionUnits = new ObservableCollection<ProductionUnit>();
             SourceDatasets = new ObservableCollection<SourceDatasetSummary>();
@@ -76,6 +81,9 @@ namespace desktop.app.ViewModels
 
         [ObservableProperty]
         private bool isVisualizationVisible;
+
+        [ObservableProperty]
+        private bool isAiAssistantVisible;
 
         [ObservableProperty]
         private bool isUpdateVisible;
@@ -196,6 +204,7 @@ namespace desktop.app.ViewModels
             IsVisualizationVisible = false;
             IsUpdateVisible = false;
             IsDeleteVisible = false;
+            IsAiAssistantVisible = false;
         }
 
         [RelayCommand]
@@ -210,6 +219,7 @@ namespace desktop.app.ViewModels
             IsVisualizationVisible = false;
             IsUpdateVisible = false;
             IsDeleteVisible = false;
+            IsAiAssistantVisible = false;
 
             ClearForm();
         }
@@ -225,6 +235,7 @@ namespace desktop.app.ViewModels
             IsVisualizationVisible = false;
             IsUpdateVisible = false;
             IsDeleteVisible = false;
+            IsAiAssistantVisible = false;
         }
 
         [RelayCommand]
@@ -276,6 +287,7 @@ namespace desktop.app.ViewModels
             IsVisualizationVisible = false;
             IsUpdateVisible = false;
             IsDeleteVisible = false;
+            IsAiAssistantVisible = false;
         }
 
         [RelayCommand]
@@ -289,6 +301,7 @@ namespace desktop.app.ViewModels
             IsVisualizationVisible = false;
             IsUpdateVisible = false;
             IsDeleteVisible = false;
+            IsAiAssistantVisible = false;
         }
 
         [RelayCommand]
@@ -302,6 +315,7 @@ namespace desktop.app.ViewModels
             IsVisualizationVisible = true;
             IsUpdateVisible = false;
             IsDeleteVisible = false;
+            IsAiAssistantVisible = false;
         }
 
         private async Task AddProductionUnitAsync()
@@ -692,6 +706,176 @@ namespace desktop.app.ViewModels
                  .Distinct()
                  .OrderBy(x => x)
                  .ToList();
+
+        // ── AI Assistant ─────────────────────────────────────────────────────────
+
+        [ObservableProperty]
+        private ObservableCollection<ChatMessage> aiMessages = new();
+
+        [ObservableProperty]
+        private string aiInputText = string.Empty;
+
+        [ObservableProperty]
+        private bool isAiTyping;
+
+        [ObservableProperty]
+        private string aiStatusMessage = string.Empty;
+
+        [ObservableProperty]
+        private UnitDataDto? pendingUnitData;
+
+        public bool HasPendingUnit => PendingUnitData != null;
+
+        [RelayCommand]
+        public async Task ShowAiAssistantAsync()
+        {
+            IsCatalogVisible = false;
+            IsCreateVisible = false;
+            IsSourceDataVisible = false;
+            IsScenariosVisible = false;
+            IsRunOptimizationVisible = false;
+            IsVisualizationVisible = false;
+            IsUpdateVisible = false;
+            IsDeleteVisible = false;
+            IsAiAssistantVisible = true;
+
+            if (AiMessages.Count == 0)
+            {
+                bool available = await _aiChatService.IsAvailableAsync();
+                if (!available)
+                {
+                    AiMessages.Add(new ChatMessage { Role = "system", Content = "⚠ AI service is offline. Start the Python API: cd ai-api && uvicorn main:app --port 8000" });
+                    AiStatusMessage = "AI service offline.";
+                    return;
+                }
+
+                AiMessages.Add(new ChatMessage
+                {
+                    Role = "assistant",
+                    Content = "Hello! I'm your production unit assistant. I can help you create a new production unit step by step. Shall we get started? Just say something like \"I want to add a new gas boiler\"."
+                });
+                AiStatusMessage = "AI service connected.";
+            }
+        }
+
+        [RelayCommand]
+        private async Task SendAiMessageAsync()
+        {
+            string text = AiInputText.Trim();
+            if (string.IsNullOrEmpty(text) || IsAiTyping)
+                return;
+
+            AiInputText = string.Empty;
+
+            AiMessages.Add(new ChatMessage { Role = "user", Content = text });
+            _aiHistory.Add(new desktop.app.Services.ChatTurn { Role = "user", Content = text });
+
+            IsAiTyping = true;
+            AiStatusMessage = "AI is thinking...";
+
+            try
+            {
+                AiChatResponse response = await _aiChatService.SendAsync(_aiHistory);
+
+                AiMessages.Add(new ChatMessage { Role = "assistant", Content = response.Reply });
+                _aiHistory.Add(new desktop.app.Services.ChatTurn { Role = "assistant", Content = response.Reply });
+
+                if (response.UnitData != null)
+                {
+                    PendingUnitData = response.UnitData;
+                    OnPropertyChanged(nameof(HasPendingUnit));
+                    AiStatusMessage = $"Unit \"{ response.UnitData.Name}\" ready to create.";
+                }
+                else
+                {
+                    AiStatusMessage = string.Empty;
+                }
+            }
+            catch (Exception ex)
+            {
+                AiMessages.Add(new ChatMessage { Role = "system", Content = $"⚠ Error: {ex.Message}" });
+                AiStatusMessage = "Error communicating with AI.";
+            }
+            finally
+            {
+                IsAiTyping = false;
+            }
+        }
+
+        [RelayCommand]
+        private async Task CreateUnitFromAiAsync()
+        {
+            if (PendingUnitData == null)
+                return;
+
+            IsLoading = true;
+            try
+            {
+                var type = Enum.Parse<ProductionUnitType>(PendingUnitData.Type);
+                ProductionUnitBase baseUnit = type switch
+                {
+                    ProductionUnitType.ElectricBoiler => new data.Models.ElectricBoiler { Name = string.Empty, ImageUrl = string.Empty },
+                    ProductionUnitType.GasBoiler => new data.Models.GasBoiler { Name = string.Empty, ImageUrl = string.Empty },
+                    ProductionUnitType.GasMotor => new data.Models.GasMotor { Name = string.Empty, ImageUrl = string.Empty },
+                    ProductionUnitType.OilBoiler => new data.Models.OilBoiler { Name = string.Empty, ImageUrl = string.Empty },
+                    _ => new data.Models.GasBoiler { Name = string.Empty, ImageUrl = string.Empty }
+                };
+
+                baseUnit.Name = PendingUnitData.Name;
+                baseUnit.ImageUrl = PendingUnitData.ImageUrl;
+                baseUnit.MaxHeatMW = PendingUnitData.MaxHeatMW;
+                baseUnit.ProductionCostPerMWh = PendingUnitData.ProductionCostPerMWh;
+                baseUnit.CO2KgPerMWh = PendingUnitData.CO2KgPerMWh;
+                baseUnit.ElectricityProducedMW = PendingUnitData.ElectricityProducedMW;
+                baseUnit.ElectricityConsumedMW = PendingUnitData.ElectricityConsumedMW;
+                baseUnit.IsAvailable = true;
+
+                var newAsset = new ProductionUnit { Data = baseUnit, Type = type };
+                var created = await _assetService.CreateAssetAsync(newAsset);
+
+                if (created != null)
+                {
+                    if (!string.IsNullOrWhiteSpace(created.Data.ImageUrl) && !created.Data.ImageUrl.Contains("://"))
+                        created.Data.ImageUrl = $"avares://desktop.app/Images/{created.Data.ImageUrl}";
+
+                    ProductionUnits.Add(created);
+                    OnPropertyChanged(nameof(FilteredProductionUnits));
+
+                    AiMessages.Add(new ChatMessage
+                    {
+                        Role = "assistant",
+                        Content = $"✅ Production unit \"{created.Data.Name}\" has been created and added to the asset list."
+                    });
+
+                    PendingUnitData = null;
+                    OnPropertyChanged(nameof(HasPendingUnit));
+                    AiStatusMessage = "Unit created successfully.";
+
+                    // Reset conversation so the user can create another unit
+                    _aiHistory.Clear();
+                }
+                else
+                {
+                    AiMessages.Add(new ChatMessage { Role = "system", Content = "⚠ API returned null – unit was not saved." });
+                }
+            }
+            catch (Exception ex)
+            {
+                AiMessages.Add(new ChatMessage { Role = "system", Content = $"⚠ Error creating unit: {ex.Message}" });
+            }
+            finally
+            {
+                IsLoading = false;
+            }
+        }
+
+        [RelayCommand]
+        private void DismissPendingUnit()
+        {
+            PendingUnitData = null;
+            OnPropertyChanged(nameof(HasPendingUnit));
+            AiStatusMessage = string.Empty;
+        }
 
         private void ClearForm()        {
             NewUnitName = string.Empty;

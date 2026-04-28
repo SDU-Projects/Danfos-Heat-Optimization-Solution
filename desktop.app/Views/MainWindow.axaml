@@ -115,6 +115,12 @@
                             <TextBlock Text="Results &amp; Visualization" VerticalAlignment="Center" />
                         </StackPanel>
                     </Button>
+                    <Button Classes="sidebar" Command="{Binding ShowAiAssistantCommand}">
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <TextBlock Text="🤖" FontSize="15" VerticalAlignment="Center" />
+                            <TextBlock Text="AI Assistant" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
                 </StackPanel>
 
                 <Border Grid.Row="2" Padding="20,16" BorderBrush="#1e293b" BorderThickness="0,1,0,0">
@@ -765,6 +771,128 @@
                 <TextBlock Text="Loading..." FontSize="18" FontWeight="SemiBold"
                            Foreground="#0f172a" HorizontalAlignment="Center" VerticalAlignment="Center" />
             </Border>
+
+            <!-- ── AI ASSISTANT ── -->
+            <Grid IsVisible="{Binding IsAiAssistantVisible}" Margin="32,28,32,28">
+                <Grid RowDefinitions="Auto,*,Auto,Auto">
+
+                    <!-- Header -->
+                    <StackPanel Grid.Row="0" Margin="0,0,0,16">
+                        <TextBlock Text="AI Production Unit Assistant" FontSize="24" FontWeight="Bold" Foreground="#0f172a" />
+                        <TextBlock FontSize="13" Foreground="#64748b" Margin="0,4,0,0"
+                                   Text="Chat with the AI to create new production units. The assistant will guide you through all required parameters." />
+                        <TextBlock Text="{Binding AiStatusMessage}" FontSize="12" Foreground="#6366f1"
+                                   Margin="0,4,0,0"
+                                   IsVisible="{Binding AiStatusMessage, Converter={x:Static StringConverters.IsNotNullOrEmpty}}" />
+                    </StackPanel>
+
+                    <!-- Chat messages -->
+                    <Border Grid.Row="1" Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="12">
+                        <ScrollViewer x:Name="AiChatScrollViewer"
+                                      VerticalScrollBarVisibility="Auto"
+                                      Padding="16,12">
+                            <ItemsControl ItemsSource="{Binding AiMessages}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate x:DataType="vm:ChatMessage">
+                                        <!-- user bubble -->
+                                        <Grid Margin="0,6">
+                                            <Border IsVisible="{Binding IsUser}"
+                                                    Background="#1e3a5f" CornerRadius="12,12,4,12"
+                                                    Padding="12,8" MaxWidth="520"
+                                                    HorizontalAlignment="Right">
+                                                <TextBlock Text="{Binding Content}" Foreground="White"
+                                                           FontSize="13" TextWrapping="Wrap" />
+                                            </Border>
+                                            <Border IsVisible="{Binding IsAssistant}"
+                                                    Background="#f1f5f9" CornerRadius="12,12,12,4"
+                                                    Padding="12,8" MaxWidth="520"
+                                                    HorizontalAlignment="Left">
+                                                <StackPanel Spacing="4">
+                                                    <TextBlock Text="🤖 AI Assistant" FontSize="10"
+                                                               Foreground="#64748b" FontWeight="SemiBold" />
+                                                    <TextBlock Text="{Binding Content}" Foreground="#1e293b"
+                                                               FontSize="13" TextWrapping="Wrap" />
+                                                </StackPanel>
+                                            </Border>
+                                            <Border IsVisible="{Binding IsSystem}"
+                                                    Background="#fef3c7" CornerRadius="8"
+                                                    Padding="10,6" MaxWidth="600"
+                                                    HorizontalAlignment="Center">
+                                                <TextBlock Text="{Binding Content}" Foreground="#92400e"
+                                                           FontSize="12" TextWrapping="Wrap"
+                                                           HorizontalAlignment="Center" />
+                                            </Border>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </ScrollViewer>
+                    </Border>
+
+                    <!-- Pending unit confirmation card -->
+                    <Border Grid.Row="2"
+                            IsVisible="{Binding HasPendingUnit}"
+                            Background="#f0fdf4" BorderBrush="#86efac" BorderThickness="1"
+                            CornerRadius="10" Padding="16,12" Margin="0,12,0,0">
+                        <Grid ColumnDefinitions="*,Auto,Auto">
+                            <StackPanel Grid.Column="0" Spacing="2">
+                                <TextBlock Text="✅ New unit ready to save" FontWeight="SemiBold"
+                                           Foreground="#166534" FontSize="13" />
+                                <TextBlock FontSize="12" Foreground="#166534" TextWrapping="Wrap">
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat="{}{0} · {1} · {2:0.0} MW heat · {3:0} DKK/MWh · {4:0} kg CO₂/MWh">
+                                            <Binding Path="PendingUnitData.Name" />
+                                            <Binding Path="PendingUnitData.Type" />
+                                            <Binding Path="PendingUnitData.MaxHeatMW" />
+                                            <Binding Path="PendingUnitData.ProductionCostPerMWh" />
+                                            <Binding Path="PendingUnitData.CO2KgPerMWh" />
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </StackPanel>
+                            <Button Grid.Column="1"
+                                    Height="36" Padding="14,0" Margin="12,0,0,0"
+                                    Background="#16a34a" BorderThickness="0" CornerRadius="8"
+                                    Foreground="White" FontSize="13" FontWeight="SemiBold"
+                                    Command="{Binding CreateUnitFromAiCommand}">
+                                <TextBlock Text="Create Unit" VerticalAlignment="Center" />
+                            </Button>
+                            <Button Grid.Column="2"
+                                    Height="36" Padding="12,0" Margin="8,0,0,0"
+                                    Background="White" BorderBrush="#e2e8f0" BorderThickness="1" CornerRadius="8"
+                                    Foreground="#64748b" FontSize="13"
+                                    Command="{Binding DismissPendingUnitCommand}">
+                                <TextBlock Text="Dismiss" VerticalAlignment="Center" />
+                            </Button>
+                        </Grid>
+                    </Border>
+
+                    <!-- Input row -->
+                    <Grid Grid.Row="3" ColumnDefinitions="*,12,Auto" Margin="0,12,0,0">
+                        <TextBox Grid.Column="0"
+                                 Text="{Binding AiInputText, Mode=TwoWay}"
+                                 Watermark="Type a message… (e.g. I want to add a new gas boiler)"
+                                 Height="42"
+                                 Background="White" BorderBrush="#e2e8f0" BorderThickness="1"
+                                 CornerRadius="8" Padding="14,0" FontSize="14"
+                                 IsEnabled="{Binding !IsAiTyping}" />
+                        <Button Grid.Column="2"
+                                Height="42" Padding="20,0"
+                                Background="#0f172a" BorderThickness="0" CornerRadius="8"
+                                Foreground="White" FontSize="14" FontWeight="SemiBold"
+                                IsEnabled="{Binding !IsAiTyping}"
+                                Command="{Binding SendAiMessageCommand}">
+                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                <TextBlock Text="➤" FontSize="14" VerticalAlignment="Center" />
+                                <TextBlock Text="Send" VerticalAlignment="Center"
+                                           IsVisible="{Binding !IsAiTyping}" />
+                                <TextBlock Text="Thinking…" VerticalAlignment="Center"
+                                           IsVisible="{Binding IsAiTyping}" />
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
